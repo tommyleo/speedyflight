@@ -1,7 +1,27 @@
-speedyFlight 2.31
-=================
+speedyFlight 2.31  VRBrain - STM32F407VG - 168 Mhz
+==================================================
 
 32 bit fork of the baseflight MultiWii RC flight controller firmware
+
+
+## Additional Features
+
+Cleanflight also has additional features not found in baseflight.  Since the primary maintainer of baseflight also sells hardware there is no incentive for baseflight to support the target platforms and features that Cleanflight now provides.
+
+For a list of features, changes and some discussion please review the thread on MultiWii forums and consult the documenation.
+
+http://www.multiwii.com/forum/viewtopic.php?f=23&t=5149
+
+
+Develop with Eclipse
+====================
+You need an ARM toolchain. 
+
+Add new target 
+
+Make target:  TARGET=VRBRAIN
+
+
 
 
 license
