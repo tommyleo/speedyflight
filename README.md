@@ -1,26 +1,38 @@
-# speedyFlight 2.31  VRBrain - STM32F407VG - 168 Mhz
+# speedyFlight 2.31  
+
+# VRBrain - STM32F4XX - 168 Mhz
 
 32 bit fork of the baseflight MultiWii RC flight controller firmware
 
-
 ## Warning, this is a beta version, do not fly and remove the propeller, it only proves the configuration of VRBrain with the GCS
+
+# Sensors
+
+MPU6000 (SPI Gyro + Acc)
+
+HMC5883 (Compass)
+
+MS5611 (SPI Barometer)
+
+EEPROM (SPI For local parameters storage)
+
+8 RC Input
+
+8 RC Output at 490 hz
+
+3 Seriale ports
+
+GPS Ublox OK
+
 
 ## Configuration Tool
 
-To configure Cleanflight you should use the Cleanlight-configurator GUI tool (Windows/OSX/Linux) that can be found here:
-
-https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb
-
-The source for it is here:
-
-https://github.com/hydra/cleanflight-configurator
+To configure speedyFlight you should use the BaseFlight configurator GUI tool (Windows/OSX/Linux) that can be found here:
 
 https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
 
 
-## Additional Features
-
-Cleanflight also has additional features not found in baseflight.  Since the primary maintainer of baseflight also sells hardware there is no incentive for baseflight to support the target platforms and features that Cleanflight now provides.
+## Features
 
 For a list of features, changes and some discussion please review the thread on MultiWii forums and consult the documenation.
 
