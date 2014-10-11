@@ -283,25 +283,25 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/align.o
  .data          0x00000000        0x0 obj/VRBRAIN/align.o
  .bss           0x00000000        0x0 obj/VRBRAIN/align.o
- .gnu.lto_.jmpfuncs.8753ba
+ .gnu.lto_.jmpfuncs.bb545a
                 0x00000000       0x21 obj/VRBRAIN/align.o
- .gnu.lto_.inline.8753ba
+ .gnu.lto_.inline.bb545a
                 0x00000000       0xe7 obj/VRBRAIN/align.o
- .gnu.lto_.pureconst.8753ba
+ .gnu.lto_.pureconst.bb545a
                 0x00000000       0x16 obj/VRBRAIN/align.o
- .gnu.lto_boardAlignmentInit.8753ba
+ .gnu.lto_boardAlignmentInit.bb545a
                 0x00000000      0x4b6 obj/VRBRAIN/align.o
- .gnu.lto_alignBoard.8753ba
+ .gnu.lto_alignBoard.bb545a
                 0x00000000      0x317 obj/VRBRAIN/align.o
- .gnu.lto_alignSensors.8753ba
+ .gnu.lto_alignSensors.bb545a
                 0x00000000      0x4af obj/VRBRAIN/align.o
- .gnu.lto_.symbol_nodes.8753ba
+ .gnu.lto_.symbol_nodes.bb545a
                 0x00000000       0x88 obj/VRBRAIN/align.o
- .gnu.lto_.refs.8753ba
+ .gnu.lto_.refs.bb545a
                 0x00000000       0x25 obj/VRBRAIN/align.o
- .gnu.lto_.decls.8753ba
+ .gnu.lto_.decls.bb545a
                 0x00000000     0x2356 obj/VRBRAIN/align.o
- .gnu.lto_.symtab.8753ba
+ .gnu.lto_.symtab.bb545a
                 0x00000000       0x87 obj/VRBRAIN/align.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/align.o
@@ -382,27 +382,27 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/buzzer.o
  .data          0x00000000        0x0 obj/VRBRAIN/buzzer.o
  .bss           0x00000000        0x0 obj/VRBRAIN/buzzer.o
- .gnu.lto_.jmpfuncs.863ae9
+ .gnu.lto_.jmpfuncs.bb6d55
                 0x00000000       0x5d obj/VRBRAIN/buzzer.o
- .gnu.lto_.inline.863ae9
+ .gnu.lto_.inline.bb6d55
                 0x00000000       0xae obj/VRBRAIN/buzzer.o
- .gnu.lto_.pureconst.863ae9
+ .gnu.lto_.pureconst.bb6d55
                 0x00000000       0x18 obj/VRBRAIN/buzzer.o
- .gnu.lto_beep.part.0.863ae9
+ .gnu.lto_beep.part.0.bb6d55
                 0x00000000      0x221 obj/VRBRAIN/buzzer.o
- .gnu.lto_beep.863ae9
+ .gnu.lto_beep.bb6d55
                 0x00000000      0x30c obj/VRBRAIN/buzzer.o
- .gnu.lto_beep_code.863ae9
+ .gnu.lto_beep_code.bb6d55
                 0x00000000      0x450 obj/VRBRAIN/buzzer.o
- .gnu.lto_buzzer.863ae9
+ .gnu.lto_buzzer.bb6d55
                 0x00000000      0x620 obj/VRBRAIN/buzzer.o
- .gnu.lto_.symbol_nodes.863ae9
+ .gnu.lto_.symbol_nodes.bb6d55
                 0x00000000       0xfb obj/VRBRAIN/buzzer.o
- .gnu.lto_.refs.863ae9
+ .gnu.lto_.refs.bb6d55
                 0x00000000       0x4f obj/VRBRAIN/buzzer.o
- .gnu.lto_.decls.863ae9
+ .gnu.lto_.decls.bb6d55
                 0x00000000     0x20d4 obj/VRBRAIN/buzzer.o
- .gnu.lto_.symtab.863ae9
+ .gnu.lto_.symtab.bb6d55
                 0x00000000       0xe7 obj/VRBRAIN/buzzer.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/buzzer.o
@@ -589,83 +589,83 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/cli.o
  .data          0x00000000        0x0 obj/VRBRAIN/cli.o
  .bss           0x00000000        0x0 obj/VRBRAIN/cli.o
- .gnu.lto_.jmpfuncs.861e92
-                0x00000000      0x7fb obj/VRBRAIN/cli.o
- .gnu.lto_.inline.861e92
+ .gnu.lto_.jmpfuncs.bb405c
+                0x00000000      0x7fc obj/VRBRAIN/cli.o
+ .gnu.lto_.inline.bb405c
                 0x00000000      0x455 obj/VRBRAIN/cli.o
- .gnu.lto_.pureconst.861e92
+ .gnu.lto_.pureconst.bb405c
                 0x00000000       0x4d obj/VRBRAIN/cli.o
- .gnu.lto_i2a.861e92
+ .gnu.lto_i2a.bb405c
                 0x00000000      0x18f obj/VRBRAIN/cli.o
- .gnu.lto__atof.861e92
+ .gnu.lto__atof.bb405c
                 0x00000000      0x880 obj/VRBRAIN/cli.o
- .gnu.lto_cliSetVar.861e92
+ .gnu.lto_cliSetVar.bb405c
                 0x00000000      0x24c obj/VRBRAIN/cli.o
- .gnu.lto_cliPrint.861e92
+ .gnu.lto_cliPrint.bb405c
                 0x00000000      0x14f obj/VRBRAIN/cli.o
- .gnu.lto_cliVersion.861e92
-                0x00000000       0xdf obj/VRBRAIN/cli.o
- .gnu.lto_cliPrompt.861e92
+ .gnu.lto_cliVersion.bb405c
+                0x00000000       0xe0 obj/VRBRAIN/cli.o
+ .gnu.lto_cliPrompt.bb405c
                 0x00000000       0xb5 obj/VRBRAIN/cli.o
- .gnu.lto_cliWrite.861e92
+ .gnu.lto_cliWrite.bb405c
                 0x00000000       0xd1 obj/VRBRAIN/cli.o
- .gnu.lto_cliHelp.861e92
+ .gnu.lto_cliHelp.bb405c
                 0x00000000      0x1f3 obj/VRBRAIN/cli.o
- .gnu.lto_cliStatus.861e92
+ .gnu.lto_cliStatus.bb405c
                 0x00000000      0x5d2 obj/VRBRAIN/cli.o
- .gnu.lto_cliCompare.861e92
+ .gnu.lto_cliCompare.bb405c
                 0x00000000      0x14e obj/VRBRAIN/cli.o
- .gnu.lto_cliSave.861e92
+ .gnu.lto_cliSave.bb405c
                 0x00000000      0x119 obj/VRBRAIN/cli.o
- .gnu.lto_cliMap.861e92
+ .gnu.lto_cliMap.bb405c
                 0x00000000      0x5cc obj/VRBRAIN/cli.o
- .gnu.lto_cliGpsPassthrough.861e92
+ .gnu.lto_cliGpsPassthrough.bb405c
                 0x00000000      0x154 obj/VRBRAIN/cli.o
- .gnu.lto_cliFeature.861e92
+ .gnu.lto_cliFeature.bb405c
                 0x00000000      0x640 obj/VRBRAIN/cli.o
- .gnu.lto_cliExit.861e92
+ .gnu.lto_cliExit.bb405c
                 0x00000000      0x156 obj/VRBRAIN/cli.o
- .gnu.lto_cliDefaults.861e92
+ .gnu.lto_cliDefaults.bb405c
                 0x00000000      0x11e obj/VRBRAIN/cli.o
- .gnu.lto_cliMixer.part.0.861e92
+ .gnu.lto_cliMixer.part.0.bb405c
                 0x00000000      0x241 obj/VRBRAIN/cli.o
- .gnu.lto_cliMixer.861e92
+ .gnu.lto_cliMixer.bb405c
                 0x00000000      0x37c obj/VRBRAIN/cli.o
- .gnu.lto_cliProfile.part.1.861e92
+ .gnu.lto_cliProfile.part.1.bb405c
                 0x00000000      0x1a4 obj/VRBRAIN/cli.o
- .gnu.lto_cliProfile.861e92
+ .gnu.lto_cliProfile.bb405c
                 0x00000000      0x244 obj/VRBRAIN/cli.o
- .gnu.lto_cliMotor.part.2.861e92
+ .gnu.lto_cliMotor.part.2.bb405c
                 0x00000000      0x4cc obj/VRBRAIN/cli.o
- .gnu.lto_cliMotor.861e92
+ .gnu.lto_cliMotor.bb405c
                 0x00000000      0x1f4 obj/VRBRAIN/cli.o
- .gnu.lto_cliAux.part.3.861e92
+ .gnu.lto_cliAux.part.3.bb405c
                 0x00000000      0x197 obj/VRBRAIN/cli.o
- .gnu.lto_cliAux.861e92
+ .gnu.lto_cliAux.bb405c
                 0x00000000      0x311 obj/VRBRAIN/cli.o
- .gnu.lto_itoa.861e92
+ .gnu.lto_itoa.bb405c
                 0x00000000      0x244 obj/VRBRAIN/cli.o
- .gnu.lto_ftoa.861e92
+ .gnu.lto_ftoa.bb405c
                 0x00000000      0x470 obj/VRBRAIN/cli.o
- .gnu.lto_cliPrintVar.861e92
+ .gnu.lto_cliPrintVar.bb405c
                 0x00000000      0x460 obj/VRBRAIN/cli.o
- .gnu.lto_cliSet.part.4.861e92
+ .gnu.lto_cliSet.part.4.bb405c
                 0x00000000      0x5de obj/VRBRAIN/cli.o
- .gnu.lto_cliSet.861e92
+ .gnu.lto_cliSet.bb405c
                 0x00000000      0x355 obj/VRBRAIN/cli.o
- .gnu.lto_cliDump.861e92
-                0x00000000      0x946 obj/VRBRAIN/cli.o
- .gnu.lto_cliCMix.861e92
+ .gnu.lto_cliDump.bb405c
+                0x00000000      0x947 obj/VRBRAIN/cli.o
+ .gnu.lto_cliCMix.bb405c
                 0x00000000      0xc7a obj/VRBRAIN/cli.o
- .gnu.lto_cliProcess.861e92
+ .gnu.lto_cliProcess.bb405c
                 0x00000000      0xc4e obj/VRBRAIN/cli.o
- .gnu.lto_.symbol_nodes.861e92
+ .gnu.lto_.symbol_nodes.bb405c
                 0x00000000      0x5fd obj/VRBRAIN/cli.o
- .gnu.lto_.refs.861e92
+ .gnu.lto_.refs.bb405c
                 0x00000000       0xc9 obj/VRBRAIN/cli.o
- .gnu.lto_.decls.861e92
+ .gnu.lto_.decls.bb405c
                 0x00000000     0x56b2 obj/VRBRAIN/cli.o
- .gnu.lto_.symtab.861e92
+ .gnu.lto_.symtab.bb405c
                 0x00000000      0x421 obj/VRBRAIN/cli.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/cli.o
@@ -819,57 +819,57 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/config.o
  .data          0x00000000        0x0 obj/VRBRAIN/config.o
  .bss           0x00000000        0x0 obj/VRBRAIN/config.o
- .gnu.lto_.jmpfuncs.86602c
+ .gnu.lto_.jmpfuncs.bb5e2f
                 0x00000000       0xc5 obj/VRBRAIN/config.o
- .gnu.lto_.inline.86602c
+ .gnu.lto_.inline.bb5e2f
                 0x00000000      0x13c obj/VRBRAIN/config.o
- .gnu.lto_.pureconst.86602c
+ .gnu.lto_.pureconst.bb5e2f
                 0x00000000       0x36 obj/VRBRAIN/config.o
- .gnu.lto_validEEPROM.part.0.86602c
+ .gnu.lto_validEEPROM.part.0.bb5e2f
                 0x00000000      0x1f4 obj/VRBRAIN/config.o
- .gnu.lto_validEEPROM.86602c
+ .gnu.lto_validEEPROM.bb5e2f
                 0x00000000      0x20c obj/VRBRAIN/config.o
- .gnu.lto_parseRcChannels.86602c
+ .gnu.lto_parseRcChannels.bb5e2f
                 0x00000000      0x2a0 obj/VRBRAIN/config.o
- .gnu.lto_configRead.86602c
+ .gnu.lto_configRead.bb5e2f
                 0x00000000      0x1b1 obj/VRBRAIN/config.o
- .gnu.lto_activateConfig.86602c
+ .gnu.lto_activateConfig.bb5e2f
                 0x00000000      0x551 obj/VRBRAIN/config.o
- .gnu.lto_loadAndActivateConfig.86602c
+ .gnu.lto_loadAndActivateConfig.bb5e2f
                 0x00000000       0xa5 obj/VRBRAIN/config.o
- .gnu.lto_writeEEPROM.86602c
+ .gnu.lto_writeEEPROM.bb5e2f
                 0x00000000      0x565 obj/VRBRAIN/config.o
- .gnu.lto_writeConfig.86602c
+ .gnu.lto_writeConfig.bb5e2f
                 0x00000000       0xc4 obj/VRBRAIN/config.o
- .gnu.lto_sensors.86602c
+ .gnu.lto_sensors.bb5e2f
                 0x00000000      0x10f obj/VRBRAIN/config.o
- .gnu.lto_sensorsSet.86602c
+ .gnu.lto_sensorsSet.bb5e2f
                 0x00000000      0x125 obj/VRBRAIN/config.o
- .gnu.lto_sensorsClear.86602c
+ .gnu.lto_sensorsClear.bb5e2f
                 0x00000000      0x139 obj/VRBRAIN/config.o
- .gnu.lto_sensorsMask.86602c
+ .gnu.lto_sensorsMask.bb5e2f
                 0x00000000       0xa7 obj/VRBRAIN/config.o
- .gnu.lto_feature.86602c
+ .gnu.lto_feature.bb5e2f
                 0x00000000       0xde obj/VRBRAIN/config.o
- .gnu.lto_featureSet.86602c
+ .gnu.lto_featureSet.bb5e2f
                 0x00000000       0xdc obj/VRBRAIN/config.o
- .gnu.lto_resetConf.86602c
+ .gnu.lto_resetConf.bb5e2f
                 0x00000000      0x8cf obj/VRBRAIN/config.o
- .gnu.lto_checkFirstTime.86602c
+ .gnu.lto_checkFirstTime.bb5e2f
                 0x00000000      0x11b obj/VRBRAIN/config.o
- .gnu.lto_featureClear.86602c
+ .gnu.lto_featureClear.bb5e2f
                 0x00000000       0xec obj/VRBRAIN/config.o
- .gnu.lto_featureClearAll.86602c
+ .gnu.lto_featureClearAll.bb5e2f
                 0x00000000       0xb7 obj/VRBRAIN/config.o
- .gnu.lto_featureMask.86602c
+ .gnu.lto_featureMask.bb5e2f
                 0x00000000       0xb7 obj/VRBRAIN/config.o
- .gnu.lto_.symbol_nodes.86602c
+ .gnu.lto_.symbol_nodes.bb5e2f
                 0x00000000      0x19a obj/VRBRAIN/config.o
- .gnu.lto_.refs.86602c
+ .gnu.lto_.refs.bb5e2f
                 0x00000000       0x6a obj/VRBRAIN/config.o
- .gnu.lto_.decls.86602c
+ .gnu.lto_.decls.bb5e2f
                 0x00000000     0x2cb6 obj/VRBRAIN/config.o
- .gnu.lto_.symtab.86602c
+ .gnu.lto_.symtab.bb5e2f
                 0x00000000      0x39e obj/VRBRAIN/config.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/config.o
@@ -1024,91 +1024,91 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/gps.o
  .data          0x00000000        0x0 obj/VRBRAIN/gps.o
  .bss           0x00000000        0x0 obj/VRBRAIN/gps.o
- .gnu.lto_.jmpfuncs.869250
+ .gnu.lto_.jmpfuncs.baaf79
                 0x00000000      0x14c obj/VRBRAIN/gps.o
- .gnu.lto_.inline.869250
+ .gnu.lto_.inline.baaf79
                 0x00000000      0x3ec obj/VRBRAIN/gps.o
- .gnu.lto_.pureconst.869250
+ .gnu.lto_.pureconst.baaf79
                 0x00000000       0x58 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_calc_velocity.869250
+ .gnu.lto_GPS_calc_velocity.baaf79
                 0x00000000      0x389 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_calc_desired_speed.869250
+ .gnu.lto_GPS_calc_desired_speed.baaf79
                 0x00000000      0x358 obj/VRBRAIN/gps.o
- .gnu.lto_wrap_36000.869250
+ .gnu.lto_wrap_36000.baaf79
                 0x00000000      0x13b obj/VRBRAIN/gps.o
- .gnu.lto_grab_fields.869250
+ .gnu.lto_grab_fields.baaf79
                 0x00000000      0x30d obj/VRBRAIN/gps.o
- .gnu.lto_hex_c.869250
+ .gnu.lto_hex_c.baaf79
                 0x00000000      0x11c obj/VRBRAIN/gps.o
- .gnu.lto_UBLOX_parse_gps.869250
+ .gnu.lto_UBLOX_parse_gps.baaf79
                 0x00000000      0x7f3 obj/VRBRAIN/gps.o
- .gnu.lto_gpsNewFrameUBLOX.869250
+ .gnu.lto_gpsNewFrameUBLOX.baaf79
                 0x00000000      0x73b obj/VRBRAIN/gps.o
- .gnu.lto_gpsSetState.869250
+ .gnu.lto_gpsSetState.baaf79
                 0x00000000       0xf5 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_calc_longitude_scaling.869250
+ .gnu.lto_GPS_calc_longitude_scaling.baaf79
                 0x00000000      0x210 obj/VRBRAIN/gps.o
- .gnu.lto_get_D.isra.1.869250
+ .gnu.lto_get_D.isra.1.baaf79
                 0x00000000      0x248 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_calc_location_error.isra.2.869250
+ .gnu.lto_GPS_calc_location_error.isra.2.baaf79
                 0x00000000      0x202 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_distance_cm_bearing.isra.3.869250
+ .gnu.lto_GPS_distance_cm_bearing.isra.3.baaf79
                 0x00000000      0x322 obj/VRBRAIN/gps.o
- .gnu.lto_get_I.isra.4.869250
+ .gnu.lto_get_I.isra.4.baaf79
                 0x00000000      0x1e1 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_calc_poshold.869250
+ .gnu.lto_GPS_calc_poshold.baaf79
                 0x00000000      0x531 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_reset_home_position.part.5.869250
+ .gnu.lto_GPS_reset_home_position.part.5.baaf79
                 0x00000000      0x1b9 obj/VRBRAIN/gps.o
- .gnu.lto_gpsThread.part.7.869250
+ .gnu.lto_gpsThread.part.7.baaf79
                 0x00000000      0x1a0 obj/VRBRAIN/gps.o
- .gnu.lto_gpsInitHardware.869250
+ .gnu.lto_gpsInitHardware.baaf79
                 0x00000000      0x4ae obj/VRBRAIN/gps.o
- .gnu.lto_leadFilter_clear.869250
+ .gnu.lto_leadFilter_clear.baaf79
                 0x00000000       0xab obj/VRBRAIN/gps.o
- .gnu.lto_leadFilter_getPosition.869250
+ .gnu.lto_leadFilter_getPosition.baaf79
                 0x00000000      0x1d5 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_reset_home_position.869250
+ .gnu.lto_GPS_reset_home_position.baaf79
                 0x00000000      0x15f obj/VRBRAIN/gps.o
- .gnu.lto_GPS_reset_nav.869250
+ .gnu.lto_GPS_reset_nav.baaf79
                 0x00000000      0x28a obj/VRBRAIN/gps.o
- .gnu.lto_gpsSetPIDs.869250
+ .gnu.lto_gpsSetPIDs.baaf79
                 0x00000000      0x275 obj/VRBRAIN/gps.o
- .gnu.lto_gpsInit.part.6.869250
+ .gnu.lto_gpsInit.part.6.baaf79
                 0x00000000      0x24f obj/VRBRAIN/gps.o
- .gnu.lto_gpsInit.869250
+ .gnu.lto_gpsInit.baaf79
                 0x00000000      0x12b obj/VRBRAIN/gps.o
- .gnu.lto_gpsSetPassthrough.869250
+ .gnu.lto_gpsSetPassthrough.baaf79
                 0x00000000      0x247 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_set_next_wp.869250
+ .gnu.lto_GPS_set_next_wp.baaf79
                 0x00000000      0x2d7 obj/VRBRAIN/gps.o
- .gnu.lto_wrap_18000.869250
+ .gnu.lto_wrap_18000.baaf79
                 0x00000000      0x144 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_update_crosstrack.869250
+ .gnu.lto_GPS_update_crosstrack.baaf79
                 0x00000000      0x3ac obj/VRBRAIN/gps.o
- .gnu.lto_GPS_calc_nav_rate.869250
+ .gnu.lto_GPS_calc_nav_rate.baaf79
                 0x00000000      0x529 obj/VRBRAIN/gps.o
- .gnu.lto_check_missed_wp.869250
+ .gnu.lto_check_missed_wp.baaf79
                 0x00000000      0x186 obj/VRBRAIN/gps.o
- .gnu.lto_GPS_coord_to_degrees.869250
+ .gnu.lto_GPS_coord_to_degrees.baaf79
                 0x00000000      0x6d4 obj/VRBRAIN/gps.o
- .gnu.lto_gpsNewFrameNMEA.869250
+ .gnu.lto_gpsNewFrameNMEA.baaf79
                 0x00000000      0xa73 obj/VRBRAIN/gps.o
- .gnu.lto_gpsNewFrame.869250
+ .gnu.lto_gpsNewFrame.baaf79
                 0x00000000      0x158 obj/VRBRAIN/gps.o
- .gnu.lto_gpsNewData.869250
+ .gnu.lto_gpsNewData.baaf79
                 0x00000000      0xc4a obj/VRBRAIN/gps.o
- .gnu.lto_gpsThread.869250
+ .gnu.lto_gpsThread.baaf79
                 0x00000000      0x286 obj/VRBRAIN/gps.o
- .gnu.lto__update_checksum.869250
+ .gnu.lto__update_checksum.baaf79
                 0x00000000      0x186 obj/VRBRAIN/gps.o
- .gnu.lto_.symbol_nodes.869250
+ .gnu.lto_.symbol_nodes.baaf79
                 0x00000000      0x45e obj/VRBRAIN/gps.o
- .gnu.lto_.refs.869250
+ .gnu.lto_.refs.baaf79
                 0x00000000      0x1fd obj/VRBRAIN/gps.o
- .gnu.lto_.decls.869250
+ .gnu.lto_.decls.baaf79
                 0x00000000     0x5702 obj/VRBRAIN/gps.o
- .gnu.lto_.symtab.869250
+ .gnu.lto_.symtab.baaf79
                 0x00000000      0x63f obj/VRBRAIN/gps.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/gps.o
@@ -1269,37 +1269,37 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/imu.o
  .data          0x00000000        0x0 obj/VRBRAIN/imu.o
  .bss           0x00000000        0x0 obj/VRBRAIN/imu.o
- .gnu.lto_.jmpfuncs.87798e
+ .gnu.lto_.jmpfuncs.baad17
                 0x00000000       0xdc obj/VRBRAIN/imu.o
- .gnu.lto_.inline.87798e
+ .gnu.lto_.inline.baad17
                 0x00000000      0x137 obj/VRBRAIN/imu.o
- .gnu.lto_.pureconst.87798e
+ .gnu.lto_.pureconst.baad17
                 0x00000000       0x22 obj/VRBRAIN/imu.o
- .gnu.lto_calculateHeading.87798e
+ .gnu.lto_calculateHeading.baad17
                 0x00000000      0x41a obj/VRBRAIN/imu.o
- .gnu.lto_imuInit.87798e
+ .gnu.lto_imuInit.baad17
                 0x00000000      0x456 obj/VRBRAIN/imu.o
- .gnu.lto_normalizeV.87798e
+ .gnu.lto_normalizeV.baad17
                 0x00000000      0x1fb obj/VRBRAIN/imu.o
- .gnu.lto_rotateV.87798e
+ .gnu.lto_rotateV.baad17
                 0x00000000      0x529 obj/VRBRAIN/imu.o
- .gnu.lto_acc_calc.87798e
+ .gnu.lto_acc_calc.baad17
                 0x00000000      0x760 obj/VRBRAIN/imu.o
- .gnu.lto_getEstimatedAttitude.87798e
+ .gnu.lto_getEstimatedAttitude.baad17
                 0x00000000      0xc81 obj/VRBRAIN/imu.o
- .gnu.lto_computeIMU.87798e
+ .gnu.lto_computeIMU.baad17
                 0x00000000      0x2b7 obj/VRBRAIN/imu.o
- .gnu.lto_accSum_reset.87798e
+ .gnu.lto_accSum_reset.baad17
                 0x00000000       0xf1 obj/VRBRAIN/imu.o
- .gnu.lto_getEstimatedAltitude.87798e
+ .gnu.lto_getEstimatedAltitude.baad17
                 0x00000000     0x11a3 obj/VRBRAIN/imu.o
- .gnu.lto_.symbol_nodes.87798e
+ .gnu.lto_.symbol_nodes.baad17
                 0x00000000      0x2a5 obj/VRBRAIN/imu.o
- .gnu.lto_.refs.87798e
+ .gnu.lto_.refs.baad17
                 0x00000000       0xef obj/VRBRAIN/imu.o
- .gnu.lto_.decls.87798e
+ .gnu.lto_.decls.baad17
                 0x00000000     0x31fd obj/VRBRAIN/imu.o
- .gnu.lto_.symtab.87798e
+ .gnu.lto_.symtab.baad17
                 0x00000000      0x56c obj/VRBRAIN/imu.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/imu.o
@@ -1454,23 +1454,23 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/main.o
  .data          0x00000000        0x0 obj/VRBRAIN/main.o
  .bss           0x00000000        0x0 obj/VRBRAIN/main.o
- .gnu.lto_.jmpfuncs.8764bc
+ .gnu.lto_.jmpfuncs.ba4c6d
                 0x00000000       0x6f obj/VRBRAIN/main.o
- .gnu.lto_.inline.8764bc
+ .gnu.lto_.inline.ba4c6d
                 0x00000000       0x68 obj/VRBRAIN/main.o
- .gnu.lto_.pureconst.8764bc
+ .gnu.lto_.pureconst.ba4c6d
                 0x00000000       0x14 obj/VRBRAIN/main.o
- .gnu.lto_main.8764bc
+ .gnu.lto_main.ba4c6d
                 0x00000000      0xa81 obj/VRBRAIN/main.o
- .gnu.lto_HardFault_Handler.8764bc
+ .gnu.lto_HardFault_Handler.ba4c6d
                 0x00000000       0xc0 obj/VRBRAIN/main.o
- .gnu.lto_.symbol_nodes.8764bc
+ .gnu.lto_.symbol_nodes.ba4c6d
                 0x00000000      0x1a0 obj/VRBRAIN/main.o
- .gnu.lto_.refs.8764bc
+ .gnu.lto_.refs.ba4c6d
                 0x00000000       0x32 obj/VRBRAIN/main.o
- .gnu.lto_.decls.8764bc
+ .gnu.lto_.decls.ba4c6d
                 0x00000000     0x31c6 obj/VRBRAIN/main.o
- .gnu.lto_.symtab.8764bc
+ .gnu.lto_.symtab.ba4c6d
                 0x00000000      0x44d obj/VRBRAIN/main.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/main.o
@@ -1625,43 +1625,43 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/mw.o
  .data          0x00000000        0x0 obj/VRBRAIN/mw.o
  .bss           0x00000000        0x0 obj/VRBRAIN/mw.o
- .gnu.lto_.jmpfuncs.87638b
+ .gnu.lto_.jmpfuncs.bb2d46
                 0x00000000      0x112 obj/VRBRAIN/mw.o
- .gnu.lto_.inline.87638b
+ .gnu.lto_.inline.bb2d46
                 0x00000000      0x156 obj/VRBRAIN/mw.o
- .gnu.lto_.pureconst.87638b
+ .gnu.lto_.pureconst.bb2d46
                 0x00000000       0x28 obj/VRBRAIN/mw.o
- .gnu.lto_mwDisarm.87638b
+ .gnu.lto_mwDisarm.bb2d46
                 0x00000000       0xf5 obj/VRBRAIN/mw.o
- .gnu.lto_pidMultiWii.87638b
+ .gnu.lto_pidMultiWii.bb2d46
                 0x00000000      0xaa7 obj/VRBRAIN/mw.o
- .gnu.lto_pidRewrite.87638b
+ .gnu.lto_pidRewrite.bb2d46
                 0x00000000      0x7a4 obj/VRBRAIN/mw.o
- .gnu.lto_mwArm.part.0.87638b
+ .gnu.lto_mwArm.part.0.bb2d46
                 0x00000000      0x152 obj/VRBRAIN/mw.o
- .gnu.lto_computeRC.part.1.87638b
+ .gnu.lto_computeRC.part.1.bb2d46
                 0x00000000      0x439 obj/VRBRAIN/mw.o
- .gnu.lto_blinkLED.87638b
+ .gnu.lto_blinkLED.bb2d46
                 0x00000000      0x242 obj/VRBRAIN/mw.o
- .gnu.lto_mwArm.87638b
+ .gnu.lto_mwArm.bb2d46
                 0x00000000      0x1ca obj/VRBRAIN/mw.o
- .gnu.lto_annexCode.87638b
+ .gnu.lto_annexCode.bb2d46
                 0x00000000     0x1065 obj/VRBRAIN/mw.o
- .gnu.lto_pwmReadRawRC.87638b
+ .gnu.lto_pwmReadRawRC.bb2d46
                 0x00000000       0xe8 obj/VRBRAIN/mw.o
- .gnu.lto_computeRC.87638b
+ .gnu.lto_computeRC.bb2d46
                 0x00000000      0x24d obj/VRBRAIN/mw.o
- .gnu.lto_setPIDController.87638b
+ .gnu.lto_setPIDController.bb2d46
                 0x00000000      0x117 obj/VRBRAIN/mw.o
- .gnu.lto_loop.87638b
+ .gnu.lto_loop.bb2d46
                 0x00000000     0x32b0 obj/VRBRAIN/mw.o
- .gnu.lto_.symbol_nodes.87638b
+ .gnu.lto_.symbol_nodes.bb2d46
                 0x00000000      0x452 obj/VRBRAIN/mw.o
- .gnu.lto_.refs.87638b
+ .gnu.lto_.refs.bb2d46
                 0x00000000      0x1df obj/VRBRAIN/mw.o
- .gnu.lto_.decls.87638b
+ .gnu.lto_.decls.bb2d46
                 0x00000000     0x3be3 obj/VRBRAIN/mw.o
- .gnu.lto_.symtab.87638b
+ .gnu.lto_.symtab.bb2d46
                 0x00000000      0xb04 obj/VRBRAIN/mw.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/mw.o
@@ -1816,41 +1816,41 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/mixer.o
  .data          0x00000000        0x0 obj/VRBRAIN/mixer.o
  .bss           0x00000000        0x0 obj/VRBRAIN/mixer.o
- .gnu.lto_.jmpfuncs.86522b
+ .gnu.lto_.jmpfuncs.ba30db
                 0x00000000       0x84 obj/VRBRAIN/mixer.o
- .gnu.lto_.inline.86522b
+ .gnu.lto_.inline.ba30db
                 0x00000000      0x114 obj/VRBRAIN/mixer.o
- .gnu.lto_.pureconst.86522b
+ .gnu.lto_.pureconst.ba30db
                 0x00000000       0x26 obj/VRBRAIN/mixer.o
- .gnu.lto_writeServos.part.0.86522b
+ .gnu.lto_writeServos.part.0.ba30db
                 0x00000000      0x3e4 obj/VRBRAIN/mixer.o
- .gnu.lto_servoMiddle.86522b
+ .gnu.lto_servoMiddle.ba30db
                 0x00000000      0x154 obj/VRBRAIN/mixer.o
- .gnu.lto_airplaneMixer.86522b
+ .gnu.lto_airplaneMixer.ba30db
                 0x00000000      0x73a obj/VRBRAIN/mixer.o
- .gnu.lto_servoDirection.86522b
+ .gnu.lto_servoDirection.ba30db
                 0x00000000      0x131 obj/VRBRAIN/mixer.o
- .gnu.lto_mixerResetMotors.86522b
+ .gnu.lto_mixerResetMotors.ba30db
                 0x00000000      0x21a obj/VRBRAIN/mixer.o
- .gnu.lto_mixerInit.86522b
+ .gnu.lto_mixerInit.ba30db
                 0x00000000      0x5e8 obj/VRBRAIN/mixer.o
- .gnu.lto_mixerLoadMix.86522b
+ .gnu.lto_mixerLoadMix.ba30db
                 0x00000000      0x2c3 obj/VRBRAIN/mixer.o
- .gnu.lto_writeServos.86522b
+ .gnu.lto_writeServos.ba30db
                 0x00000000       0xf9 obj/VRBRAIN/mixer.o
- .gnu.lto_writeMotors.86522b
+ .gnu.lto_writeMotors.ba30db
                 0x00000000      0x1cb obj/VRBRAIN/mixer.o
- .gnu.lto_writeAllMotors.86522b
+ .gnu.lto_writeAllMotors.ba30db
                 0x00000000      0x1c1 obj/VRBRAIN/mixer.o
- .gnu.lto_mixTable.86522b
+ .gnu.lto_mixTable.ba30db
                 0x00000000     0x1c49 obj/VRBRAIN/mixer.o
- .gnu.lto_.symbol_nodes.86522b
+ .gnu.lto_.symbol_nodes.ba30db
                 0x00000000      0x1f3 obj/VRBRAIN/mixer.o
- .gnu.lto_.refs.86522b
+ .gnu.lto_.refs.ba30db
                 0x00000000       0xe5 obj/VRBRAIN/mixer.o
- .gnu.lto_.decls.86522b
+ .gnu.lto_.decls.ba30db
                 0x00000000     0x346f obj/VRBRAIN/mixer.o
- .gnu.lto_.symtab.86522b
+ .gnu.lto_.symtab.ba30db
                 0x00000000      0x29d obj/VRBRAIN/mixer.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/mixer.o
@@ -2009,57 +2009,57 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/msp.o
  .data          0x00000000        0x0 obj/VRBRAIN/msp.o
  .bss           0x00000000        0x0 obj/VRBRAIN/msp.o
- .gnu.lto_.jmpfuncs.86dd69
+ .gnu.lto_.jmpfuncs.ba5af6
                 0x00000000      0x150 obj/VRBRAIN/msp.o
- .gnu.lto_.inline.86dd69
+ .gnu.lto_.inline.ba5af6
                 0x00000000      0x1e1 obj/VRBRAIN/msp.o
- .gnu.lto_.pureconst.86dd69
+ .gnu.lto_.pureconst.ba5af6
                 0x00000000       0x36 obj/VRBRAIN/msp.o
- .gnu.lto_evaluateOtherData.86dd69
+ .gnu.lto_evaluateOtherData.ba5af6
                 0x00000000      0x13b obj/VRBRAIN/msp.o
- .gnu.lto_serialize32.86dd69
+ .gnu.lto_serialize32.ba5af6
                 0x00000000      0x2b8 obj/VRBRAIN/msp.o
- .gnu.lto_serialize16.86dd69
+ .gnu.lto_serialize16.ba5af6
                 0x00000000      0x212 obj/VRBRAIN/msp.o
- .gnu.lto_serialize8.86dd69
+ .gnu.lto_serialize8.ba5af6
                 0x00000000      0x14e obj/VRBRAIN/msp.o
- .gnu.lto_read8.86dd69
+ .gnu.lto_read8.ba5af6
                 0x00000000      0x146 obj/VRBRAIN/msp.o
- .gnu.lto_read16.86dd69
+ .gnu.lto_read16.ba5af6
                 0x00000000      0x124 obj/VRBRAIN/msp.o
- .gnu.lto_read32.86dd69
+ .gnu.lto_read32.ba5af6
                 0x00000000      0x128 obj/VRBRAIN/msp.o
- .gnu.lto_headSerialResponse.86dd69
+ .gnu.lto_headSerialResponse.ba5af6
                 0x00000000      0x193 obj/VRBRAIN/msp.o
- .gnu.lto_headSerialReply.86dd69
+ .gnu.lto_headSerialReply.ba5af6
                 0x00000000       0xa4 obj/VRBRAIN/msp.o
- .gnu.lto_headSerialError.86dd69
+ .gnu.lto_headSerialError.ba5af6
                 0x00000000       0xa5 obj/VRBRAIN/msp.o
- .gnu.lto_tailSerialReply.86dd69
+ .gnu.lto_tailSerialReply.ba5af6
                 0x00000000       0xf8 obj/VRBRAIN/msp.o
- .gnu.lto_s_struct.86dd69
+ .gnu.lto_s_struct.ba5af6
                 0x00000000      0x15f obj/VRBRAIN/msp.o
- .gnu.lto_serializeNames.86dd69
+ .gnu.lto_serializeNames.ba5af6
                 0x00000000      0x158 obj/VRBRAIN/msp.o
- .gnu.lto_serializeBoxNamesReply.86dd69
+ .gnu.lto_serializeBoxNamesReply.ba5af6
                 0x00000000      0x430 obj/VRBRAIN/msp.o
- .gnu.lto_evaluateCommand.86dd69
+ .gnu.lto_evaluateCommand.ba5af6
                 0x00000000     0x275b obj/VRBRAIN/msp.o
- .gnu.lto_mspInit.86dd69
+ .gnu.lto_mspInit.ba5af6
                 0x00000000      0x65e obj/VRBRAIN/msp.o
- .gnu.lto_serialComImpl.86dd69
+ .gnu.lto_serialComImpl.ba5af6
                 0x00000000      0x635 obj/VRBRAIN/msp.o
- .gnu.lto_serialCom.part.0.86dd69
+ .gnu.lto_serialCom.part.0.ba5af6
                 0x00000000      0x12b obj/VRBRAIN/msp.o
- .gnu.lto_serialCom.86dd69
+ .gnu.lto_serialCom.ba5af6
                 0x00000000      0x19d obj/VRBRAIN/msp.o
- .gnu.lto_.symbol_nodes.86dd69
+ .gnu.lto_.symbol_nodes.ba5af6
                 0x00000000      0x4fe obj/VRBRAIN/msp.o
- .gnu.lto_.refs.86dd69
+ .gnu.lto_.refs.ba5af6
                 0x00000000      0x125 obj/VRBRAIN/msp.o
- .gnu.lto_.decls.86dd69
+ .gnu.lto_.decls.ba5af6
                 0x00000000     0x3c99 obj/VRBRAIN/msp.o
- .gnu.lto_.symtab.86dd69
+ .gnu.lto_.symtab.ba5af6
                 0x00000000      0x735 obj/VRBRAIN/msp.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/msp.o
@@ -2214,43 +2214,43 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/printf.o
  .data          0x00000000        0x0 obj/VRBRAIN/printf.o
  .bss           0x00000000        0x0 obj/VRBRAIN/printf.o
- .gnu.lto_.jmpfuncs.86af01
+ .gnu.lto_.jmpfuncs.bae696
                 0x00000000       0x88 obj/VRBRAIN/printf.o
- .gnu.lto_.inline.86af01
+ .gnu.lto_.inline.bae696
                 0x00000000      0x14b obj/VRBRAIN/printf.o
- .gnu.lto_.pureconst.86af01
+ .gnu.lto_.pureconst.bae696
                 0x00000000       0x28 obj/VRBRAIN/printf.o
- .gnu.lto_uli2a.86af01
+ .gnu.lto_uli2a.bae696
                 0x00000000      0x3e2 obj/VRBRAIN/printf.o
- .gnu.lto_li2a.86af01
+ .gnu.lto_li2a.bae696
                 0x00000000      0x196 obj/VRBRAIN/printf.o
- .gnu.lto_ui2a.86af01
+ .gnu.lto_ui2a.bae696
                 0x00000000      0x3ed obj/VRBRAIN/printf.o
- .gnu.lto_i2a.86af01
+ .gnu.lto_i2a.bae696
                 0x00000000      0x18c obj/VRBRAIN/printf.o
- .gnu.lto_a2d.86af01
+ .gnu.lto_a2d.bae696
                 0x00000000      0x18a obj/VRBRAIN/printf.o
- .gnu.lto_a2i.86af01
+ .gnu.lto_a2i.bae696
                 0x00000000      0x266 obj/VRBRAIN/printf.o
- .gnu.lto_putchw.86af01
+ .gnu.lto_putchw.bae696
                 0x00000000      0x2f3 obj/VRBRAIN/printf.o
- .gnu.lto_putcp.86af01
+ .gnu.lto_putcp.bae696
                 0x00000000       0xe0 obj/VRBRAIN/printf.o
- .gnu.lto_tfp_format.86af01
+ .gnu.lto_tfp_format.bae696
                 0x00000000      0x801 obj/VRBRAIN/printf.o
- .gnu.lto_init_printf.86af01
+ .gnu.lto_init_printf.bae696
                 0x00000000       0xc8 obj/VRBRAIN/printf.o
- .gnu.lto_tfp_printf.86af01
+ .gnu.lto_tfp_printf.bae696
                 0x00000000      0x195 obj/VRBRAIN/printf.o
- .gnu.lto_tfp_sprintf.86af01
+ .gnu.lto_tfp_sprintf.bae696
                 0x00000000      0x1cb obj/VRBRAIN/printf.o
- .gnu.lto_.symbol_nodes.86af01
+ .gnu.lto_.symbol_nodes.bae696
                 0x00000000      0x112 obj/VRBRAIN/printf.o
- .gnu.lto_.refs.86af01
+ .gnu.lto_.refs.bae696
                 0x00000000       0x20 obj/VRBRAIN/printf.o
- .gnu.lto_.decls.86af01
+ .gnu.lto_.decls.bae696
                 0x00000000     0x1a8b obj/VRBRAIN/printf.o
- .gnu.lto_.symtab.86af01
+ .gnu.lto_.symtab.bae696
                 0x00000000       0x85 obj/VRBRAIN/printf.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/printf.o
@@ -2408,27 +2408,27 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/rxmsp.o
  .data          0x00000000        0x0 obj/VRBRAIN/rxmsp.o
  .bss           0x00000000        0x0 obj/VRBRAIN/rxmsp.o
- .gnu.lto_.jmpfuncs.87d2f4
+ .gnu.lto_.jmpfuncs.ba4fcd
                 0x00000000       0x19 obj/VRBRAIN/rxmsp.o
- .gnu.lto_.inline.87d2f4
+ .gnu.lto_.inline.ba4fcd
                 0x00000000       0x59 obj/VRBRAIN/rxmsp.o
- .gnu.lto_.pureconst.87d2f4
+ .gnu.lto_.pureconst.ba4fcd
                 0x00000000       0x18 obj/VRBRAIN/rxmsp.o
- .gnu.lto_mspReadRawRC.87d2f4
+ .gnu.lto_mspReadRawRC.ba4fcd
                 0x00000000       0xd0 obj/VRBRAIN/rxmsp.o
- .gnu.lto_mspFrameRecieve.87d2f4
+ .gnu.lto_mspFrameRecieve.ba4fcd
                 0x00000000       0xa5 obj/VRBRAIN/rxmsp.o
- .gnu.lto_mspFrameComplete.87d2f4
+ .gnu.lto_mspFrameComplete.ba4fcd
                 0x00000000      0x146 obj/VRBRAIN/rxmsp.o
- .gnu.lto_mspRxInit.87d2f4
+ .gnu.lto_mspRxInit.ba4fcd
                 0x00000000       0xd9 obj/VRBRAIN/rxmsp.o
- .gnu.lto_.symbol_nodes.87d2f4
+ .gnu.lto_.symbol_nodes.ba4fcd
                 0x00000000       0x4c obj/VRBRAIN/rxmsp.o
- .gnu.lto_.refs.87d2f4
+ .gnu.lto_.refs.ba4fcd
                 0x00000000       0x23 obj/VRBRAIN/rxmsp.o
- .gnu.lto_.decls.87d2f4
+ .gnu.lto_.decls.ba4fcd
                 0x00000000     0x153f obj/VRBRAIN/rxmsp.o
- .gnu.lto_.symtab.87d2f4
+ .gnu.lto_.symtab.ba4fcd
                 0x00000000       0xa4 obj/VRBRAIN/rxmsp.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/rxmsp.o
@@ -2583,29 +2583,29 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/rxsbus.o
  .data          0x00000000        0x0 obj/VRBRAIN/rxsbus.o
  .bss           0x00000000        0x0 obj/VRBRAIN/rxsbus.o
- .gnu.lto_.jmpfuncs.86c73a
+ .gnu.lto_.jmpfuncs.baf923
                 0x00000000       0x4f obj/VRBRAIN/rxsbus.o
- .gnu.lto_.inline.86c73a
+ .gnu.lto_.inline.baf923
                 0x00000000       0x96 obj/VRBRAIN/rxsbus.o
- .gnu.lto_.pureconst.86c73a
+ .gnu.lto_.pureconst.baf923
                 0x00000000       0x1a obj/VRBRAIN/rxsbus.o
- .gnu.lto_sbusReadRawRC.86c73a
+ .gnu.lto_sbusReadRawRC.baf923
                 0x00000000      0x129 obj/VRBRAIN/rxsbus.o
- .gnu.lto_sbusDataReceive.86c73a
+ .gnu.lto_sbusDataReceive.baf923
                 0x00000000      0x2e7 obj/VRBRAIN/rxsbus.o
- .gnu.lto_sbusFrameComplete.part.0.86c73a
+ .gnu.lto_sbusFrameComplete.part.0.baf923
                 0x00000000      0x213 obj/VRBRAIN/rxsbus.o
- .gnu.lto_sbusInit.86c73a
+ .gnu.lto_sbusInit.baf923
                 0x00000000      0x25d obj/VRBRAIN/rxsbus.o
- .gnu.lto_sbusFrameComplete.86c73a
+ .gnu.lto_sbusFrameComplete.baf923
                 0x00000000      0x1e0 obj/VRBRAIN/rxsbus.o
- .gnu.lto_.symbol_nodes.86c73a
+ .gnu.lto_.symbol_nodes.baf923
                 0x00000000       0x9e obj/VRBRAIN/rxsbus.o
- .gnu.lto_.refs.86c73a
+ .gnu.lto_.refs.baf923
                 0x00000000       0x3b obj/VRBRAIN/rxsbus.o
- .gnu.lto_.decls.86c73a
+ .gnu.lto_.decls.baf923
                 0x00000000     0x2be2 obj/VRBRAIN/rxsbus.o
- .gnu.lto_.symtab.86c73a
+ .gnu.lto_.symtab.baf923
                 0x00000000       0xdc obj/VRBRAIN/rxsbus.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/rxsbus.o
@@ -2760,29 +2760,29 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/rxspektrum.o
  .data          0x00000000        0x0 obj/VRBRAIN/rxspektrum.o
  .bss           0x00000000        0x0 obj/VRBRAIN/rxspektrum.o
- .gnu.lto_.jmpfuncs.86bf53
+ .gnu.lto_.jmpfuncs.bab692
                 0x00000000       0x4e obj/VRBRAIN/rxspektrum.o
- .gnu.lto_.inline.86bf53
+ .gnu.lto_.inline.bab692
                 0x00000000       0x9f obj/VRBRAIN/rxspektrum.o
- .gnu.lto_.pureconst.86bf53
+ .gnu.lto_.pureconst.bab692
                 0x00000000       0x1a obj/VRBRAIN/rxspektrum.o
- .gnu.lto_spektrumParser.86bf53
+ .gnu.lto_spektrumParser.bab692
                 0x00000000      0x2ba obj/VRBRAIN/rxspektrum.o
- .gnu.lto_spektrumRead.part.0.86bf53
+ .gnu.lto_spektrumRead.part.0.bab692
                 0x00000000      0x24a obj/VRBRAIN/rxspektrum.o
- .gnu.lto_spektrumRead.86bf53
+ .gnu.lto_spektrumRead.bab692
                 0x00000000      0x4f6 obj/VRBRAIN/rxspektrum.o
- .gnu.lto_spektrumFrameComplete.86bf53
+ .gnu.lto_spektrumFrameComplete.bab692
                 0x00000000       0xa6 obj/VRBRAIN/rxspektrum.o
- .gnu.lto_spektrumInit.86bf53
+ .gnu.lto_spektrumInit.bab692
                 0x00000000      0x20e obj/VRBRAIN/rxspektrum.o
- .gnu.lto_.symbol_nodes.86bf53
+ .gnu.lto_.symbol_nodes.bab692
                 0x00000000       0xa9 obj/VRBRAIN/rxspektrum.o
- .gnu.lto_.refs.86bf53
+ .gnu.lto_.refs.bab692
                 0x00000000       0x45 obj/VRBRAIN/rxspektrum.o
- .gnu.lto_.decls.86bf53
+ .gnu.lto_.decls.bab692
                 0x00000000     0x2b04 obj/VRBRAIN/rxspektrum.o
- .gnu.lto_.symtab.86bf53
+ .gnu.lto_.symtab.bab692
                 0x00000000      0x102 obj/VRBRAIN/rxspektrum.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/rxspektrum.o
@@ -2937,29 +2937,29 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/rxsumd.o
  .data          0x00000000        0x0 obj/VRBRAIN/rxsumd.o
  .bss           0x00000000        0x0 obj/VRBRAIN/rxsumd.o
- .gnu.lto_.jmpfuncs.8641c4
+ .gnu.lto_.jmpfuncs.bb044f
                 0x00000000       0x48 obj/VRBRAIN/rxsumd.o
- .gnu.lto_.inline.8641c4
+ .gnu.lto_.inline.bb044f
                 0x00000000       0x95 obj/VRBRAIN/rxsumd.o
- .gnu.lto_.pureconst.8641c4
+ .gnu.lto_.pureconst.bb044f
                 0x00000000       0x1a obj/VRBRAIN/rxsumd.o
- .gnu.lto_sumdReadRawRC.8641c4
+ .gnu.lto_sumdReadRawRC.bb044f
                 0x00000000      0x11a obj/VRBRAIN/rxsumd.o
- .gnu.lto_sumdDataReceive.8641c4
+ .gnu.lto_sumdDataReceive.bb044f
                 0x00000000      0x33c obj/VRBRAIN/rxsumd.o
- .gnu.lto_sumdFrameComplete.part.0.8641c4
+ .gnu.lto_sumdFrameComplete.part.0.bb044f
                 0x00000000      0x2c7 obj/VRBRAIN/rxsumd.o
- .gnu.lto_sumdInit.8641c4
+ .gnu.lto_sumdInit.bb044f
                 0x00000000      0x137 obj/VRBRAIN/rxsumd.o
- .gnu.lto_sumdFrameComplete.8641c4
+ .gnu.lto_sumdFrameComplete.bb044f
                 0x00000000      0x194 obj/VRBRAIN/rxsumd.o
- .gnu.lto_.symbol_nodes.8641c4
+ .gnu.lto_.symbol_nodes.bb044f
                 0x00000000       0x8f obj/VRBRAIN/rxsumd.o
- .gnu.lto_.refs.8641c4
+ .gnu.lto_.refs.bb044f
                 0x00000000       0x3b obj/VRBRAIN/rxsumd.o
- .gnu.lto_.decls.8641c4
+ .gnu.lto_.decls.bb044f
                 0x00000000     0x29fe obj/VRBRAIN/rxsumd.o
- .gnu.lto_.symtab.8641c4
+ .gnu.lto_.symtab.bb044f
                 0x00000000       0xc5 obj/VRBRAIN/rxsumd.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/rxsumd.o
@@ -3114,51 +3114,51 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/sensors.o
  .data          0x00000000        0x0 obj/VRBRAIN/sensors.o
  .bss           0x00000000        0x0 obj/VRBRAIN/sensors.o
- .gnu.lto_.jmpfuncs.8672c6
+ .gnu.lto_.jmpfuncs.ba3eb9
                 0x00000000       0xb6 obj/VRBRAIN/sensors.o
- .gnu.lto_.inline.8672c6
+ .gnu.lto_.inline.ba3eb9
                 0x00000000      0x17b obj/VRBRAIN/sensors.o
- .gnu.lto_.pureconst.8672c6
+ .gnu.lto_.pureconst.ba3eb9
                 0x00000000       0x30 obj/VRBRAIN/sensors.o
- .gnu.lto_devPush.8672c6
+ .gnu.lto_devPush.ba3eb9
                 0x00000000      0x1d0 obj/VRBRAIN/sensors.o
- .gnu.lto_devVariance.8672c6
+ .gnu.lto_devVariance.ba3eb9
                 0x00000000      0x162 obj/VRBRAIN/sensors.o
- .gnu.lto_devStandardDeviation.8672c6
+ .gnu.lto_devStandardDeviation.ba3eb9
                 0x00000000       0xbd obj/VRBRAIN/sensors.o
- .gnu.lto_Mag_getADC.part.2.8672c6
+ .gnu.lto_Mag_getADC.part.2.ba3eb9
                 0x00000000      0x535 obj/VRBRAIN/sensors.o
- .gnu.lto_sensorsAutodetect.8672c6
+ .gnu.lto_sensorsAutodetect.ba3eb9
                 0x00000000      0x294 obj/VRBRAIN/sensors.o
- .gnu.lto_batteryAdcToVoltage.8672c6
+ .gnu.lto_batteryAdcToVoltage.ba3eb9
                 0x00000000      0x130 obj/VRBRAIN/sensors.o
- .gnu.lto_currentSensorToCentiamps.8672c6
+ .gnu.lto_currentSensorToCentiamps.ba3eb9
                 0x00000000      0x18c obj/VRBRAIN/sensors.o
- .gnu.lto_batteryInit.8672c6
+ .gnu.lto_batteryInit.ba3eb9
                 0x00000000      0x2a4 obj/VRBRAIN/sensors.o
- .gnu.lto_ACC_Common.8672c6
+ .gnu.lto_ACC_Common.ba3eb9
                 0x00000000      0x9cb obj/VRBRAIN/sensors.o
- .gnu.lto_ACC_getADC.8672c6
+ .gnu.lto_ACC_getADC.ba3eb9
                 0x00000000       0xe8 obj/VRBRAIN/sensors.o
- .gnu.lto_Baro_Common.8672c6
+ .gnu.lto_Baro_Common.ba3eb9
                 0x00000000      0x2c0 obj/VRBRAIN/sensors.o
- .gnu.lto_Baro_update.part.1.8672c6
+ .gnu.lto_Baro_update.part.1.ba3eb9
                 0x00000000      0x21f obj/VRBRAIN/sensors.o
- .gnu.lto_Baro_update.8672c6
+ .gnu.lto_Baro_update.ba3eb9
                 0x00000000      0x2cd obj/VRBRAIN/sensors.o
- .gnu.lto_GYRO_Common.8672c6
+ .gnu.lto_GYRO_Common.ba3eb9
                 0x00000000      0x5dd obj/VRBRAIN/sensors.o
- .gnu.lto_Gyro_getADC.8672c6
+ .gnu.lto_Gyro_getADC.ba3eb9
                 0x00000000       0xe8 obj/VRBRAIN/sensors.o
- .gnu.lto_Mag_getADC.8672c6
+ .gnu.lto_Mag_getADC.ba3eb9
                 0x00000000      0x397 obj/VRBRAIN/sensors.o
- .gnu.lto_.symbol_nodes.8672c6
+ .gnu.lto_.symbol_nodes.ba3eb9
                 0x00000000      0x23a obj/VRBRAIN/sensors.o
- .gnu.lto_.refs.8672c6
+ .gnu.lto_.refs.ba3eb9
                 0x00000000       0xf3 obj/VRBRAIN/sensors.o
- .gnu.lto_.decls.8672c6
+ .gnu.lto_.decls.ba3eb9
                 0x00000000     0x3435 obj/VRBRAIN/sensors.o
- .gnu.lto_.symtab.8672c6
+ .gnu.lto_.symtab.ba3eb9
                 0x00000000      0x587 obj/VRBRAIN/sensors.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/sensors.o
@@ -3320,43 +3320,43 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/telemetry_common.o
  .data          0x00000000        0x0 obj/VRBRAIN/telemetry_common.o
  .bss           0x00000000        0x0 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_.jmpfuncs.87fc24
+ .gnu.lto_.jmpfuncs.ba47c7
                 0x00000000       0x4e obj/VRBRAIN/telemetry_common.o
- .gnu.lto_.inline.87fc24
+ .gnu.lto_.inline.ba47c7
                 0x00000000       0x9a obj/VRBRAIN/telemetry_common.o
- .gnu.lto_.pureconst.87fc24
+ .gnu.lto_.pureconst.ba47c7
                 0x00000000       0x28 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_canUseTelemetryWithCurrentConfiguration.part.0.87fc24
+ .gnu.lto_canUseTelemetryWithCurrentConfiguration.part.0.ba47c7
                 0x00000000      0x16c obj/VRBRAIN/telemetry_common.o
- .gnu.lto_determineNewTelemetryEnabledState.part.1.87fc24
+ .gnu.lto_determineNewTelemetryEnabledState.part.1.ba47c7
                 0x00000000      0x1ad obj/VRBRAIN/telemetry_common.o
- .gnu.lto_isTelemetryProviderFrSky.87fc24
+ .gnu.lto_isTelemetryProviderFrSky.ba47c7
                 0x00000000       0xd0 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_isTelemetryProviderHoTT.87fc24
+ .gnu.lto_isTelemetryProviderHoTT.ba47c7
                 0x00000000       0xcf obj/VRBRAIN/telemetry_common.o
- .gnu.lto_canUseTelemetryWithCurrentConfiguration.87fc24
+ .gnu.lto_canUseTelemetryWithCurrentConfiguration.ba47c7
                 0x00000000      0x17e obj/VRBRAIN/telemetry_common.o
- .gnu.lto_initTelemetry.87fc24
+ .gnu.lto_initTelemetry.ba47c7
                 0x00000000       0xf2 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_determineNewTelemetryEnabledState.87fc24
+ .gnu.lto_determineNewTelemetryEnabledState.ba47c7
                 0x00000000      0x15b obj/VRBRAIN/telemetry_common.o
- .gnu.lto_checkTelemetryState.part.2.87fc24
+ .gnu.lto_checkTelemetryState.part.2.ba47c7
                 0x00000000      0x1d6 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_shouldChangeTelemetryStateNow.87fc24
+ .gnu.lto_shouldChangeTelemetryStateNow.ba47c7
                 0x00000000      0x105 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_freeTelemetryPort.87fc24
+ .gnu.lto_freeTelemetryPort.ba47c7
                 0x00000000      0x168 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_checkTelemetryState.87fc24
+ .gnu.lto_checkTelemetryState.ba47c7
                 0x00000000      0x157 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_handleTelemetry.87fc24
+ .gnu.lto_handleTelemetry.ba47c7
                 0x00000000       0x86 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_.symbol_nodes.87fc24
+ .gnu.lto_.symbol_nodes.ba47c7
                 0x00000000       0xd3 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_.refs.87fc24
+ .gnu.lto_.refs.ba47c7
                 0x00000000       0x36 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_.decls.87fc24
+ .gnu.lto_.decls.ba47c7
                 0x00000000     0x2c54 obj/VRBRAIN/telemetry_common.o
- .gnu.lto_.symtab.87fc24
+ .gnu.lto_.symtab.ba47c7
                 0x00000000      0x24b obj/VRBRAIN/telemetry_common.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/telemetry_common.o
@@ -3525,59 +3525,59 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/telemetry_frsky.o
  .data          0x00000000        0x0 obj/VRBRAIN/telemetry_frsky.o
  .bss           0x00000000        0x0 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_.jmpfuncs.8673cb
+ .gnu.lto_.jmpfuncs.bad05a
                 0x00000000       0x9f obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_.inline.8673cb
+ .gnu.lto_.inline.bad05a
                 0x00000000      0x14d obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_.pureconst.8673cb
+ .gnu.lto_.pureconst.bad05a
                 0x00000000       0x34 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendDataHead.8673cb
+ .gnu.lto_sendDataHead.bad05a
                 0x00000000       0xee obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendTelemetryTail.8673cb
+ .gnu.lto_sendTelemetryTail.bad05a
                 0x00000000       0xd3 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_serializeFrsky.part.0.8673cb
+ .gnu.lto_serializeFrsky.part.0.bad05a
                 0x00000000      0x13c obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_serializeFrsky.8673cb
+ .gnu.lto_serializeFrsky.bad05a
                 0x00000000      0x176 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_serialize16.8673cb
+ .gnu.lto_serialize16.bad05a
                 0x00000000      0x125 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendAccel.8673cb
+ .gnu.lto_sendAccel.bad05a
                 0x00000000      0x23b obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendVario.8673cb
+ .gnu.lto_sendVario.bad05a
                 0x00000000      0x121 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendBaro.8673cb
+ .gnu.lto_sendBaro.bad05a
                 0x00000000      0x16d obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendHeading.8673cb
+ .gnu.lto_sendHeading.bad05a
                 0x00000000      0x12f obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendTemperature1.8673cb
+ .gnu.lto_sendTemperature1.bad05a
                 0x00000000      0x12d obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendVoltage.8673cb
+ .gnu.lto_sendVoltage.bad05a
                 0x00000000      0x374 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendVoltageAmp.8673cb
+ .gnu.lto_sendVoltageAmp.bad05a
                 0x00000000      0x1dd obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendGPS.8673cb
+ .gnu.lto_sendGPS.bad05a
                 0x00000000      0x2b1 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_sendTime.8673cb
+ .gnu.lto_sendTime.bad05a
                 0x00000000      0x1df obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_handleFrSkyTelemetry.part.1.8673cb
+ .gnu.lto_handleFrSkyTelemetry.part.1.bad05a
                 0x00000000      0x28b obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_freeFrSkyTelemetryPort.8673cb
+ .gnu.lto_freeFrSkyTelemetryPort.bad05a
                 0x00000000       0x85 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_configureFrSkyTelemetryPort.8673cb
+ .gnu.lto_configureFrSkyTelemetryPort.bad05a
                 0x00000000       0x85 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_canSendFrSkyTelemetry.8673cb
+ .gnu.lto_canSendFrSkyTelemetry.bad05a
                 0x00000000       0xe6 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_hasEnoughTimeLapsedSinceLastTelemetryTransmission.8673cb
+ .gnu.lto_hasEnoughTimeLapsedSinceLastTelemetryTransmission.bad05a
                 0x00000000      0x117 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_handleFrSkyTelemetry.8673cb
+ .gnu.lto_handleFrSkyTelemetry.bad05a
                 0x00000000      0x2d2 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_.symbol_nodes.8673cb
+ .gnu.lto_.symbol_nodes.bad05a
                 0x00000000      0x202 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_.refs.8673cb
+ .gnu.lto_.refs.bad05a
                 0x00000000       0x5c obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_.decls.8673cb
+ .gnu.lto_.decls.bad05a
                 0x00000000     0x1f85 obj/VRBRAIN/telemetry_frsky.o
- .gnu.lto_.symtab.8673cb
+ .gnu.lto_.symtab.bad05a
                 0x00000000      0x270 obj/VRBRAIN/telemetry_frsky.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/telemetry_frsky.o
@@ -3769,39 +3769,39 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/telemetry_hott.o
  .data          0x00000000        0x0 obj/VRBRAIN/telemetry_hott.o
  .bss           0x00000000        0x0 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_.jmpfuncs.861ba1
+ .gnu.lto_.jmpfuncs.ba3b65
                 0x00000000       0x9f obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_.inline.861ba1
+ .gnu.lto_.inline.ba3b65
                 0x00000000       0xc3 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_.pureconst.861ba1
+ .gnu.lto_.pureconst.ba3b65
                 0x00000000       0x24 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_hottV4GPSUpdate.861ba1
+ .gnu.lto_hottV4GPSUpdate.ba3b65
                 0x00000000      0x644 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_hottV4EAMUpdateBattery.861ba1
+ .gnu.lto_hottV4EAMUpdateBattery.ba3b65
                 0x00000000      0x155 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_hottV4EAMUpdateTemperatures.861ba1
+ .gnu.lto_hottV4EAMUpdateTemperatures.ba3b65
                 0x00000000       0xca obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_hottV4SerialWrite.861ba1
+ .gnu.lto_hottV4SerialWrite.ba3b65
                 0x00000000       0xd9 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_hottV4Respond.861ba1
+ .gnu.lto_hottV4Respond.ba3b65
                 0x00000000      0x28f obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_hottV4FormatAndSendGPSResponse.861ba1
+ .gnu.lto_hottV4FormatAndSendGPSResponse.ba3b65
                 0x00000000      0x132 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_hottV4FormatAndSendEAMResponse.861ba1
+ .gnu.lto_hottV4FormatAndSendEAMResponse.ba3b65
                 0x00000000      0x17b obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_configureHoTTTelemetryPort.861ba1
+ .gnu.lto_configureHoTTTelemetryPort.ba3b65
                 0x00000000       0xd6 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_freeHoTTTelemetryPort.861ba1
+ .gnu.lto_freeHoTTTelemetryPort.ba3b65
                 0x00000000       0xd6 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_handleHoTTTelemetry.861ba1
+ .gnu.lto_handleHoTTTelemetry.ba3b65
                 0x00000000      0x249 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_.symbol_nodes.861ba1
+ .gnu.lto_.symbol_nodes.ba3b65
                 0x00000000      0x13a obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_.refs.861ba1
+ .gnu.lto_.refs.ba3b65
                 0x00000000       0x50 obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_.decls.861ba1
+ .gnu.lto_.decls.ba3b65
                 0x00000000     0x26aa obj/VRBRAIN/telemetry_hott.o
- .gnu.lto_.symtab.861ba1
+ .gnu.lto_.symtab.ba3b65
                 0x00000000      0x2a3 obj/VRBRAIN/telemetry_hott.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/telemetry_hott.o
@@ -3915,25 +3915,25 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/utils_math.o
  .data          0x00000000        0x0 obj/VRBRAIN/utils_math.o
  .bss           0x00000000        0x0 obj/VRBRAIN/utils_math.o
- .gnu.lto_.jmpfuncs.87dc4c
+ .gnu.lto_.jmpfuncs.bada45
                 0x00000000       0x22 obj/VRBRAIN/utils_math.o
- .gnu.lto_.inline.87dc4c
+ .gnu.lto_.inline.bada45
                 0x00000000       0x7a obj/VRBRAIN/utils_math.o
- .gnu.lto_.pureconst.87dc4c
+ .gnu.lto_.pureconst.bada45
                 0x00000000       0x15 obj/VRBRAIN/utils_math.o
- .gnu.lto_applyDeadband.part.0.87dc4c
+ .gnu.lto_applyDeadband.part.0.bada45
                 0x00000000      0x127 obj/VRBRAIN/utils_math.o
- .gnu.lto_constrain.87dc4c
+ .gnu.lto_constrain.bada45
                 0x00000000       0xec obj/VRBRAIN/utils_math.o
- .gnu.lto_applyDeadband.87dc4c
+ .gnu.lto_applyDeadband.bada45
                 0x00000000      0x102 obj/VRBRAIN/utils_math.o
- .gnu.lto_.symbol_nodes.87dc4c
+ .gnu.lto_.symbol_nodes.bada45
                 0x00000000       0x34 obj/VRBRAIN/utils_math.o
- .gnu.lto_.refs.87dc4c
+ .gnu.lto_.refs.bada45
                 0x00000000        0xf obj/VRBRAIN/utils_math.o
- .gnu.lto_.decls.87dc4c
+ .gnu.lto_.decls.bada45
                 0x00000000      0x1e2 obj/VRBRAIN/utils_math.o
- .gnu.lto_.symtab.87dc4c
+ .gnu.lto_.symtab.bada45
                 0x00000000       0x36 obj/VRBRAIN/utils_math.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/utils_math.o
@@ -4014,49 +4014,49 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/system_stm32f4xx.o
  .data          0x00000000        0x0 obj/VRBRAIN/system_stm32f4xx.o
  .bss           0x00000000        0x0 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_.jmpfuncs.865db5
+ .gnu.lto_.jmpfuncs.baed34
                 0x00000000       0x59 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_.inline.865db5
+ .gnu.lto_.inline.baed34
                 0x00000000      0x12c obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_.pureconst.865db5
+ .gnu.lto_.pureconst.baed34
                 0x00000000       0x2e obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_NVIC_SetPriority.865db5
+ .gnu.lto_NVIC_SetPriority.baed34
                 0x00000000      0x1cf obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_SysTick_Config.865db5
+ .gnu.lto_SysTick_Config.baed34
                 0x00000000      0x16a obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_SetSysClock.865db5
+ .gnu.lto_SetSysClock.baed34
                 0x00000000      0x530 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_cycleCounterInit.865db5
+ .gnu.lto_cycleCounterInit.baed34
                 0x00000000      0x17a obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_SysTick_Handler.865db5
+ .gnu.lto_SysTick_Handler.baed34
                 0x00000000      0x133 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_micros.865db5
+ .gnu.lto_micros.baed34
                 0x00000000      0x244 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_millis.865db5
+ .gnu.lto_millis.baed34
                 0x00000000       0xbb obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_delayMicroseconds.865db5
+ .gnu.lto_delayMicroseconds.baed34
                 0x00000000      0x14b obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_delay.865db5
+ .gnu.lto_delay.baed34
                 0x00000000      0x12e obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_failureMode.865db5
+ .gnu.lto_failureMode.baed34
                 0x00000000      0x188 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_systemReset.865db5
+ .gnu.lto_systemReset.baed34
                 0x00000000      0x125 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_systemUnPause.865db5
+ .gnu.lto_systemUnPause.baed34
                 0x00000000       0xe1 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_systemPause.865db5
+ .gnu.lto_systemPause.baed34
                 0x00000000       0xdf obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_SystemCoreClockUpdate.865db5
+ .gnu.lto_SystemCoreClockUpdate.baed34
                 0x00000000      0x4b2 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_SystemInit.865db5
+ .gnu.lto_SystemInit.baed34
                 0x00000000      0x242 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_.symbol_nodes.865db5
+ .gnu.lto_.symbol_nodes.baed34
                 0x00000000      0x102 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_.refs.865db5
+ .gnu.lto_.refs.baed34
                 0x00000000       0x30 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_.decls.865db5
+ .gnu.lto_.decls.baed34
                 0x00000000     0x2777 obj/VRBRAIN/system_stm32f4xx.o
- .gnu.lto_.symtab.865db5
+ .gnu.lto_.symtab.baed34
                 0x00000000      0x21f obj/VRBRAIN/system_stm32f4xx.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/system_stm32f4xx.o
@@ -4154,49 +4154,49 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/usbd_core.o
  .data          0x00000000        0x0 obj/VRBRAIN/usbd_core.o
  .bss           0x00000000        0x0 obj/VRBRAIN/usbd_core.o
- .gnu.lto_.jmpfuncs.8627f6
+ .gnu.lto_.jmpfuncs.bab9c3
                 0x00000000       0x8c obj/VRBRAIN/usbd_core.o
- .gnu.lto_.inline.8627f6
+ .gnu.lto_.inline.bab9c3
                 0x00000000      0x1ef obj/VRBRAIN/usbd_core.o
- .gnu.lto_.pureconst.8627f6
+ .gnu.lto_.pureconst.bab9c3
                 0x00000000       0x2d obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_Resume.8627f6
+ .gnu.lto_USBD_Resume.bab9c3
                 0x00000000      0x105 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_Suspend.8627f6
+ .gnu.lto_USBD_Suspend.bab9c3
                 0x00000000      0x105 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_SOF.8627f6
+ .gnu.lto_USBD_SOF.bab9c3
                 0x00000000      0x117 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_IsoINIncomplete.8627f6
+ .gnu.lto_USBD_IsoINIncomplete.bab9c3
                 0x00000000       0xf0 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_IsoOUTIncomplete.8627f6
+ .gnu.lto_USBD_IsoOUTIncomplete.bab9c3
                 0x00000000       0xf1 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_Reset.8627f6
+ .gnu.lto_USBD_Reset.bab9c3
                 0x00000000      0x14d obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_SetupStage.8627f6
+ .gnu.lto_USBD_SetupStage.bab9c3
                 0x00000000      0x1e7 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_DataInStage.part.0.8627f6
+ .gnu.lto_USBD_DataInStage.part.0.bab9c3
                 0x00000000      0x361 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_DataInStage.8627f6
+ .gnu.lto_USBD_DataInStage.bab9c3
                 0x00000000      0x226 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_DataOutStage.part.1.8627f6
+ .gnu.lto_USBD_DataOutStage.part.1.bab9c3
                 0x00000000      0x1d1 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_DataOutStage.8627f6
+ .gnu.lto_USBD_DataOutStage.bab9c3
                 0x00000000      0x321 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_Init.8627f6
+ .gnu.lto_USBD_Init.bab9c3
                 0x00000000      0x18e obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_DeInit.8627f6
+ .gnu.lto_USBD_DeInit.bab9c3
                 0x00000000       0x8a obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_SetCfg.8627f6
+ .gnu.lto_USBD_SetCfg.bab9c3
                 0x00000000      0x128 obj/VRBRAIN/usbd_core.o
- .gnu.lto_USBD_ClrCfg.8627f6
+ .gnu.lto_USBD_ClrCfg.bab9c3
                 0x00000000       0xf2 obj/VRBRAIN/usbd_core.o
- .gnu.lto_.symbol_nodes.8627f6
+ .gnu.lto_.symbol_nodes.bab9c3
                 0x00000000      0x156 obj/VRBRAIN/usbd_core.o
- .gnu.lto_.refs.8627f6
+ .gnu.lto_.refs.bab9c3
                 0x00000000       0x26 obj/VRBRAIN/usbd_core.o
- .gnu.lto_.decls.8627f6
+ .gnu.lto_.decls.bab9c3
                 0x00000000     0x1ce9 obj/VRBRAIN/usbd_core.o
- .gnu.lto_.symtab.8627f6
+ .gnu.lto_.symtab.bab9c3
                 0x00000000      0x254 obj/VRBRAIN/usbd_core.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/usbd_core.o
@@ -4242,33 +4242,33 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/usbd_ioreq.o
  .data          0x00000000        0x0 obj/VRBRAIN/usbd_ioreq.o
  .bss           0x00000000        0x0 obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_.jmpfuncs.87850a
+ .gnu.lto_.jmpfuncs.bb39dc
                 0x00000000       0x5c obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_.inline.87850a
+ .gnu.lto_.inline.bb39dc
                 0x00000000       0x71 obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_.pureconst.87850a
+ .gnu.lto_.pureconst.bb39dc
                 0x00000000       0x1e obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_USBD_CtlSendData.87850a
+ .gnu.lto_USBD_CtlSendData.bb39dc
                 0x00000000      0x168 obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_USBD_CtlContinueSendData.87850a
+ .gnu.lto_USBD_CtlContinueSendData.bb39dc
                 0x00000000       0xff obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_USBD_CtlPrepareRx.87850a
+ .gnu.lto_USBD_CtlPrepareRx.bb39dc
                 0x00000000      0x166 obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_USBD_CtlContinueRx.87850a
+ .gnu.lto_USBD_CtlContinueRx.bb39dc
                 0x00000000       0xf1 obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_USBD_CtlSendStatus.87850a
+ .gnu.lto_USBD_CtlSendStatus.bb39dc
                 0x00000000      0x12c obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_USBD_CtlReceiveStatus.87850a
+ .gnu.lto_USBD_CtlReceiveStatus.bb39dc
                 0x00000000      0x12a obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_USBD_GetRxCount.87850a
+ .gnu.lto_USBD_GetRxCount.bb39dc
                 0x00000000       0xf4 obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_.symbol_nodes.87850a
+ .gnu.lto_.symbol_nodes.bb39dc
                 0x00000000       0x71 obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_.refs.87850a
+ .gnu.lto_.refs.bb39dc
                 0x00000000        0xf obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_.decls.87850a
+ .gnu.lto_.decls.bb39dc
                 0x00000000     0x163f obj/VRBRAIN/usbd_ioreq.o
- .gnu.lto_.symtab.87850a
+ .gnu.lto_.symtab.bb39dc
                 0x00000000      0x14e obj/VRBRAIN/usbd_ioreq.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/usbd_ioreq.o
@@ -4316,49 +4316,49 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/usbd_req.o
  .data          0x00000000        0x0 obj/VRBRAIN/usbd_req.o
  .bss           0x00000000        0x0 obj/VRBRAIN/usbd_req.o
- .gnu.lto_.jmpfuncs.87d3a0
+ .gnu.lto_.jmpfuncs.bb5d42
                 0x00000000       0xc6 obj/VRBRAIN/usbd_req.o
- .gnu.lto_.inline.87d3a0
+ .gnu.lto_.inline.bb5d42
                 0x00000000      0x3a6 obj/VRBRAIN/usbd_req.o
- .gnu.lto_.pureconst.87d3a0
+ .gnu.lto_.pureconst.bb5d42
                 0x00000000       0x2e obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_GetLen.87d3a0
+ .gnu.lto_USBD_GetLen.bb5d42
                 0x00000000      0x182 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_SetFeature.87d3a0
+ .gnu.lto_USBD_SetFeature.bb5d42
                 0x00000000      0x3a2 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_StdItfReq.part.0.87d3a0
+ .gnu.lto_USBD_StdItfReq.part.0.bb5d42
                 0x00000000      0x183 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_ParseSetupRequest.87d3a0
+ .gnu.lto_USBD_ParseSetupRequest.bb5d42
                 0x00000000      0x237 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_CtlError.87d3a0
+ .gnu.lto_USBD_CtlError.bb5d42
                 0x00000000      0x17c obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_GetDescriptor.87d3a0
+ .gnu.lto_USBD_GetDescriptor.bb5d42
                 0x00000000      0x682 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_SetAddress.87d3a0
+ .gnu.lto_USBD_SetAddress.bb5d42
                 0x00000000      0x268 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_SetConfig.87d3a0
+ .gnu.lto_USBD_SetConfig.bb5d42
                 0x00000000      0x32e obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_GetConfig.87d3a0
+ .gnu.lto_USBD_GetConfig.bb5d42
                 0x00000000      0x1e9 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_GetStatus.87d3a0
+ .gnu.lto_USBD_GetStatus.bb5d42
                 0x00000000      0x1d3 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_ClrFeature.87d3a0
+ .gnu.lto_USBD_ClrFeature.bb5d42
                 0x00000000      0x1e6 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_StdDevReq.87d3a0
+ .gnu.lto_USBD_StdDevReq.bb5d42
                 0x00000000      0x204 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_StdItfReq.87d3a0
+ .gnu.lto_USBD_StdItfReq.bb5d42
                 0x00000000      0x1d3 obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_StdEPReq.87d3a0
+ .gnu.lto_USBD_StdEPReq.bb5d42
                 0x00000000      0x5dd obj/VRBRAIN/usbd_req.o
- .gnu.lto_USBD_GetString.87d3a0
+ .gnu.lto_USBD_GetString.bb5d42
                 0x00000000      0x297 obj/VRBRAIN/usbd_req.o
- .gnu.lto_.symbol_nodes.87d3a0
+ .gnu.lto_.symbol_nodes.bb5d42
                 0x00000000      0x212 obj/VRBRAIN/usbd_req.o
- .gnu.lto_.refs.87d3a0
+ .gnu.lto_.refs.bb5d42
                 0x00000000       0x2a obj/VRBRAIN/usbd_req.o
- .gnu.lto_.decls.87d3a0
+ .gnu.lto_.decls.bb5d42
                 0x00000000     0x1ec5 obj/VRBRAIN/usbd_req.o
- .gnu.lto_.symtab.87d3a0
+ .gnu.lto_.symtab.bb5d42
                 0x00000000      0x22b obj/VRBRAIN/usbd_req.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/usbd_req.o
@@ -4398,35 +4398,35 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/misc.o
  .data          0x00000000        0x0 obj/VRBRAIN/misc.o
  .bss           0x00000000        0x0 obj/VRBRAIN/misc.o
- .gnu.lto_.jmpfuncs.868b74
+ .gnu.lto_.jmpfuncs.ba68eb
                 0x00000000       0x2b obj/VRBRAIN/misc.o
- .gnu.lto_.inline.868b74
+ .gnu.lto_.inline.ba68eb
                 0x00000000       0xe0 obj/VRBRAIN/misc.o
- .gnu.lto_.pureconst.868b74
+ .gnu.lto_.pureconst.ba68eb
                 0x00000000       0x20 obj/VRBRAIN/misc.o
- .gnu.lto_NVIC_Init.part.0.868b74
+ .gnu.lto_NVIC_Init.part.0.ba68eb
                 0x00000000      0x2f6 obj/VRBRAIN/misc.o
- .gnu.lto_NVIC_SystemLPConfig.part.1.868b74
+ .gnu.lto_NVIC_SystemLPConfig.part.1.ba68eb
                 0x00000000      0x150 obj/VRBRAIN/misc.o
- .gnu.lto_SysTick_CLKSourceConfig.part.2.868b74
+ .gnu.lto_SysTick_CLKSourceConfig.part.2.ba68eb
                 0x00000000      0x13c obj/VRBRAIN/misc.o
- .gnu.lto_NVIC_PriorityGroupConfig.868b74
+ .gnu.lto_NVIC_PriorityGroupConfig.ba68eb
                 0x00000000       0xda obj/VRBRAIN/misc.o
- .gnu.lto_NVIC_Init.868b74
+ .gnu.lto_NVIC_Init.ba68eb
                 0x00000000      0x207 obj/VRBRAIN/misc.o
- .gnu.lto_NVIC_SetVectorTable.868b74
+ .gnu.lto_NVIC_SetVectorTable.ba68eb
                 0x00000000       0xed obj/VRBRAIN/misc.o
- .gnu.lto_NVIC_SystemLPConfig.868b74
+ .gnu.lto_NVIC_SystemLPConfig.ba68eb
                 0x00000000      0x143 obj/VRBRAIN/misc.o
- .gnu.lto_SysTick_CLKSourceConfig.868b74
+ .gnu.lto_SysTick_CLKSourceConfig.ba68eb
                 0x00000000      0x13b obj/VRBRAIN/misc.o
- .gnu.lto_.symbol_nodes.868b74
+ .gnu.lto_.symbol_nodes.ba68eb
                 0x00000000       0x5a obj/VRBRAIN/misc.o
- .gnu.lto_.refs.868b74
+ .gnu.lto_.refs.ba68eb
                 0x00000000        0xf obj/VRBRAIN/misc.o
- .gnu.lto_.decls.868b74
+ .gnu.lto_.decls.ba68eb
                 0x00000000      0xb23 obj/VRBRAIN/misc.o
- .gnu.lto_.symtab.868b74
+ .gnu.lto_.symtab.ba68eb
                 0x00000000       0xae obj/VRBRAIN/misc.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/misc.o
@@ -4465,61 +4465,61 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_dma.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_dma.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_.jmpfuncs.871c27
+ .gnu.lto_.jmpfuncs.ba69f6
                 0x00000000       0x44 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_.inline.871c27
+ .gnu.lto_.inline.ba69f6
                 0x00000000      0x347 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_.pureconst.871c27
+ .gnu.lto_.pureconst.ba69f6
                 0x00000000       0x32 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_DeInit.part.0.871c27
+ .gnu.lto_DMA_DeInit.part.0.ba69f6
                 0x00000000      0x228 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_ITConfig.part.1.871c27
+ .gnu.lto_DMA_ITConfig.part.1.ba69f6
                 0x00000000      0x15e obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_DeInit.871c27
+ .gnu.lto_DMA_DeInit.ba69f6
                 0x00000000      0x2a8 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_Init.871c27
+ .gnu.lto_DMA_Init.ba69f6
                 0x00000000      0x302 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_StructInit.871c27
+ .gnu.lto_DMA_StructInit.ba69f6
                 0x00000000      0x13f obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_Cmd.871c27
+ .gnu.lto_DMA_Cmd.ba69f6
                 0x00000000      0x142 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_PeriphIncOffsetSizeConfig.871c27
+ .gnu.lto_DMA_PeriphIncOffsetSizeConfig.ba69f6
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_FlowControllerConfig.871c27
+ .gnu.lto_DMA_FlowControllerConfig.ba69f6
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_SetCurrDataCounter.871c27
+ .gnu.lto_DMA_SetCurrDataCounter.ba69f6
                 0x00000000       0xda obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_GetCurrDataCounter.871c27
+ .gnu.lto_DMA_GetCurrDataCounter.ba69f6
                 0x00000000       0xd6 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_DoubleBufferModeConfig.871c27
+ .gnu.lto_DMA_DoubleBufferModeConfig.ba69f6
                 0x00000000      0x15c obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_DoubleBufferModeCmd.871c27
+ .gnu.lto_DMA_DoubleBufferModeCmd.ba69f6
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_MemoryTargetConfig.871c27
+ .gnu.lto_DMA_MemoryTargetConfig.ba69f6
                 0x00000000      0x114 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_GetCurrentMemoryTarget.871c27
+ .gnu.lto_DMA_GetCurrentMemoryTarget.ba69f6
                 0x00000000      0x169 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_GetCmdStatus.871c27
+ .gnu.lto_DMA_GetCmdStatus.ba69f6
                 0x00000000      0x169 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_GetFIFOStatus.871c27
+ .gnu.lto_DMA_GetFIFOStatus.ba69f6
                 0x00000000      0x12a obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_GetFlagStatus.871c27
+ .gnu.lto_DMA_GetFlagStatus.ba69f6
                 0x00000000      0x285 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_ClearFlag.871c27
+ .gnu.lto_DMA_ClearFlag.ba69f6
                 0x00000000      0x1c1 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_ITConfig.871c27
+ .gnu.lto_DMA_ITConfig.ba69f6
                 0x00000000      0x20a obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_GetITStatus.871c27
+ .gnu.lto_DMA_GetITStatus.ba69f6
                 0x00000000      0x36e obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_DMA_ClearITPendingBit.871c27
+ .gnu.lto_DMA_ClearITPendingBit.ba69f6
                 0x00000000      0x1c6 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_.symbol_nodes.871c27
+ .gnu.lto_.symbol_nodes.ba69f6
                 0x00000000       0x86 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_.refs.871c27
+ .gnu.lto_.refs.ba69f6
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_.decls.871c27
+ .gnu.lto_.decls.ba69f6
                 0x00000000      0xcc5 obj/VRBRAIN/stm32f4xx_dma.o
- .gnu.lto_.symtab.871c27
+ .gnu.lto_.symtab.ba69f6
                 0x00000000      0x288 obj/VRBRAIN/stm32f4xx_dma.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_dma.o
@@ -4603,37 +4603,37 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_exti.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_exti.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_.jmpfuncs.87bf36
+ .gnu.lto_.jmpfuncs.ba993e
                 0x00000000       0x2a obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_.inline.87bf36
+ .gnu.lto_.inline.ba993e
                 0x00000000       0xdf obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_.pureconst.87bf36
+ .gnu.lto_.pureconst.ba993e
                 0x00000000       0x22 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_Init.part.0.87bf36
+ .gnu.lto_EXTI_Init.part.0.ba993e
                 0x00000000      0x316 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_DeInit.87bf36
+ .gnu.lto_EXTI_DeInit.ba993e
                 0x00000000       0xf0 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_Init.87bf36
+ .gnu.lto_EXTI_Init.ba993e
                 0x00000000      0x20e obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_StructInit.87bf36
+ .gnu.lto_EXTI_StructInit.ba993e
                 0x00000000       0xf1 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_GenerateSWInterrupt.87bf36
+ .gnu.lto_EXTI_GenerateSWInterrupt.ba993e
                 0x00000000       0xeb obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_GetFlagStatus.87bf36
+ .gnu.lto_EXTI_GetFlagStatus.ba993e
                 0x00000000      0x16d obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_ClearFlag.87bf36
+ .gnu.lto_EXTI_ClearFlag.ba993e
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_GetITStatus.87bf36
+ .gnu.lto_EXTI_GetITStatus.ba993e
                 0x00000000      0x1dd obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_EXTI_ClearITPendingBit.87bf36
+ .gnu.lto_EXTI_ClearITPendingBit.ba993e
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_.symbol_nodes.87bf36
+ .gnu.lto_.symbol_nodes.ba993e
                 0x00000000       0x50 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_.refs.87bf36
+ .gnu.lto_.refs.ba993e
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_.decls.87bf36
+ .gnu.lto_.decls.ba993e
                 0x00000000      0x753 obj/VRBRAIN/stm32f4xx_exti.o
- .gnu.lto_.symtab.87bf36
+ .gnu.lto_.symtab.ba993e
                 0x00000000      0x101 obj/VRBRAIN/stm32f4xx_exti.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_exti.o
@@ -4679,101 +4679,101 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_flash.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_flash.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_.jmpfuncs.860e7d
+ .gnu.lto_.jmpfuncs.bb359d
                 0x00000000       0x76 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_.inline.860e7d
+ .gnu.lto_.inline.bb359d
                 0x00000000      0x1cc obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_.pureconst.860e7d
+ .gnu.lto_.pureconst.bb359d
                 0x00000000       0x4e obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_PrefetchBufferCmd.part.0.860e7d
+ .gnu.lto_FLASH_PrefetchBufferCmd.part.0.bb359d
                 0x00000000      0x13f obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_InstructionCacheCmd.part.1.860e7d
+ .gnu.lto_FLASH_InstructionCacheCmd.part.1.bb359d
                 0x00000000      0x140 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_DataCacheCmd.part.2.860e7d
+ .gnu.lto_FLASH_DataCacheCmd.part.2.bb359d
                 0x00000000      0x140 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ITConfig.part.3.860e7d
+ .gnu.lto_FLASH_ITConfig.part.3.bb359d
                 0x00000000      0x154 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_GetStatus.part.4.860e7d
+ .gnu.lto_FLASH_GetStatus.part.4.bb359d
                 0x00000000      0x16f obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_WRPConfig.part.9.860e7d
+ .gnu.lto_FLASH_OB_WRPConfig.part.9.bb359d
                 0x00000000      0x16e obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_UserConfig.part.10.860e7d
+ .gnu.lto_FLASH_OB_UserConfig.part.10.bb359d
                 0x00000000      0x181 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_SetLatency.860e7d
+ .gnu.lto_FLASH_SetLatency.bb359d
                 0x00000000       0xd3 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_PrefetchBufferCmd.860e7d
+ .gnu.lto_FLASH_PrefetchBufferCmd.bb359d
                 0x00000000      0x148 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_InstructionCacheCmd.860e7d
+ .gnu.lto_FLASH_InstructionCacheCmd.bb359d
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_DataCacheCmd.860e7d
+ .gnu.lto_FLASH_DataCacheCmd.bb359d
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_InstructionCacheReset.860e7d
+ .gnu.lto_FLASH_InstructionCacheReset.bb359d
                 0x00000000       0xe7 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_DataCacheReset.860e7d
+ .gnu.lto_FLASH_DataCacheReset.bb359d
                 0x00000000       0xe7 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_Unlock.860e7d
+ .gnu.lto_FLASH_Unlock.bb359d
                 0x00000000      0x132 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_Lock.860e7d
+ .gnu.lto_FLASH_Lock.bb359d
                 0x00000000       0xe8 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_Unlock.860e7d
+ .gnu.lto_FLASH_OB_Unlock.bb359d
                 0x00000000      0x133 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_Lock.860e7d
+ .gnu.lto_FLASH_OB_Lock.bb359d
                 0x00000000       0xe8 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_BORConfig.860e7d
+ .gnu.lto_FLASH_OB_BORConfig.bb359d
                 0x00000000      0x106 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_GetUser.860e7d
+ .gnu.lto_FLASH_OB_GetUser.bb359d
                 0x00000000       0xeb obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_GetWRP.860e7d
+ .gnu.lto_FLASH_OB_GetWRP.bb359d
                 0x00000000       0xc0 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_GetRDP.860e7d
+ .gnu.lto_FLASH_OB_GetRDP.bb359d
                 0x00000000      0x15e obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_GetBOR.860e7d
+ .gnu.lto_FLASH_OB_GetBOR.bb359d
                 0x00000000       0xd2 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ITConfig.860e7d
+ .gnu.lto_FLASH_ITConfig.bb359d
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_GetFlagStatus.860e7d
+ .gnu.lto_FLASH_GetFlagStatus.bb359d
                 0x00000000      0x175 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ClearFlag.860e7d
+ .gnu.lto_FLASH_ClearFlag.bb359d
                 0x00000000       0xcc obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_GetStatus.860e7d
+ .gnu.lto_FLASH_GetStatus.bb359d
                 0x00000000      0x1f2 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_WaitForLastOperation.860e7d
+ .gnu.lto_FLASH_WaitForLastOperation.bb359d
                 0x00000000      0x1ba obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_EraseSector.860e7d
+ .gnu.lto_FLASH_EraseSector.bb359d
                 0x00000000      0x300 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_EraseAllSectors.860e7d
+ .gnu.lto_FLASH_EraseAllSectors.bb359d
                 0x00000000      0x2c4 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramDoubleWord.part.5.860e7d
+ .gnu.lto_FLASH_ProgramDoubleWord.part.5.bb359d
                 0x00000000      0x213 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramDoubleWord.860e7d
+ .gnu.lto_FLASH_ProgramDoubleWord.bb359d
                 0x00000000      0x15d obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramWord.part.6.860e7d
+ .gnu.lto_FLASH_ProgramWord.part.6.bb359d
                 0x00000000      0x214 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramWord.860e7d
+ .gnu.lto_FLASH_ProgramWord.bb359d
                 0x00000000      0x15e obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramHalfWord.part.7.860e7d
+ .gnu.lto_FLASH_ProgramHalfWord.part.7.bb359d
                 0x00000000      0x219 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramHalfWord.860e7d
+ .gnu.lto_FLASH_ProgramHalfWord.bb359d
                 0x00000000      0x165 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramByte.part.8.860e7d
+ .gnu.lto_FLASH_ProgramByte.part.8.bb359d
                 0x00000000      0x211 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_ProgramByte.860e7d
+ .gnu.lto_FLASH_ProgramByte.bb359d
                 0x00000000      0x163 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_WRPConfig.860e7d
+ .gnu.lto_FLASH_OB_WRPConfig.bb359d
                 0x00000000      0x1d4 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_RDPConfig.860e7d
+ .gnu.lto_FLASH_OB_RDPConfig.bb359d
                 0x00000000      0x15d obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_UserConfig.860e7d
+ .gnu.lto_FLASH_OB_UserConfig.bb359d
                 0x00000000      0x175 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_FLASH_OB_Launch.860e7d
+ .gnu.lto_FLASH_OB_Launch.bb359d
                 0x00000000      0x14b obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_.symbol_nodes.860e7d
+ .gnu.lto_.symbol_nodes.bb359d
                 0x00000000      0x168 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_.refs.860e7d
+ .gnu.lto_.refs.bb359d
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_.decls.860e7d
+ .gnu.lto_.decls.bb359d
                 0x00000000      0xfd0 obj/VRBRAIN/stm32f4xx_flash.o
- .gnu.lto_.symtab.860e7d
+ .gnu.lto_.symtab.bb359d
                 0x00000000      0x3f5 obj/VRBRAIN/stm32f4xx_flash.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_flash.o
@@ -4852,47 +4852,47 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_gpio.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_gpio.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_.jmpfuncs.8658e3
+ .gnu.lto_.jmpfuncs.ba57de
                 0x00000000       0x67 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_.inline.8658e3
+ .gnu.lto_.inline.ba57de
                 0x00000000      0x1ad obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_.pureconst.8658e3
+ .gnu.lto_.pureconst.ba57de
                 0x00000000       0x2b obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_DeInit.8658e3
+ .gnu.lto_GPIO_DeInit.ba57de
                 0x00000000      0x255 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_Init.8658e3
+ .gnu.lto_GPIO_Init.ba57de
                 0x00000000      0x4bc obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_StructInit.8658e3
+ .gnu.lto_GPIO_StructInit.ba57de
                 0x00000000      0x100 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_PinLockConfig.8658e3
+ .gnu.lto_GPIO_PinLockConfig.ba57de
                 0x00000000      0x202 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_ReadInputDataBit.8658e3
+ .gnu.lto_GPIO_ReadInputDataBit.ba57de
                 0x00000000      0x177 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_ReadInputData.8658e3
+ .gnu.lto_GPIO_ReadInputData.ba57de
                 0x00000000       0xd6 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_ReadOutputDataBit.8658e3
+ .gnu.lto_GPIO_ReadOutputDataBit.ba57de
                 0x00000000      0x174 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_ReadOutputData.8658e3
+ .gnu.lto_GPIO_ReadOutputData.ba57de
                 0x00000000       0xd6 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_SetBits.8658e3
+ .gnu.lto_GPIO_SetBits.ba57de
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_ResetBits.8658e3
+ .gnu.lto_GPIO_ResetBits.ba57de
                 0x00000000       0xc9 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_WriteBit.8658e3
+ .gnu.lto_GPIO_WriteBit.ba57de
                 0x00000000      0x111 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_Write.8658e3
+ .gnu.lto_GPIO_Write.ba57de
                 0x00000000       0xd8 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_ToggleBits.8658e3
+ .gnu.lto_GPIO_ToggleBits.ba57de
                 0x00000000       0xf5 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_GPIO_PinAFConfig.8658e3
+ .gnu.lto_GPIO_PinAFConfig.ba57de
                 0x00000000      0x22c obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_.symbol_nodes.8658e3
+ .gnu.lto_.symbol_nodes.ba57de
                 0x00000000       0xa8 obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_.refs.8658e3
+ .gnu.lto_.refs.ba57de
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_.decls.8658e3
+ .gnu.lto_.decls.ba57de
                 0x00000000      0xafc obj/VRBRAIN/stm32f4xx_gpio.o
- .gnu.lto_.symtab.8658e3
+ .gnu.lto_.symtab.ba57de
                 0x00000000      0x1db obj/VRBRAIN/stm32f4xx_gpio.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_gpio.o
@@ -4944,87 +4944,87 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_i2c.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_i2c.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_.jmpfuncs.8639e4
+ .gnu.lto_.jmpfuncs.baa9c2
                 0x00000000       0x70 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_.inline.8639e4
+ .gnu.lto_.inline.baa9c2
                 0x00000000      0x266 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_.pureconst.8639e4
+ .gnu.lto_.pureconst.baa9c2
                 0x00000000       0x43 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_DeInit.part.0.8639e4
+ .gnu.lto_I2C_DeInit.part.0.baa9c2
                 0x00000000      0x11d obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_DeInit.8639e4
+ .gnu.lto_I2C_DeInit.baa9c2
                 0x00000000      0x173 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_Init.8639e4
+ .gnu.lto_I2C_Init.baa9c2
                 0x00000000      0x5db obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_StructInit.8639e4
+ .gnu.lto_I2C_StructInit.baa9c2
                 0x00000000      0x10b obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_Cmd.8639e4
+ .gnu.lto_I2C_Cmd.baa9c2
                 0x00000000      0x140 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_GenerateSTART.8639e4
+ .gnu.lto_I2C_GenerateSTART.baa9c2
                 0x00000000      0x140 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_GenerateSTOP.8639e4
+ .gnu.lto_I2C_GenerateSTOP.baa9c2
                 0x00000000      0x141 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_Send7bitAddress.8639e4
+ .gnu.lto_I2C_Send7bitAddress.baa9c2
                 0x00000000      0x159 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_AcknowledgeConfig.8639e4
+ .gnu.lto_I2C_AcknowledgeConfig.baa9c2
                 0x00000000      0x141 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_OwnAddress2Config.8639e4
+ .gnu.lto_I2C_OwnAddress2Config.baa9c2
                 0x00000000      0x19c obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_DualAddressCmd.8639e4
+ .gnu.lto_I2C_DualAddressCmd.baa9c2
                 0x00000000      0x140 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_GeneralCallCmd.8639e4
+ .gnu.lto_I2C_GeneralCallCmd.baa9c2
                 0x00000000      0x13f obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_SoftwareResetCmd.8639e4
+ .gnu.lto_I2C_SoftwareResetCmd.baa9c2
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_StretchClockCmd.8639e4
+ .gnu.lto_I2C_StretchClockCmd.baa9c2
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_FastModeDutyCycleConfig.8639e4
+ .gnu.lto_I2C_FastModeDutyCycleConfig.baa9c2
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_NACKPositionConfig.8639e4
+ .gnu.lto_I2C_NACKPositionConfig.baa9c2
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_SMBusAlertConfig.8639e4
+ .gnu.lto_I2C_SMBusAlertConfig.baa9c2
                 0x00000000      0x144 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_ARPCmd.8639e4
+ .gnu.lto_I2C_ARPCmd.baa9c2
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_SendData.8639e4
+ .gnu.lto_I2C_SendData.baa9c2
                 0x00000000       0xda obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_ReceiveData.8639e4
+ .gnu.lto_I2C_ReceiveData.baa9c2
                 0x00000000       0xd6 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_TransmitPEC.8639e4
+ .gnu.lto_I2C_TransmitPEC.baa9c2
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_PECPositionConfig.8639e4
+ .gnu.lto_I2C_PECPositionConfig.baa9c2
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_CalculatePEC.8639e4
+ .gnu.lto_I2C_CalculatePEC.baa9c2
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_GetPEC.8639e4
+ .gnu.lto_I2C_GetPEC.baa9c2
                 0x00000000       0xe4 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_DMACmd.8639e4
+ .gnu.lto_I2C_DMACmd.baa9c2
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_DMALastTransferCmd.8639e4
+ .gnu.lto_I2C_DMALastTransferCmd.baa9c2
                 0x00000000      0x144 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_ReadRegister.8639e4
+ .gnu.lto_I2C_ReadRegister.baa9c2
                 0x00000000      0x1d8 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_ITConfig.8639e4
+ .gnu.lto_I2C_ITConfig.baa9c2
                 0x00000000      0x152 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_CheckEvent.8639e4
+ .gnu.lto_I2C_CheckEvent.baa9c2
                 0x00000000      0x258 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_GetLastEvent.8639e4
+ .gnu.lto_I2C_GetLastEvent.baa9c2
                 0x00000000      0x1cd obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_GetFlagStatus.8639e4
+ .gnu.lto_I2C_GetFlagStatus.baa9c2
                 0x00000000      0x35b obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_ClearFlag.8639e4
+ .gnu.lto_I2C_ClearFlag.baa9c2
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_GetITStatus.8639e4
+ .gnu.lto_I2C_GetITStatus.baa9c2
                 0x00000000      0x232 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_I2C_ClearITPendingBit.8639e4
+ .gnu.lto_I2C_ClearITPendingBit.baa9c2
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_.symbol_nodes.8639e4
+ .gnu.lto_.symbol_nodes.baa9c2
                 0x00000000       0xe6 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_.refs.8639e4
+ .gnu.lto_.refs.baa9c2
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_.decls.8639e4
+ .gnu.lto_.decls.baa9c2
                 0x00000000     0x1080 obj/VRBRAIN/stm32f4xx_i2c.o
- .gnu.lto_.symtab.8639e4
+ .gnu.lto_.symtab.baa9c2
                 0x00000000      0x46b obj/VRBRAIN/stm32f4xx_i2c.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_i2c.o
@@ -5105,139 +5105,139 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_rcc.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_rcc.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_.jmpfuncs.86db64
+ .gnu.lto_.jmpfuncs.ba5847
                 0x00000000       0x87 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_.inline.86db64
+ .gnu.lto_.inline.ba5847
                 0x00000000      0x1ca obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_.pureconst.86db64
+ .gnu.lto_.pureconst.ba5847
                 0x00000000       0x5e obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB1PeriphClockCmd.part.0.86db64
+ .gnu.lto_RCC_AHB1PeriphClockCmd.part.0.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB2PeriphClockCmd.part.1.86db64
+ .gnu.lto_RCC_AHB2PeriphClockCmd.part.1.ba5847
                 0x00000000      0x154 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB3PeriphClockCmd.part.2.86db64
+ .gnu.lto_RCC_AHB3PeriphClockCmd.part.2.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB1PeriphClockCmd.part.3.86db64
+ .gnu.lto_RCC_APB1PeriphClockCmd.part.3.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB2PeriphClockCmd.part.4.86db64
+ .gnu.lto_RCC_APB2PeriphClockCmd.part.4.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB1PeriphResetCmd.part.5.86db64
+ .gnu.lto_RCC_AHB1PeriphResetCmd.part.5.ba5847
                 0x00000000      0x152 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB2PeriphResetCmd.part.6.86db64
+ .gnu.lto_RCC_AHB2PeriphResetCmd.part.6.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB3PeriphResetCmd.part.7.86db64
+ .gnu.lto_RCC_AHB3PeriphResetCmd.part.7.ba5847
                 0x00000000      0x152 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB1PeriphResetCmd.part.8.86db64
+ .gnu.lto_RCC_APB1PeriphResetCmd.part.8.ba5847
                 0x00000000      0x152 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB2PeriphResetCmd.part.9.86db64
+ .gnu.lto_RCC_APB2PeriphResetCmd.part.9.ba5847
                 0x00000000      0x152 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB1PeriphClockLPModeCmd.part.10.86db64
+ .gnu.lto_RCC_AHB1PeriphClockLPModeCmd.part.10.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB2PeriphClockLPModeCmd.part.11.86db64
+ .gnu.lto_RCC_AHB2PeriphClockLPModeCmd.part.11.ba5847
                 0x00000000      0x152 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB3PeriphClockLPModeCmd.part.12.86db64
+ .gnu.lto_RCC_AHB3PeriphClockLPModeCmd.part.12.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB1PeriphClockLPModeCmd.part.13.86db64
+ .gnu.lto_RCC_APB1PeriphClockLPModeCmd.part.13.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB2PeriphClockLPModeCmd.part.14.86db64
+ .gnu.lto_RCC_APB2PeriphClockLPModeCmd.part.14.ba5847
                 0x00000000      0x155 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_ITConfig.part.15.86db64
+ .gnu.lto_RCC_ITConfig.part.15.ba5847
                 0x00000000      0x14c obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_DeInit.86db64
+ .gnu.lto_RCC_DeInit.ba5847
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_HSEConfig.86db64
+ .gnu.lto_RCC_HSEConfig.ba5847
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AdjustHSICalibrationValue.86db64
+ .gnu.lto_RCC_AdjustHSICalibrationValue.ba5847
                 0x00000000      0x17d obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_HSICmd.86db64
+ .gnu.lto_RCC_HSICmd.ba5847
                 0x00000000       0xd1 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_LSEConfig.86db64
+ .gnu.lto_RCC_LSEConfig.ba5847
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_LSICmd.86db64
+ .gnu.lto_RCC_LSICmd.ba5847
                 0x00000000       0xd1 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_PLLConfig.86db64
+ .gnu.lto_RCC_PLLConfig.ba5847
                 0x00000000      0x163 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_PLLCmd.86db64
+ .gnu.lto_RCC_PLLCmd.ba5847
                 0x00000000       0xd1 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_PLLI2SConfig.86db64
+ .gnu.lto_RCC_PLLI2SConfig.ba5847
                 0x00000000      0x102 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_PLLI2SCmd.86db64
+ .gnu.lto_RCC_PLLI2SCmd.ba5847
                 0x00000000       0xd1 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_ClockSecuritySystemCmd.86db64
+ .gnu.lto_RCC_ClockSecuritySystemCmd.ba5847
                 0x00000000       0xd5 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_MCO1Config.86db64
+ .gnu.lto_RCC_MCO1Config.ba5847
                 0x00000000      0x172 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_MCO2Config.86db64
+ .gnu.lto_RCC_MCO2Config.ba5847
                 0x00000000      0x172 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_SYSCLKConfig.86db64
+ .gnu.lto_RCC_SYSCLKConfig.ba5847
                 0x00000000      0x15e obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_GetSYSCLKSource.86db64
+ .gnu.lto_RCC_GetSYSCLKSource.ba5847
                 0x00000000       0xe9 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_HCLKConfig.86db64
+ .gnu.lto_RCC_HCLKConfig.ba5847
                 0x00000000      0x160 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_PCLK1Config.86db64
+ .gnu.lto_RCC_PCLK1Config.ba5847
                 0x00000000      0x15d obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_PCLK2Config.86db64
+ .gnu.lto_RCC_PCLK2Config.ba5847
                 0x00000000      0x175 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_GetClocksFreq.86db64
+ .gnu.lto_RCC_GetClocksFreq.ba5847
                 0x00000000      0x558 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_RTCCLKConfig.86db64
+ .gnu.lto_RCC_RTCCLKConfig.ba5847
                 0x00000000      0x1e4 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_RTCCLKCmd.86db64
+ .gnu.lto_RCC_RTCCLKCmd.ba5847
                 0x00000000       0xd5 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_BackupResetCmd.86db64
+ .gnu.lto_RCC_BackupResetCmd.ba5847
                 0x00000000       0xd5 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_I2SCLKConfig.86db64
+ .gnu.lto_RCC_I2SCLKConfig.ba5847
                 0x00000000       0xc0 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB1PeriphClockCmd.86db64
+ .gnu.lto_RCC_AHB1PeriphClockCmd.ba5847
                 0x00000000      0x149 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB2PeriphClockCmd.86db64
+ .gnu.lto_RCC_AHB2PeriphClockCmd.ba5847
                 0x00000000      0x14a obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB3PeriphClockCmd.86db64
+ .gnu.lto_RCC_AHB3PeriphClockCmd.ba5847
                 0x00000000      0x149 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB1PeriphClockCmd.86db64
+ .gnu.lto_RCC_APB1PeriphClockCmd.ba5847
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB2PeriphClockCmd.86db64
+ .gnu.lto_RCC_APB2PeriphClockCmd.ba5847
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB1PeriphResetCmd.86db64
+ .gnu.lto_RCC_AHB1PeriphResetCmd.ba5847
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB2PeriphResetCmd.86db64
+ .gnu.lto_RCC_AHB2PeriphResetCmd.ba5847
                 0x00000000      0x148 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB3PeriphResetCmd.86db64
+ .gnu.lto_RCC_AHB3PeriphResetCmd.ba5847
                 0x00000000      0x148 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB1PeriphResetCmd.86db64
+ .gnu.lto_RCC_APB1PeriphResetCmd.ba5847
                 0x00000000      0x149 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB2PeriphResetCmd.86db64
+ .gnu.lto_RCC_APB2PeriphResetCmd.ba5847
                 0x00000000      0x149 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB1PeriphClockLPModeCmd.86db64
+ .gnu.lto_RCC_AHB1PeriphClockLPModeCmd.ba5847
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB2PeriphClockLPModeCmd.86db64
+ .gnu.lto_RCC_AHB2PeriphClockLPModeCmd.ba5847
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_AHB3PeriphClockLPModeCmd.86db64
+ .gnu.lto_RCC_AHB3PeriphClockLPModeCmd.ba5847
                 0x00000000      0x148 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB1PeriphClockLPModeCmd.86db64
+ .gnu.lto_RCC_APB1PeriphClockLPModeCmd.ba5847
                 0x00000000      0x149 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_APB2PeriphClockLPModeCmd.86db64
+ .gnu.lto_RCC_APB2PeriphClockLPModeCmd.ba5847
                 0x00000000      0x149 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_ITConfig.86db64
+ .gnu.lto_RCC_ITConfig.ba5847
                 0x00000000      0x13f obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_GetFlagStatus.86db64
+ .gnu.lto_RCC_GetFlagStatus.ba5847
                 0x00000000      0x2cd obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_WaitForHSEStartUp.86db64
+ .gnu.lto_RCC_WaitForHSEStartUp.ba5847
                 0x00000000      0x27c obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_ClearFlag.86db64
+ .gnu.lto_RCC_ClearFlag.ba5847
                 0x00000000       0xe9 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_GetITStatus.86db64
+ .gnu.lto_RCC_GetITStatus.ba5847
                 0x00000000      0x181 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_RCC_ClearITPendingBit.86db64
+ .gnu.lto_RCC_ClearITPendingBit.ba5847
                 0x00000000       0xc0 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_.symbol_nodes.86db64
+ .gnu.lto_.symbol_nodes.ba5847
                 0x00000000      0x161 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_.refs.86db64
+ .gnu.lto_.refs.ba5847
                 0x00000000       0x15 obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_.decls.86db64
+ .gnu.lto_.decls.ba5847
                 0x00000000     0x15be obj/VRBRAIN/stm32f4xx_rcc.o
- .gnu.lto_.symtab.86db64
+ .gnu.lto_.symtab.ba5847
                 0x00000000      0x5e9 obj/VRBRAIN/stm32f4xx_rcc.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_rcc.o
@@ -5336,71 +5336,71 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_spi.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_spi.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_.jmpfuncs.87d11a
+ .gnu.lto_.jmpfuncs.baa29b
                 0x00000000       0x64 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_.inline.87d11a
+ .gnu.lto_.inline.baa29b
                 0x00000000      0x33f obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_.pureconst.87d11a
+ .gnu.lto_.pureconst.baa29b
                 0x00000000       0x36 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_DeInit.part.0.87d11a
+ .gnu.lto_SPI_I2S_DeInit.part.0.baa29b
                 0x00000000      0x11b obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_DeInit.87d11a
+ .gnu.lto_SPI_I2S_DeInit.baa29b
                 0x00000000      0x173 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_Init.87d11a
+ .gnu.lto_SPI_Init.baa29b
                 0x00000000      0x25c obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_I2S_Init.87d11a
+ .gnu.lto_I2S_Init.baa29b
                 0x00000000      0x6e3 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_StructInit.87d11a
+ .gnu.lto_SPI_StructInit.baa29b
                 0x00000000      0x108 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_I2S_StructInit.87d11a
+ .gnu.lto_I2S_StructInit.baa29b
                 0x00000000       0xf8 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_Cmd.87d11a
+ .gnu.lto_SPI_Cmd.baa29b
                 0x00000000      0x144 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_I2S_Cmd.87d11a
+ .gnu.lto_I2S_Cmd.baa29b
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_DataSizeConfig.87d11a
+ .gnu.lto_SPI_DataSizeConfig.baa29b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_BiDirectionalLineConfig.87d11a
+ .gnu.lto_SPI_BiDirectionalLineConfig.baa29b
                 0x00000000      0x144 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_NSSInternalSoftwareConfig.87d11a
+ .gnu.lto_SPI_NSSInternalSoftwareConfig.baa29b
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_SSOutputCmd.87d11a
+ .gnu.lto_SPI_SSOutputCmd.baa29b
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_TIModeCmd.87d11a
+ .gnu.lto_SPI_TIModeCmd.baa29b
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_I2S_FullDuplexConfig.87d11a
+ .gnu.lto_I2S_FullDuplexConfig.baa29b
                 0x00000000      0x283 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_ReceiveData.87d11a
+ .gnu.lto_SPI_I2S_ReceiveData.baa29b
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_SendData.87d11a
+ .gnu.lto_SPI_I2S_SendData.baa29b
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_CalculateCRC.87d11a
+ .gnu.lto_SPI_CalculateCRC.baa29b
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_TransmitCRC.87d11a
+ .gnu.lto_SPI_TransmitCRC.baa29b
                 0x00000000       0xea obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_GetCRC.87d11a
+ .gnu.lto_SPI_GetCRC.baa29b
                 0x00000000      0x179 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_GetCRCPolynomial.87d11a
+ .gnu.lto_SPI_GetCRCPolynomial.baa29b
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_DMACmd.87d11a
+ .gnu.lto_SPI_I2S_DMACmd.baa29b
                 0x00000000      0x153 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_ITConfig.87d11a
+ .gnu.lto_SPI_I2S_ITConfig.baa29b
                 0x00000000      0x1fe obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_GetFlagStatus.87d11a
+ .gnu.lto_SPI_I2S_GetFlagStatus.baa29b
                 0x00000000      0x171 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_ClearFlag.87d11a
+ .gnu.lto_SPI_I2S_ClearFlag.baa29b
                 0x00000000       0xdc obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_GetITStatus.87d11a
+ .gnu.lto_SPI_I2S_GetITStatus.baa29b
                 0x00000000      0x29e obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_SPI_I2S_ClearITPendingBit.87d11a
+ .gnu.lto_SPI_I2S_ClearITPendingBit.baa29b
                 0x00000000      0x15c obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_.symbol_nodes.87d11a
+ .gnu.lto_.symbol_nodes.baa29b
                 0x00000000       0xc3 obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_.refs.87d11a
+ .gnu.lto_.refs.baa29b
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_.decls.87d11a
+ .gnu.lto_.decls.baa29b
                 0x00000000     0x111b obj/VRBRAIN/stm32f4xx_spi.o
- .gnu.lto_.symtab.87d11a
+ .gnu.lto_.symtab.baa29b
                 0x00000000      0x36e obj/VRBRAIN/stm32f4xx_spi.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_spi.o
@@ -5469,203 +5469,203 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_tim.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_tim.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_.jmpfuncs.86c4cc
+ .gnu.lto_.jmpfuncs.ba542b
                 0x00000000      0x125 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_.inline.86c4cc
+ .gnu.lto_.inline.ba542b
                 0x00000000      0x6c0 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_.pureconst.86c4cc
+ .gnu.lto_.pureconst.ba542b
                 0x00000000       0x93 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TI1_Config.86c4cc
+ .gnu.lto_TI1_Config.ba542b
                 0x00000000      0x22a obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TI2_Config.86c4cc
+ .gnu.lto_TI2_Config.ba542b
                 0x00000000      0x26a obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TI3_Config.86c4cc
+ .gnu.lto_TI3_Config.ba542b
                 0x00000000      0x25c obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TI4_Config.86c4cc
+ .gnu.lto_TI4_Config.ba542b
                 0x00000000      0x268 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_DeInit.86c4cc
+ .gnu.lto_TIM_DeInit.ba542b
                 0x00000000      0x31c obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_TimeBaseInit.86c4cc
+ .gnu.lto_TIM_TimeBaseInit.ba542b
                 0x00000000      0x334 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_TimeBaseStructInit.86c4cc
+ .gnu.lto_TIM_TimeBaseStructInit.ba542b
                 0x00000000       0xfe obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_PrescalerConfig.86c4cc
+ .gnu.lto_TIM_PrescalerConfig.ba542b
                 0x00000000       0xd9 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_CounterModeConfig.86c4cc
+ .gnu.lto_TIM_CounterModeConfig.ba542b
                 0x00000000      0x150 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetCounter.86c4cc
+ .gnu.lto_TIM_SetCounter.ba542b
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetAutoreload.86c4cc
+ .gnu.lto_TIM_SetAutoreload.ba542b
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetCounter.86c4cc
+ .gnu.lto_TIM_GetCounter.ba542b
                 0x00000000       0xc6 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetPrescaler.86c4cc
+ .gnu.lto_TIM_GetPrescaler.ba542b
                 0x00000000       0xc3 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_UpdateDisableConfig.86c4cc
+ .gnu.lto_TIM_UpdateDisableConfig.ba542b
                 0x00000000      0x13f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_UpdateRequestConfig.86c4cc
+ .gnu.lto_TIM_UpdateRequestConfig.ba542b
                 0x00000000      0x13d obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ARRPreloadConfig.86c4cc
+ .gnu.lto_TIM_ARRPreloadConfig.ba542b
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectOnePulseMode.86c4cc
+ .gnu.lto_TIM_SelectOnePulseMode.ba542b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetClockDivision.86c4cc
+ .gnu.lto_TIM_SetClockDivision.ba542b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_Cmd.86c4cc
+ .gnu.lto_TIM_Cmd.ba542b
                 0x00000000      0x144 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC1Init.86c4cc
+ .gnu.lto_TIM_OC1Init.ba542b
                 0x00000000      0x3dc obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC2Init.86c4cc
+ .gnu.lto_TIM_OC2Init.ba542b
                 0x00000000      0x42f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC3Init.86c4cc
+ .gnu.lto_TIM_OC3Init.ba542b
                 0x00000000      0x420 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC4Init.86c4cc
+ .gnu.lto_TIM_OC4Init.ba542b
                 0x00000000      0x36c obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OCStructInit.86c4cc
+ .gnu.lto_TIM_OCStructInit.ba542b
                 0x00000000      0x109 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectOCxM.86c4cc
+ .gnu.lto_TIM_SelectOCxM.ba542b
                 0x00000000      0x339 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetCompare1.86c4cc
+ .gnu.lto_TIM_SetCompare1.ba542b
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetCompare2.86c4cc
+ .gnu.lto_TIM_SetCompare2.ba542b
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetCompare3.86c4cc
+ .gnu.lto_TIM_SetCompare3.ba542b
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetCompare4.86c4cc
+ .gnu.lto_TIM_SetCompare4.ba542b
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ForcedOC1Config.86c4cc
+ .gnu.lto_TIM_ForcedOC1Config.ba542b
                 0x00000000      0x158 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ForcedOC2Config.86c4cc
+ .gnu.lto_TIM_ForcedOC2Config.ba542b
                 0x00000000      0x16b obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ForcedOC3Config.86c4cc
+ .gnu.lto_TIM_ForcedOC3Config.ba542b
                 0x00000000      0x157 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ForcedOC4Config.86c4cc
+ .gnu.lto_TIM_ForcedOC4Config.ba542b
                 0x00000000      0x16a obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC1PreloadConfig.86c4cc
+ .gnu.lto_TIM_OC1PreloadConfig.ba542b
                 0x00000000      0x158 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC2PreloadConfig.86c4cc
+ .gnu.lto_TIM_OC2PreloadConfig.ba542b
                 0x00000000      0x16d obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC3PreloadConfig.86c4cc
+ .gnu.lto_TIM_OC3PreloadConfig.ba542b
                 0x00000000      0x157 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC4PreloadConfig.86c4cc
+ .gnu.lto_TIM_OC4PreloadConfig.ba542b
                 0x00000000      0x16c obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC1FastConfig.86c4cc
+ .gnu.lto_TIM_OC1FastConfig.ba542b
                 0x00000000      0x159 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC2FastConfig.86c4cc
+ .gnu.lto_TIM_OC2FastConfig.ba542b
                 0x00000000      0x169 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC3FastConfig.86c4cc
+ .gnu.lto_TIM_OC3FastConfig.ba542b
                 0x00000000      0x156 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC4FastConfig.86c4cc
+ .gnu.lto_TIM_OC4FastConfig.ba542b
                 0x00000000      0x169 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ClearOC1Ref.86c4cc
+ .gnu.lto_TIM_ClearOC1Ref.ba542b
                 0x00000000      0x158 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ClearOC2Ref.86c4cc
+ .gnu.lto_TIM_ClearOC2Ref.ba542b
                 0x00000000      0x169 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ClearOC3Ref.86c4cc
+ .gnu.lto_TIM_ClearOC3Ref.ba542b
                 0x00000000      0x156 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ClearOC4Ref.86c4cc
+ .gnu.lto_TIM_ClearOC4Ref.ba542b
                 0x00000000      0x16b obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC1PolarityConfig.86c4cc
+ .gnu.lto_TIM_OC1PolarityConfig.ba542b
                 0x00000000      0x157 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC1NPolarityConfig.86c4cc
+ .gnu.lto_TIM_OC1NPolarityConfig.ba542b
                 0x00000000      0x159 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC2PolarityConfig.86c4cc
+ .gnu.lto_TIM_OC2PolarityConfig.ba542b
                 0x00000000      0x16c obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC2NPolarityConfig.86c4cc
+ .gnu.lto_TIM_OC2NPolarityConfig.ba542b
                 0x00000000      0x16c obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC3PolarityConfig.86c4cc
+ .gnu.lto_TIM_OC3PolarityConfig.ba542b
                 0x00000000      0x16e obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC3NPolarityConfig.86c4cc
+ .gnu.lto_TIM_OC3NPolarityConfig.ba542b
                 0x00000000      0x16f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_OC4PolarityConfig.86c4cc
+ .gnu.lto_TIM_OC4PolarityConfig.ba542b
                 0x00000000      0x16e obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_CCxCmd.86c4cc
+ .gnu.lto_TIM_CCxCmd.ba542b
                 0x00000000      0x1a6 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_CCxNCmd.86c4cc
+ .gnu.lto_TIM_CCxNCmd.ba542b
                 0x00000000      0x1ab obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ICStructInit.86c4cc
+ .gnu.lto_TIM_ICStructInit.ba542b
                 0x00000000       0xf0 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetCapture1.86c4cc
+ .gnu.lto_TIM_GetCapture1.ba542b
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetCapture2.86c4cc
+ .gnu.lto_TIM_GetCapture2.ba542b
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetCapture3.86c4cc
+ .gnu.lto_TIM_GetCapture3.ba542b
                 0x00000000       0xc5 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetCapture4.86c4cc
+ .gnu.lto_TIM_GetCapture4.ba542b
                 0x00000000       0xc8 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetIC1Prescaler.86c4cc
+ .gnu.lto_TIM_SetIC1Prescaler.ba542b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetIC2Prescaler.86c4cc
+ .gnu.lto_TIM_SetIC2Prescaler.ba542b
                 0x00000000      0x121 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_PWMIConfig.86c4cc
+ .gnu.lto_TIM_PWMIConfig.ba542b
                 0x00000000      0x2e6 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetIC3Prescaler.86c4cc
+ .gnu.lto_TIM_SetIC3Prescaler.ba542b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SetIC4Prescaler.86c4cc
+ .gnu.lto_TIM_SetIC4Prescaler.ba542b
                 0x00000000      0x120 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ICInit.86c4cc
+ .gnu.lto_TIM_ICInit.ba542b
                 0x00000000      0x28a obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_BDTRConfig.86c4cc
+ .gnu.lto_TIM_BDTRConfig.ba542b
                 0x00000000      0x177 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_BDTRStructInit.86c4cc
+ .gnu.lto_TIM_BDTRStructInit.ba542b
                 0x00000000       0xfd obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_CtrlPWMOutputs.86c4cc
+ .gnu.lto_TIM_CtrlPWMOutputs.ba542b
                 0x00000000      0x144 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectCOM.86c4cc
+ .gnu.lto_TIM_SelectCOM.ba542b
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_CCPreloadControl.86c4cc
+ .gnu.lto_TIM_CCPreloadControl.ba542b
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ITConfig.86c4cc
+ .gnu.lto_TIM_ITConfig.ba542b
                 0x00000000      0x152 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GenerateEvent.86c4cc
+ .gnu.lto_TIM_GenerateEvent.ba542b
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetFlagStatus.86c4cc
+ .gnu.lto_TIM_GetFlagStatus.ba542b
                 0x00000000      0x16e obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ClearFlag.86c4cc
+ .gnu.lto_TIM_ClearFlag.ba542b
                 0x00000000       0xdc obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_GetITStatus.86c4cc
+ .gnu.lto_TIM_GetITStatus.ba542b
                 0x00000000      0x201 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ClearITPendingBit.86c4cc
+ .gnu.lto_TIM_ClearITPendingBit.ba542b
                 0x00000000       0xdc obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_DMAConfig.86c4cc
+ .gnu.lto_TIM_DMAConfig.ba542b
                 0x00000000       0xe2 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_DMACmd.86c4cc
+ .gnu.lto_TIM_DMACmd.ba542b
                 0x00000000      0x154 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectCCDMA.86c4cc
+ .gnu.lto_TIM_SelectCCDMA.ba542b
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_InternalClockConfig.86c4cc
+ .gnu.lto_TIM_InternalClockConfig.ba542b
                 0x00000000       0xeb obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ITRxExternalClockConfig.86c4cc
+ .gnu.lto_TIM_ITRxExternalClockConfig.ba542b
                 0x00000000      0x1f8 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_TIxExternalClockConfig.86c4cc
+ .gnu.lto_TIM_TIxExternalClockConfig.ba542b
                 0x00000000      0x262 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectInputTrigger.86c4cc
+ .gnu.lto_TIM_SelectInputTrigger.ba542b
                 0x00000000      0x155 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectOutputTrigger.86c4cc
+ .gnu.lto_TIM_SelectOutputTrigger.ba542b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectSlaveMode.86c4cc
+ .gnu.lto_TIM_SelectSlaveMode.ba542b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectMasterSlaveMode.86c4cc
+ .gnu.lto_TIM_SelectMasterSlaveMode.ba542b
                 0x00000000      0x10f obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ETRConfig.86c4cc
+ .gnu.lto_TIM_ETRConfig.ba542b
                 0x00000000      0x18b obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ETRClockMode1Config.86c4cc
+ .gnu.lto_TIM_ETRClockMode1Config.ba542b
                 0x00000000      0x1b0 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_ETRClockMode2Config.86c4cc
+ .gnu.lto_TIM_ETRClockMode2Config.ba542b
                 0x00000000      0x115 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_EncoderInterfaceConfig.86c4cc
+ .gnu.lto_TIM_EncoderInterfaceConfig.ba542b
                 0x00000000      0x250 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_SelectHallSensor.86c4cc
+ .gnu.lto_TIM_SelectHallSensor.ba542b
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_TIM_RemapConfig.86c4cc
+ .gnu.lto_TIM_RemapConfig.ba542b
                 0x00000000       0xca obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_.symbol_nodes.86c4cc
+ .gnu.lto_.symbol_nodes.ba542b
                 0x00000000      0x28a obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_.refs.86c4cc
+ .gnu.lto_.refs.ba542b
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_.decls.86c4cc
+ .gnu.lto_.decls.ba542b
                 0x00000000     0x2052 obj/VRBRAIN/stm32f4xx_tim.o
- .gnu.lto_.symtab.86c4cc
+ .gnu.lto_.symtab.ba542b
                 0x00000000      0xbc6 obj/VRBRAIN/stm32f4xx_tim.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_tim.o
@@ -5825,77 +5825,77 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_usart.o
  .data          0x00000000        0x0 obj/VRBRAIN/stm32f4xx_usart.o
  .bss           0x00000000        0x0 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_.jmpfuncs.86b78e
+ .gnu.lto_.jmpfuncs.ba8465
                 0x00000000       0x76 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_.inline.86b78e
+ .gnu.lto_.inline.ba8465
                 0x00000000      0x2b1 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_.pureconst.86b78e
+ .gnu.lto_.pureconst.ba8465
                 0x00000000       0x3c obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_DeInit.86b78e
+ .gnu.lto_USART_DeInit.ba8465
                 0x00000000      0x1ec obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_Init.86b78e
+ .gnu.lto_USART_Init.ba8465
                 0x00000000      0x600 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_StructInit.86b78e
+ .gnu.lto_USART_StructInit.ba8465
                 0x00000000      0x103 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_ClockInit.86b78e
+ .gnu.lto_USART_ClockInit.ba8465
                 0x00000000      0x1e2 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_ClockStructInit.86b78e
+ .gnu.lto_USART_ClockStructInit.ba8465
                 0x00000000       0xe3 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_Cmd.86b78e
+ .gnu.lto_USART_Cmd.ba8465
                 0x00000000      0x143 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_SetPrescaler.86b78e
+ .gnu.lto_USART_SetPrescaler.ba8465
                 0x00000000      0x119 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_OverSampling8Cmd.86b78e
+ .gnu.lto_USART_OverSampling8Cmd.ba8465
                 0x00000000      0x140 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_OneBitMethodCmd.86b78e
+ .gnu.lto_USART_OneBitMethodCmd.ba8465
                 0x00000000      0x142 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_SendData.86b78e
+ .gnu.lto_USART_SendData.ba8465
                 0x00000000       0xe4 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_ReceiveData.86b78e
+ .gnu.lto_USART_ReceiveData.ba8465
                 0x00000000       0xdd obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_SetAddress.86b78e
+ .gnu.lto_USART_SetAddress.ba8465
                 0x00000000      0x11c obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_ReceiverWakeUpCmd.86b78e
+ .gnu.lto_USART_ReceiverWakeUpCmd.ba8465
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_WakeUpConfig.86b78e
+ .gnu.lto_USART_WakeUpConfig.ba8465
                 0x00000000      0x111 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_LINBreakDetectLengthConfig.86b78e
+ .gnu.lto_USART_LINBreakDetectLengthConfig.ba8465
                 0x00000000      0x111 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_LINCmd.86b78e
+ .gnu.lto_USART_LINCmd.ba8465
                 0x00000000      0x147 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_SendBreak.86b78e
+ .gnu.lto_USART_SendBreak.ba8465
                 0x00000000       0xeb obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_HalfDuplexCmd.86b78e
+ .gnu.lto_USART_HalfDuplexCmd.ba8465
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_SetGuardTime.86b78e
+ .gnu.lto_USART_SetGuardTime.ba8465
                 0x00000000      0x12d obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_SmartCardCmd.86b78e
+ .gnu.lto_USART_SmartCardCmd.ba8465
                 0x00000000      0x148 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_SmartCardNACKCmd.86b78e
+ .gnu.lto_USART_SmartCardNACKCmd.ba8465
                 0x00000000      0x145 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_IrDAConfig.86b78e
+ .gnu.lto_USART_IrDAConfig.ba8465
                 0x00000000      0x10e obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_IrDACmd.86b78e
+ .gnu.lto_USART_IrDACmd.ba8465
                 0x00000000      0x146 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_DMACmd.86b78e
+ .gnu.lto_USART_DMACmd.ba8465
                 0x00000000      0x158 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_ITConfig.86b78e
+ .gnu.lto_USART_ITConfig.ba8465
                 0x00000000      0x344 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_GetFlagStatus.86b78e
+ .gnu.lto_USART_GetFlagStatus.ba8465
                 0x00000000      0x173 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_ClearFlag.86b78e
+ .gnu.lto_USART_ClearFlag.ba8465
                 0x00000000       0xde obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_GetITStatus.86b78e
+ .gnu.lto_USART_GetITStatus.ba8465
                 0x00000000      0x3b2 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_USART_ClearITPendingBit.86b78e
+ .gnu.lto_USART_ClearITPendingBit.ba8465
                 0x00000000      0x18b obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_.symbol_nodes.86b78e
+ .gnu.lto_.symbol_nodes.ba8465
                 0x00000000       0xe4 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_.refs.86b78e
+ .gnu.lto_.refs.ba8465
                 0x00000000        0xf obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_.decls.86b78e
+ .gnu.lto_.decls.ba8465
                 0x00000000      0xf37 obj/VRBRAIN/stm32f4xx_usart.o
- .gnu.lto_.symtab.86b78e
+ .gnu.lto_.symtab.ba8465
                 0x00000000      0x42e obj/VRBRAIN/stm32f4xx_usart.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/stm32f4xx_usart.o
@@ -5977,101 +5977,101 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/usb_core.o
  .data          0x00000000        0x0 obj/VRBRAIN/usb_core.o
  .bss           0x00000000        0x0 obj/VRBRAIN/usb_core.o
- .gnu.lto_.jmpfuncs.8793d9
+ .gnu.lto_.jmpfuncs.bac52f
                 0x00000000       0xb5 obj/VRBRAIN/usb_core.o
- .gnu.lto_.inline.8793d9
+ .gnu.lto_.inline.bac52f
                 0x00000000      0x5d9 obj/VRBRAIN/usb_core.o
- .gnu.lto_.pureconst.8793d9
+ .gnu.lto_.pureconst.bac52f
                 0x00000000       0x4d obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EnableCommonInt.isra.0.8793d9
+ .gnu.lto_USB_OTG_EnableCommonInt.isra.0.bac52f
                 0x00000000      0x1a0 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_CoreReset.isra.1.8793d9
+ .gnu.lto_USB_OTG_CoreReset.isra.1.bac52f
                 0x00000000      0x325 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_WritePacket.part.2.8793d9
+ .gnu.lto_USB_OTG_WritePacket.part.2.bac52f
                 0x00000000      0x2a0 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EPSetStall.part.3.8793d9
+ .gnu.lto_USB_OTG_EPSetStall.part.3.bac52f
                 0x00000000      0x256 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ActiveRemoteWakeup.part.4.8793d9
+ .gnu.lto_USB_OTG_ActiveRemoteWakeup.part.4.bac52f
                 0x00000000      0x325 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_UngateClock.part.5.8793d9
+ .gnu.lto_USB_OTG_UngateClock.part.5.bac52f
                 0x00000000      0x230 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_GetEPStatus.part.6.8793d9
+ .gnu.lto_USB_OTG_GetEPStatus.part.6.bac52f
                 0x00000000      0x276 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_WritePacket.8793d9
+ .gnu.lto_USB_OTG_WritePacket.bac52f
                 0x00000000      0x14f obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ReadPacket.8793d9
+ .gnu.lto_USB_OTG_ReadPacket.bac52f
                 0x00000000      0x263 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_SelectCore.8793d9
+ .gnu.lto_USB_OTG_SelectCore.bac52f
                 0x00000000      0x56a obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_CoreInit.8793d9
+ .gnu.lto_USB_OTG_CoreInit.bac52f
                 0x00000000      0x679 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EnableGlobalInt.8793d9
+ .gnu.lto_USB_OTG_EnableGlobalInt.bac52f
                 0x00000000      0x19e obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_DisableGlobalInt.8793d9
+ .gnu.lto_USB_OTG_DisableGlobalInt.bac52f
                 0x00000000      0x1a6 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_FlushTxFifo.8793d9
+ .gnu.lto_USB_OTG_FlushTxFifo.bac52f
                 0x00000000      0x2a9 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_FlushRxFifo.8793d9
+ .gnu.lto_USB_OTG_FlushRxFifo.bac52f
                 0x00000000      0x279 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_SetCurrentMode.8793d9
+ .gnu.lto_USB_OTG_SetCurrentMode.bac52f
                 0x00000000      0x235 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_GetMode.8793d9
+ .gnu.lto_USB_OTG_GetMode.bac52f
                 0x00000000       0xe9 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_IsDeviceMode.8793d9
+ .gnu.lto_USB_OTG_IsDeviceMode.bac52f
                 0x00000000      0x160 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_IsHostMode.8793d9
+ .gnu.lto_USB_OTG_IsHostMode.bac52f
                 0x00000000      0x160 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ReadCoreItr.8793d9
+ .gnu.lto_USB_OTG_ReadCoreItr.bac52f
                 0x00000000      0x14a obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ReadOtgItr.8793d9
+ .gnu.lto_USB_OTG_ReadOtgItr.bac52f
                 0x00000000       0xde obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_InitDevSpeed.8793d9
+ .gnu.lto_USB_OTG_InitDevSpeed.bac52f
                 0x00000000      0x177 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EnableDevInt.8793d9
+ .gnu.lto_USB_OTG_EnableDevInt.bac52f
                 0x00000000      0x2bb obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_CoreInitDev.8793d9
+ .gnu.lto_USB_OTG_CoreInitDev.bac52f
                 0x00000000      0x814 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_GetDeviceSpeed.8793d9
+ .gnu.lto_USB_OTG_GetDeviceSpeed.bac52f
                 0x00000000      0x21f obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EP0Activate.8793d9
+ .gnu.lto_USB_OTG_EP0Activate.bac52f
                 0x00000000      0x302 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EPActivate.8793d9
+ .gnu.lto_USB_OTG_EPActivate.bac52f
                 0x00000000      0x465 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EPDeactivate.8793d9
+ .gnu.lto_USB_OTG_EPDeactivate.bac52f
                 0x00000000      0x38a obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EPStartXfer.8793d9
+ .gnu.lto_USB_OTG_EPStartXfer.bac52f
                 0x00000000      0x87e obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EP0StartXfer.8793d9
+ .gnu.lto_USB_OTG_EP0StartXfer.bac52f
                 0x00000000      0x692 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EPSetStall.8793d9
+ .gnu.lto_USB_OTG_EPSetStall.bac52f
                 0x00000000      0x279 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EPClearStall.8793d9
+ .gnu.lto_USB_OTG_EPClearStall.bac52f
                 0x00000000      0x316 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ReadDevAllOutEp_itr.8793d9
+ .gnu.lto_USB_OTG_ReadDevAllOutEp_itr.bac52f
                 0x00000000      0x14d obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ReadDevOutEP_itr.8793d9
+ .gnu.lto_USB_OTG_ReadDevOutEP_itr.bac52f
                 0x00000000      0x171 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ReadDevAllInEPItr.8793d9
+ .gnu.lto_USB_OTG_ReadDevAllInEPItr.bac52f
                 0x00000000      0x14d obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_EP0_OutStart.8793d9
+ .gnu.lto_USB_OTG_EP0_OutStart.bac52f
                 0x00000000      0x257 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_ActiveRemoteWakeup.8793d9
+ .gnu.lto_USB_OTG_ActiveRemoteWakeup.bac52f
                 0x00000000      0x15e obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_UngateClock.8793d9
+ .gnu.lto_USB_OTG_UngateClock.bac52f
                 0x00000000      0x10b obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_StopDevice.8793d9
+ .gnu.lto_USB_OTG_StopDevice.bac52f
                 0x00000000      0x25b obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_GetEPStatus.8793d9
+ .gnu.lto_USB_OTG_GetEPStatus.bac52f
                 0x00000000      0x2c4 obj/VRBRAIN/usb_core.o
- .gnu.lto_USB_OTG_SetEPStatus.8793d9
+ .gnu.lto_USB_OTG_SetEPStatus.bac52f
                 0x00000000      0x4bf obj/VRBRAIN/usb_core.o
- .gnu.lto_.symbol_nodes.8793d9
+ .gnu.lto_.symbol_nodes.bac52f
                 0x00000000      0x185 obj/VRBRAIN/usb_core.o
- .gnu.lto_.refs.8793d9
+ .gnu.lto_.refs.bac52f
                 0x00000000        0xf obj/VRBRAIN/usb_core.o
- .gnu.lto_.decls.8793d9
+ .gnu.lto_.decls.bac52f
                 0x00000000     0x3966 obj/VRBRAIN/usb_core.o
- .gnu.lto_.symtab.8793d9
+ .gnu.lto_.symtab.bac52f
                 0x00000000      0x50c obj/VRBRAIN/usb_core.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/usb_core.o
@@ -6125,45 +6125,45 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/usb_dcd.o
  .data          0x00000000        0x0 obj/VRBRAIN/usb_dcd.o
  .bss           0x00000000        0x0 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_.jmpfuncs.87a11c
+ .gnu.lto_.jmpfuncs.ba5722
                 0x00000000       0x63 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_.inline.87a11c
+ .gnu.lto_.inline.ba5722
                 0x00000000      0x113 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_.pureconst.87a11c
+ .gnu.lto_.pureconst.ba5722
                 0x00000000       0x2a obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_Init.87a11c
+ .gnu.lto_DCD_Init.ba5722
                 0x00000000      0x393 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_Open.87a11c
+ .gnu.lto_DCD_EP_Open.ba5722
                 0x00000000      0x2e9 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_Close.87a11c
+ .gnu.lto_DCD_EP_Close.ba5722
                 0x00000000      0x244 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_PrepareRx.87a11c
+ .gnu.lto_DCD_EP_PrepareRx.ba5722
                 0x00000000      0x27c obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_Tx.87a11c
+ .gnu.lto_DCD_EP_Tx.ba5722
                 0x00000000      0x225 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_Stall.87a11c
+ .gnu.lto_DCD_EP_Stall.ba5722
                 0x00000000      0x24f obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_ClrStall.87a11c
+ .gnu.lto_DCD_EP_ClrStall.ba5722
                 0x00000000      0x24e obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_Flush.87a11c
+ .gnu.lto_DCD_EP_Flush.ba5722
                 0x00000000      0x158 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_EP_SetAddress.87a11c
+ .gnu.lto_DCD_EP_SetAddress.ba5722
                 0x00000000      0x17b obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_DevConnect.87a11c
+ .gnu.lto_DCD_DevConnect.ba5722
                 0x00000000      0x17b obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_DevDisconnect.87a11c
+ .gnu.lto_DCD_DevDisconnect.ba5722
                 0x00000000      0x17d obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_GetEPStatus.87a11c
+ .gnu.lto_DCD_GetEPStatus.ba5722
                 0x00000000      0x21e obj/VRBRAIN/usb_dcd.o
- .gnu.lto_DCD_SetEPStatus.87a11c
+ .gnu.lto_DCD_SetEPStatus.ba5722
                 0x00000000      0x1f8 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_.symbol_nodes.87a11c
+ .gnu.lto_.symbol_nodes.ba5722
                 0x00000000      0x10e obj/VRBRAIN/usb_dcd.o
- .gnu.lto_.refs.87a11c
+ .gnu.lto_.refs.ba5722
                 0x00000000        0xf obj/VRBRAIN/usb_dcd.o
- .gnu.lto_.decls.87a11c
+ .gnu.lto_.decls.ba5722
                 0x00000000     0x1df2 obj/VRBRAIN/usb_dcd.o
- .gnu.lto_.symtab.87a11c
+ .gnu.lto_.symtab.ba5722
                 0x00000000      0x3d8 obj/VRBRAIN/usb_dcd.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/usb_dcd.o
@@ -6215,45 +6215,45 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/usb_dcd_int.o
  .data          0x00000000        0x0 obj/VRBRAIN/usb_dcd_int.o
  .bss           0x00000000        0x0 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_.jmpfuncs.869e04
+ .gnu.lto_.jmpfuncs.bbc21a
                 0x00000000       0x69 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_.inline.869e04
+ .gnu.lto_.inline.bbc21a
                 0x00000000      0x170 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_.pureconst.869e04
+ .gnu.lto_.pureconst.bbc21a
                 0x00000000       0x29 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleResume_ISR.869e04
+ .gnu.lto_DCD_HandleResume_ISR.bbc21a
                 0x00000000      0x332 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleUSBSuspend_ISR.869e04
+ .gnu.lto_DCD_HandleUSBSuspend_ISR.bbc21a
                 0x00000000      0x37a obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleSof_ISR.869e04
+ .gnu.lto_DCD_HandleSof_ISR.bbc21a
                 0x00000000      0x1d2 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_IsoINIncomplete_ISR.869e04
+ .gnu.lto_DCD_IsoINIncomplete_ISR.bbc21a
                 0x00000000      0x1dc obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_IsoOUTIncomplete_ISR.869e04
+ .gnu.lto_DCD_IsoOUTIncomplete_ISR.bbc21a
                 0x00000000      0x1d0 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_ReadDevInEP.869e04
+ .gnu.lto_DCD_ReadDevInEP.bbc21a
                 0x00000000      0x1fd obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleOutEP_ISR.869e04
+ .gnu.lto_DCD_HandleOutEP_ISR.bbc21a
                 0x00000000      0x5d0 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_WriteEmptyTxFifo.869e04
+ .gnu.lto_DCD_WriteEmptyTxFifo.bbc21a
                 0x00000000      0x489 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleInEP_ISR.869e04
+ .gnu.lto_DCD_HandleInEP_ISR.bbc21a
                 0x00000000      0x676 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleRxStatusQueueLevel_ISR.869e04
+ .gnu.lto_DCD_HandleRxStatusQueueLevel_ISR.bbc21a
                 0x00000000      0x42a obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleUsbReset_ISR.869e04
+ .gnu.lto_DCD_HandleUsbReset_ISR.bbc21a
                 0x00000000      0x549 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_DCD_HandleEnumDone_ISR.869e04
+ .gnu.lto_DCD_HandleEnumDone_ISR.bbc21a
                 0x00000000      0x291 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_USBD_OTG_ISR_Handler.869e04
+ .gnu.lto_USBD_OTG_ISR_Handler.bbc21a
                 0x00000000      0x5b6 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_.symbol_nodes.869e04
+ .gnu.lto_.symbol_nodes.bbc21a
                 0x00000000      0x15e obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_.refs.869e04
+ .gnu.lto_.refs.bbc21a
                 0x00000000       0x28 obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_.decls.869e04
+ .gnu.lto_.decls.bbc21a
                 0x00000000     0x2e6a obj/VRBRAIN/usb_dcd_int.o
- .gnu.lto_.symtab.869e04
+ .gnu.lto_.symtab.bbc21a
                 0x00000000      0x1dd obj/VRBRAIN/usb_dcd_int.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/usb_dcd_int.o
@@ -6299,39 +6299,39 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/usbd_cdc_core.o
  .data          0x00000000        0x0 obj/VRBRAIN/usbd_cdc_core.o
  .bss           0x00000000        0x0 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_.jmpfuncs.86fb1e
+ .gnu.lto_.jmpfuncs.ba530d
                 0x00000000       0xc2 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_.inline.86fb1e
+ .gnu.lto_.inline.ba530d
                 0x00000000      0x187 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_.pureconst.86fb1e
+ .gnu.lto_.pureconst.ba530d
                 0x00000000       0x24 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_EP0_RxReady.86fb1e
+ .gnu.lto_usbd_cdc_EP0_RxReady.ba530d
                 0x00000000      0x192 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_USBD_cdc_GetCfgDesc.86fb1e
+ .gnu.lto_USBD_cdc_GetCfgDesc.ba530d
                 0x00000000       0xc0 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_Handle_USBAsynchXfer.86fb1e
+ .gnu.lto_Handle_USBAsynchXfer.ba530d
                 0x00000000      0x496 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_SOF.86fb1e
+ .gnu.lto_usbd_cdc_SOF.ba530d
                 0x00000000      0x182 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_DataOut.86fb1e
+ .gnu.lto_usbd_cdc_DataOut.ba530d
                 0x00000000      0x1df obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_Setup.86fb1e
+ .gnu.lto_usbd_cdc_Setup.ba530d
                 0x00000000      0x568 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_DeInit.86fb1e
+ .gnu.lto_usbd_cdc_DeInit.ba530d
                 0x00000000      0x106 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_Init.86fb1e
+ .gnu.lto_usbd_cdc_Init.ba530d
                 0x00000000      0x1fc obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_DataIn.part.0.86fb1e
+ .gnu.lto_usbd_cdc_DataIn.part.0.ba530d
                 0x00000000      0x3cb obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_usbd_cdc_DataIn.86fb1e
+ .gnu.lto_usbd_cdc_DataIn.ba530d
                 0x00000000      0x184 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_.symbol_nodes.86fb1e
+ .gnu.lto_.symbol_nodes.ba530d
                 0x00000000      0x14a obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_.refs.86fb1e
+ .gnu.lto_.refs.ba530d
                 0x00000000       0x68 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_.decls.86fb1e
+ .gnu.lto_.decls.ba530d
                 0x00000000     0x1e12 obj/VRBRAIN/usbd_cdc_core.o
- .gnu.lto_.symtab.86fb1e
+ .gnu.lto_.symtab.ba530d
                 0x00000000      0x22a obj/VRBRAIN/usbd_cdc_core.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/usbd_cdc_core.o
@@ -6360,23 +6360,23 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
  .data          0x00000000        0x0 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
  .bss           0x00000000        0x0 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_.jmpfuncs.863332
+ .gnu.lto_.jmpfuncs.ba373e
                 0x00000000       0x15 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_.inline.863332
+ .gnu.lto_.inline.ba373e
                 0x00000000       0xde obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_.pureconst.863332
+ .gnu.lto_.pureconst.ba373e
                 0x00000000       0x97 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_Default_Handler.863332
+ .gnu.lto_Default_Handler.ba373e
                 0x00000000       0x94 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_Default_Reset_Handler.863332
+ .gnu.lto_Default_Reset_Handler.ba373e
                 0x00000000      0x26f obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_.symbol_nodes.863332
+ .gnu.lto_.symbol_nodes.ba373e
                 0x00000000      0x1cc obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_.refs.863332
+ .gnu.lto_.refs.ba373e
                 0x00000000      0x146 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_.decls.863332
+ .gnu.lto_.decls.ba373e
                 0x00000000      0xcf0 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
- .gnu.lto_.symtab.863332
+ .gnu.lto_.symtab.ba373e
                 0x00000000      0xd36 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/lib/cmsis_boot/startup/startup_stm32f4xx.o
@@ -6457,35 +6457,35 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/spi1.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/spi1.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_.jmpfuncs.87aa94
+ .gnu.lto_.jmpfuncs.ba0102
                 0x00000000       0xca obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_.inline.87aa94
+ .gnu.lto_.inline.ba0102
                 0x00000000       0xf3 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_.pureconst.87aa94
+ .gnu.lto_.pureconst.ba0102
                 0x00000000       0x20 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_spiTransferByte.part.0.87aa94
+ .gnu.lto_spiTransferByte.part.0.ba0102
                 0x00000000      0x170 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_spiInit.87aa94
+ .gnu.lto_spiInit.ba0102
                 0x00000000      0x2db obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_setSPIdivisor.87aa94
+ .gnu.lto_setSPIdivisor.ba0102
                 0x00000000      0x338 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_spiTimeoutUserCallback.87aa94
+ .gnu.lto_spiTimeoutUserCallback.ba0102
                 0x00000000      0x129 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_spiTransferByte.87aa94
+ .gnu.lto_spiTransferByte.ba0102
                 0x00000000      0x29f obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_spiTransfer.87aa94
+ .gnu.lto_spiTransfer.ba0102
                 0x00000000      0x450 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_spiGetErrorCounter.87aa94
+ .gnu.lto_spiGetErrorCounter.ba0102
                 0x00000000       0xaf obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_spiResetErrorCounter.87aa94
+ .gnu.lto_spiResetErrorCounter.ba0102
                 0x00000000       0xb0 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_.symbol_nodes.87aa94
+ .gnu.lto_.symbol_nodes.ba0102
                 0x00000000      0x12f obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_.refs.87aa94
+ .gnu.lto_.refs.ba0102
                 0x00000000       0x1d obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_.decls.87aa94
+ .gnu.lto_.decls.ba0102
                 0x00000000     0x1ee6 obj/VRBRAIN/drivers/spi1.o
- .gnu.lto_.symtab.87aa94
+ .gnu.lto_.symtab.ba0102
                 0x00000000      0x26b obj/VRBRAIN/drivers/spi1.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/spi1.o
@@ -6640,35 +6640,35 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/spi2.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/spi2.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_.jmpfuncs.87b7eb
+ .gnu.lto_.jmpfuncs.bb20b4
                 0x00000000       0xe7 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_.inline.87b7eb
+ .gnu.lto_.inline.bb20b4
                 0x00000000       0xf4 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_.pureconst.87b7eb
+ .gnu.lto_.pureconst.bb20b4
                 0x00000000       0x20 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_spiTransferByte2.part.0.87b7eb
+ .gnu.lto_spiTransferByte2.part.0.bb20b4
                 0x00000000      0x170 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_spiInit2.87b7eb
+ .gnu.lto_spiInit2.bb20b4
                 0x00000000      0x405 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_setSPIdivisor2.87b7eb
+ .gnu.lto_setSPIdivisor2.bb20b4
                 0x00000000      0x33b obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_spiTimeoutUserCallback2.87b7eb
+ .gnu.lto_spiTimeoutUserCallback2.bb20b4
                 0x00000000      0x12f obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_spiTransferByte2.87b7eb
+ .gnu.lto_spiTransferByte2.bb20b4
                 0x00000000      0x29b obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_spiTransfer2.87b7eb
+ .gnu.lto_spiTransfer2.bb20b4
                 0x00000000      0x452 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_spiGetErrorCounter2.87b7eb
+ .gnu.lto_spiGetErrorCounter2.bb20b4
                 0x00000000       0xaf obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_spiResetErrorCounter2.87b7eb
+ .gnu.lto_spiResetErrorCounter2.bb20b4
                 0x00000000       0xb0 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_.symbol_nodes.87b7eb
+ .gnu.lto_.symbol_nodes.bb20b4
                 0x00000000      0x14a obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_.refs.87b7eb
+ .gnu.lto_.refs.bb20b4
                 0x00000000       0x1d obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_.decls.87b7eb
+ .gnu.lto_.decls.bb20b4
                 0x00000000     0x1ec0 obj/VRBRAIN/drivers/spi2.o
- .gnu.lto_.symtab.87b7eb
+ .gnu.lto_.symtab.bb20b4
                 0x00000000      0x275 obj/VRBRAIN/drivers/spi2.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/spi2.o
@@ -6825,25 +6825,25 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/crc.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/crc.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/crc.o
- .gnu.lto_.jmpfuncs.863db6
+ .gnu.lto_.jmpfuncs.bb292f
                 0x00000000       0x31 obj/VRBRAIN/drivers/crc.o
- .gnu.lto_.inline.863db6
+ .gnu.lto_.inline.bb292f
                 0x00000000       0x4f obj/VRBRAIN/drivers/crc.o
- .gnu.lto_.pureconst.863db6
+ .gnu.lto_.pureconst.bb292f
                 0x00000000       0x16 obj/VRBRAIN/drivers/crc.o
- .gnu.lto_crc32Reset.863db6
+ .gnu.lto_crc32Reset.bb292f
                 0x00000000      0x124 obj/VRBRAIN/drivers/crc.o
- .gnu.lto_crc32Feed.863db6
+ .gnu.lto_crc32Feed.bb292f
                 0x00000000      0x279 obj/VRBRAIN/drivers/crc.o
- .gnu.lto_crc32B.863db6
+ .gnu.lto_crc32B.bb292f
                 0x00000000      0x1ef obj/VRBRAIN/drivers/crc.o
- .gnu.lto_.symbol_nodes.863db6
+ .gnu.lto_.symbol_nodes.bb292f
                 0x00000000       0x50 obj/VRBRAIN/drivers/crc.o
- .gnu.lto_.refs.863db6
+ .gnu.lto_.refs.bb292f
                 0x00000000        0xf obj/VRBRAIN/drivers/crc.o
- .gnu.lto_.decls.863db6
+ .gnu.lto_.decls.bb292f
                 0x00000000     0x1726 obj/VRBRAIN/drivers/crc.o
- .gnu.lto_.symtab.863db6
+ .gnu.lto_.symtab.bb292f
                 0x00000000       0x70 obj/VRBRAIN/drivers/crc.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/crc.o
@@ -7013,55 +7013,55 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/pwm.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/pwm.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_.jmpfuncs.862de0
+ .gnu.lto_.jmpfuncs.bae68a
                 0x00000000      0x113 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_.inline.862de0
+ .gnu.lto_.inline.bae68a
                 0x00000000      0x177 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_.pureconst.862de0
+ .gnu.lto_.pureconst.bae68a
                 0x00000000       0x34 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmWriteBrushed.862de0
+ .gnu.lto_pwmWriteBrushed.bae68a
                 0x00000000      0x16a obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmWriteStandard.862de0
+ .gnu.lto_pwmWriteStandard.bae68a
                 0x00000000      0x116 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmOCConfig.862de0
+ .gnu.lto_pwmOCConfig.bae68a
                 0x00000000      0x256 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_failsafeCheck.part.0.862de0
+ .gnu.lto_failsafeCheck.part.0.bae68a
                 0x00000000      0x26f obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_failsafeCheck.862de0
+ .gnu.lto_failsafeCheck.bae68a
                 0x00000000      0x253 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_ppmCallback.part.1.862de0
+ .gnu.lto_ppmCallback.part.1.bae68a
                 0x00000000      0x1e8 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_ppmCallback.862de0
+ .gnu.lto_ppmCallback.bae68a
                 0x00000000      0x288 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmGPIOConfig.isra.2.862de0
+ .gnu.lto_pwmGPIOConfig.isra.2.bae68a
                 0x00000000      0x199 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmOUTGPIOConfig.isra.3.862de0
+ .gnu.lto_pwmOUTGPIOConfig.isra.3.bae68a
                 0x00000000      0x198 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmOutConfig.862de0
+ .gnu.lto_pwmOutConfig.bae68a
                 0x00000000      0x344 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmWriteMotor.part.4.862de0
+ .gnu.lto_pwmWriteMotor.part.4.bae68a
                 0x00000000      0x13d obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmWriteMotor.862de0
+ .gnu.lto_pwmWriteMotor.bae68a
                 0x00000000      0x131 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmWriteServo.862de0
+ .gnu.lto_pwmWriteServo.bae68a
                 0x00000000      0x192 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmRead.862de0
+ .gnu.lto_pwmRead.bae68a
                 0x00000000       0xd2 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmICConfig.862de0
+ .gnu.lto_pwmICConfig.bae68a
                 0x00000000      0x182 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmCallback.862de0
+ .gnu.lto_pwmCallback.bae68a
                 0x00000000      0x288 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmInConfig.862de0
+ .gnu.lto_pwmInConfig.bae68a
                 0x00000000      0x249 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_pwmInit.862de0
+ .gnu.lto_pwmInit.bae68a
                 0x00000000      0xa48 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_.symbol_nodes.862de0
+ .gnu.lto_.symbol_nodes.bae68a
                 0x00000000      0x22e obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_.refs.862de0
+ .gnu.lto_.refs.bae68a
                 0x00000000       0x77 obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_.decls.862de0
+ .gnu.lto_.decls.bae68a
                 0x00000000     0x30ab obj/VRBRAIN/drivers/pwm.o
- .gnu.lto_.symtab.862de0
+ .gnu.lto_.symtab.bae68a
                 0x00000000      0x33b obj/VRBRAIN/drivers/pwm.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/pwm.o
@@ -7215,35 +7215,35 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/serial.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/serial.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_.jmpfuncs.86b30d
+ .gnu.lto_.jmpfuncs.bbcb7a
                 0x00000000       0x3b obj/VRBRAIN/drivers/serial.o
- .gnu.lto_.inline.86b30d
+ .gnu.lto_.inline.bbcb7a
                 0x00000000       0x70 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_.pureconst.86b30d
+ .gnu.lto_.pureconst.bbcb7a
                 0x00000000       0x20 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_serialGetBaudRate.86b30d
+ .gnu.lto_serialGetBaudRate.bbcb7a
                 0x00000000       0xb4 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_serialWrite.86b30d
+ .gnu.lto_serialWrite.bbcb7a
                 0x00000000       0xe8 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_serialPrint.86b30d
+ .gnu.lto_serialPrint.bbcb7a
                 0x00000000      0x15d obj/VRBRAIN/drivers/serial.o
- .gnu.lto_serialTotalBytesWaiting.86b30d
+ .gnu.lto_serialTotalBytesWaiting.bbcb7a
                 0x00000000       0xe2 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_serialRead.86b30d
+ .gnu.lto_serialRead.bbcb7a
                 0x00000000       0xe3 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_serialSetBaudRate.86b30d
+ .gnu.lto_serialSetBaudRate.bbcb7a
                 0x00000000       0xe6 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_isSerialTransmitBufferEmpty.86b30d
+ .gnu.lto_isSerialTransmitBufferEmpty.bbcb7a
                 0x00000000       0xe4 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_serialSetMode.86b30d
+ .gnu.lto_serialSetMode.bbcb7a
                 0x00000000       0xeb obj/VRBRAIN/drivers/serial.o
- .gnu.lto_.symbol_nodes.86b30d
+ .gnu.lto_.symbol_nodes.bbcb7a
                 0x00000000       0x66 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_.refs.86b30d
+ .gnu.lto_.refs.bbcb7a
                 0x00000000        0xf obj/VRBRAIN/drivers/serial.o
- .gnu.lto_.decls.86b30d
+ .gnu.lto_.decls.bbcb7a
                 0x00000000     0x1939 obj/VRBRAIN/drivers/serial.o
- .gnu.lto_.symtab.86b30d
+ .gnu.lto_.symtab.bbcb7a
                 0x00000000      0x11c obj/VRBRAIN/drivers/serial.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/serial.o
@@ -7400,99 +7400,99 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/softserial.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/softserial.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_.jmpfuncs.86d928
+ .gnu.lto_.jmpfuncs.ba3c72
                 0x00000000      0x14c obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_.inline.86d928
+ .gnu.lto_.inline.ba3c72
                 0x00000000      0x38b obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_.pureconst.86d928
+ .gnu.lto_.pureconst.ba3c72
                 0x00000000       0x59 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_moveHeadToNextByte.86d928
+ .gnu.lto_moveHeadToNextByte.ba3c72
                 0x00000000      0x153 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialGPIOConfig.86d928
+ .gnu.lto_softSerialGPIOConfig.ba3c72
                 0x00000000      0x138 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_setTxSignal.part.0.86d928
+ .gnu.lto_setTxSignal.part.0.ba3c72
                 0x00000000      0x152 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_applyChangedBits.part.1.86d928
+ .gnu.lto_applyChangedBits.part.1.ba3c72
                 0x00000000      0x205 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialTotalBytesWaiting.part.5.86d928
+ .gnu.lto_softSerialTotalBytesWaiting.part.5.ba3c72
                 0x00000000      0x238 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialReadByte.part.6.86d928
+ .gnu.lto_softSerialReadByte.part.6.ba3c72
                 0x00000000      0x15f obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialWriteByte.part.7.86d928
+ .gnu.lto_softSerialWriteByte.part.7.ba3c72
                 0x00000000      0x14f obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_setTxSignal.86d928
+ .gnu.lto_setTxSignal.ba3c72
                 0x00000000      0x1cd obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_processTxState.part.8.86d928
+ .gnu.lto_processTxState.part.8.ba3c72
                 0x00000000      0x1cd obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_lookupSoftSerial.86d928
+ .gnu.lto_lookupSoftSerial.ba3c72
                 0x00000000       0xc4 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_resetSerialTimer.86d928
+ .gnu.lto_resetSerialTimer.ba3c72
                 0x00000000       0xf7 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_stopSerialTimer.86d928
+ .gnu.lto_stopSerialTimer.ba3c72
                 0x00000000       0xf8 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_startSerialTimer.86d928
+ .gnu.lto_startSerialTimer.ba3c72
                 0x00000000       0xfa obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_serialInputPortConfig.86d928
+ .gnu.lto_serialInputPortConfig.ba3c72
                 0x00000000      0x104 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_isTimerPeriodTooLarge.86d928
+ .gnu.lto_isTimerPeriodTooLarge.ba3c72
                 0x00000000       0xaa obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_serialTimerTxConfig.86d928
+ .gnu.lto_serialTimerTxConfig.ba3c72
                 0x00000000      0x294 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_onSerialTimer.86d928
+ .gnu.lto_onSerialTimer.ba3c72
                 0x00000000      0x128 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_serialICConfig.86d928
+ .gnu.lto_serialICConfig.ba3c72
                 0x00000000      0x189 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_prepareForNextRxByte.part.2.86d928
+ .gnu.lto_prepareForNextRxByte.part.2.ba3c72
                 0x00000000      0x19b obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_serialTimerRxConfig.86d928
+ .gnu.lto_serialTimerRxConfig.ba3c72
                 0x00000000      0x17f obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_onSerialRxPinChange.86d928
+ .gnu.lto_onSerialRxPinChange.ba3c72
                 0x00000000      0x495 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_serialOutputPortConfig.86d928
+ .gnu.lto_serialOutputPortConfig.ba3c72
                 0x00000000      0x102 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_resetBuffers.86d928
+ .gnu.lto_resetBuffers.ba3c72
                 0x00000000      0x142 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_initialiseSoftSerial.86d928
+ .gnu.lto_initialiseSoftSerial.ba3c72
                 0x00000000      0x208 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_setupSoftSerialPrimary.86d928
+ .gnu.lto_setupSoftSerialPrimary.ba3c72
                 0x00000000      0x1b4 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_setupSoftSerialSecondary.86d928
+ .gnu.lto_setupSoftSerialSecondary.ba3c72
                 0x00000000      0x198 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_updateBufferIndex.86d928
+ .gnu.lto_updateBufferIndex.ba3c72
                 0x00000000      0x150 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_extractAndStoreRxByte.part.3.86d928
+ .gnu.lto_extractAndStoreRxByte.part.3.ba3c72
                 0x00000000      0x292 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_processTxState.86d928
+ .gnu.lto_processTxState.ba3c72
                 0x00000000      0x35f obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_applyChangedBits.86d928
+ .gnu.lto_applyChangedBits.ba3c72
                 0x00000000      0x104 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_prepareForNextRxByte.86d928
+ .gnu.lto_prepareForNextRxByte.ba3c72
                 0x00000000      0x125 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_extractAndStoreRxByte.86d928
+ .gnu.lto_extractAndStoreRxByte.ba3c72
                 0x00000000      0x17a obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_processRxState.part.4.86d928
+ .gnu.lto_processRxState.part.4.ba3c72
                 0x00000000      0x14a obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_processRxState.86d928
+ .gnu.lto_processRxState.ba3c72
                 0x00000000      0x17b obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialTotalBytesWaiting.86d928
+ .gnu.lto_softSerialTotalBytesWaiting.ba3c72
                 0x00000000      0x174 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialReadByte.86d928
+ .gnu.lto_softSerialReadByte.ba3c72
                 0x00000000      0x181 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialWriteByte.86d928
+ .gnu.lto_softSerialWriteByte.ba3c72
                 0x00000000      0x123 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialSetBaudRate.86d928
+ .gnu.lto_softSerialSetBaudRate.ba3c72
                 0x00000000       0x87 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_softSerialSetMode.86d928
+ .gnu.lto_softSerialSetMode.ba3c72
                 0x00000000       0xbc obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_isSoftSerialTransmitBufferEmpty.86d928
+ .gnu.lto_isSoftSerialTransmitBufferEmpty.ba3c72
                 0x00000000       0xd9 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_.symbol_nodes.86d928
+ .gnu.lto_.symbol_nodes.ba3c72
                 0x00000000      0x215 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_.refs.86d928
+ .gnu.lto_.refs.ba3c72
                 0x00000000       0x3d obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_.decls.86d928
+ .gnu.lto_.decls.ba3c72
                 0x00000000     0x31a8 obj/VRBRAIN/drivers/softserial.o
- .gnu.lto_.symtab.86d928
+ .gnu.lto_.symtab.ba3c72
                 0x00000000      0x593 obj/VRBRAIN/drivers/softserial.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/softserial.o
@@ -7719,51 +7719,51 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/timer.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/timer.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_.jmpfuncs.86640c
+ .gnu.lto_.jmpfuncs.ba8eef
                 0x00000000       0xbd obj/VRBRAIN/drivers/timer.o
- .gnu.lto_.inline.86640c
+ .gnu.lto_.inline.ba8eef
                 0x00000000      0x15a obj/VRBRAIN/drivers/timer.o
- .gnu.lto_.pureconst.86640c
+ .gnu.lto_.pureconst.ba8eef
                 0x00000000       0x30 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_lookupTimerIndex.86640c
+ .gnu.lto_lookupTimerIndex.ba8eef
                 0x00000000      0x16f obj/VRBRAIN/drivers/timer.o
- .gnu.lto_lookupChannelIndex.86640c
+ .gnu.lto_lookupChannelIndex.ba8eef
                 0x00000000      0x178 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_lookupTimerConfigIndex.86640c
+ .gnu.lto_lookupTimerConfigIndex.ba8eef
                 0x00000000       0xe7 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_timCCxHandler.86640c
+ .gnu.lto_timCCxHandler.ba8eef
                 0x00000000      0x64b obj/VRBRAIN/drivers/timer.o
- .gnu.lto_configureTimerInputCaptureCompareChannel.part.0.86640c
+ .gnu.lto_configureTimerInputCaptureCompareChannel.part.0.ba8eef
                 0x00000000      0x112 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_configureTimerChannelCallback.86640c
+ .gnu.lto_configureTimerChannelCallback.ba8eef
                 0x00000000      0x1a2 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_configureTimerInputCaptureCompareChannel.86640c
+ .gnu.lto_configureTimerInputCaptureCompareChannel.ba8eef
                 0x00000000      0x169 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_configureTimerCaptureCompareInterrupt.86640c
+ .gnu.lto_configureTimerCaptureCompareInterrupt.ba8eef
                 0x00000000      0x12e obj/VRBRAIN/drivers/timer.o
- .gnu.lto_timerNVICConfigure.86640c
+ .gnu.lto_timerNVICConfigure.ba8eef
                 0x00000000      0x14e obj/VRBRAIN/drivers/timer.o
- .gnu.lto_configTimeBase.86640c
+ .gnu.lto_configTimeBase.ba8eef
                 0x00000000      0x2e9 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_timerConfigure.86640c
+ .gnu.lto_timerConfigure.ba8eef
                 0x00000000      0x12e obj/VRBRAIN/drivers/timer.o
- .gnu.lto_findTimerConfig.86640c
+ .gnu.lto_findTimerConfig.ba8eef
                 0x00000000      0x12e obj/VRBRAIN/drivers/timer.o
- .gnu.lto_TIM1_CC_IRQHandler.86640c
+ .gnu.lto_TIM1_CC_IRQHandler.ba8eef
                 0x00000000       0xae obj/VRBRAIN/drivers/timer.o
- .gnu.lto_TIM2_IRQHandler.86640c
+ .gnu.lto_TIM2_IRQHandler.ba8eef
                 0x00000000       0xad obj/VRBRAIN/drivers/timer.o
- .gnu.lto_TIM3_IRQHandler.86640c
+ .gnu.lto_TIM3_IRQHandler.ba8eef
                 0x00000000       0xad obj/VRBRAIN/drivers/timer.o
- .gnu.lto_TIM8_CC_IRQHandler.86640c
+ .gnu.lto_TIM8_CC_IRQHandler.ba8eef
                 0x00000000       0xae obj/VRBRAIN/drivers/timer.o
- .gnu.lto_.symbol_nodes.86640c
+ .gnu.lto_.symbol_nodes.ba8eef
                 0x00000000      0x17d obj/VRBRAIN/drivers/timer.o
- .gnu.lto_.refs.86640c
+ .gnu.lto_.refs.ba8eef
                 0x00000000       0x2c obj/VRBRAIN/drivers/timer.o
- .gnu.lto_.decls.86640c
+ .gnu.lto_.decls.ba8eef
                 0x00000000     0x25b2 obj/VRBRAIN/drivers/timer.o
- .gnu.lto_.symtab.86640c
+ .gnu.lto_.symtab.ba8eef
                 0x00000000      0x342 obj/VRBRAIN/drivers/timer.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/timer.o
@@ -7918,25 +7918,25 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/sensors/i2c_hmc5883l.o
  .data          0x00000000        0x0 obj/VRBRAIN/sensors/i2c_hmc5883l.o
  .bss           0x00000000        0x0 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_.jmpfuncs.87ea7c
+ .gnu.lto_.jmpfuncs.bad449
                 0x00000000       0x8d obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_.inline.87ea7c
+ .gnu.lto_.inline.bad449
                 0x00000000       0x8c obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_.pureconst.87ea7c
+ .gnu.lto_.pureconst.bad449
                 0x00000000       0x16 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_hmc5883lRead.87ea7c
+ .gnu.lto_hmc5883lRead.bad449
                 0x00000000      0x311 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_hmc5883lInit.87ea7c
+ .gnu.lto_hmc5883lInit.bad449
                 0x00000000      0x770 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_hmc5883lDetect.87ea7c
+ .gnu.lto_hmc5883lDetect.bad449
                 0x00000000      0x208 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_.symbol_nodes.87ea7c
+ .gnu.lto_.symbol_nodes.bad449
                 0x00000000       0xb5 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_.refs.87ea7c
+ .gnu.lto_.refs.bad449
                 0x00000000       0x23 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_.decls.87ea7c
+ .gnu.lto_.decls.bad449
                 0x00000000     0x1b59 obj/VRBRAIN/sensors/i2c_hmc5883l.o
- .gnu.lto_.symtab.87ea7c
+ .gnu.lto_.symtab.bad449
                 0x00000000       0xe9 obj/VRBRAIN/sensors/i2c_hmc5883l.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/sensors/i2c_hmc5883l.o
@@ -8090,29 +8090,29 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/sensors/spi_mpu6000.o
  .data          0x00000000        0x0 obj/VRBRAIN/sensors/spi_mpu6000.o
  .bss           0x00000000        0x0 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_.jmpfuncs.87fe2e
+ .gnu.lto_.jmpfuncs.ba9305
                 0x00000000       0x90 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_.inline.87fe2e
+ .gnu.lto_.inline.ba9305
                 0x00000000       0xc1 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_.pureconst.87fe2e
+ .gnu.lto_.pureconst.ba9305
                 0x00000000       0x1a obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_mpu6000GyroInit.87fe2e
+ .gnu.lto_mpu6000GyroInit.ba9305
                 0x00000000       0xea obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_mpu6000AccInit.87fe2e
+ .gnu.lto_mpu6000AccInit.ba9305
                 0x00000000      0x106 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_mpu6000GyroRead.87fe2e
+ .gnu.lto_mpu6000GyroRead.ba9305
                 0x00000000      0x2f2 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_mpu6000AccRead.87fe2e
+ .gnu.lto_mpu6000AccRead.ba9305
                 0x00000000      0x2d5 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_mpu6000DetectSpi.87fe2e
+ .gnu.lto_mpu6000DetectSpi.ba9305
                 0x00000000      0x3e3 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_.symbol_nodes.87fe2e
+ .gnu.lto_.symbol_nodes.ba9305
                 0x00000000      0x122 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_.refs.87fe2e
+ .gnu.lto_.refs.ba9305
                 0x00000000       0x27 obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_.decls.87fe2e
+ .gnu.lto_.decls.ba9305
                 0x00000000     0x1aab obj/VRBRAIN/sensors/spi_mpu6000.o
- .gnu.lto_.symtab.87fe2e
+ .gnu.lto_.symtab.ba9305
                 0x00000000      0x1b8 obj/VRBRAIN/sensors/spi_mpu6000.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/sensors/spi_mpu6000.o
@@ -8266,33 +8266,33 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/sensors/spi_ms5611.o
  .data          0x00000000        0x0 obj/VRBRAIN/sensors/spi_ms5611.o
  .bss           0x00000000        0x0 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_.jmpfuncs.87e9c8
+ .gnu.lto_.jmpfuncs.bb71b5
                 0x00000000       0x7e obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_.inline.87e9c8
+ .gnu.lto_.inline.bb71b5
                 0x00000000       0xc1 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_.pureconst.87e9c8
+ .gnu.lto_.pureconst.bb71b5
                 0x00000000       0x1e obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_calculatePressureAltitude.87e9c8
+ .gnu.lto_calculatePressureAltitude.bb71b5
                 0x00000000      0x5c1 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_readPressure.87e9c8
+ .gnu.lto_readPressure.bb71b5
                 0x00000000      0x143 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_requestTemperature.87e9c8
+ .gnu.lto_requestTemperature.bb71b5
                 0x00000000       0xd5 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_requestPressure.87e9c8
+ .gnu.lto_requestPressure.bb71b5
                 0x00000000       0xd5 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_calculateTemperature.87e9c8
+ .gnu.lto_calculateTemperature.bb71b5
                 0x00000000      0x1f9 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_readTemperature.87e9c8
+ .gnu.lto_readTemperature.bb71b5
                 0x00000000      0x14a obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_ms5611DetectSpi.87e9c8
+ .gnu.lto_ms5611DetectSpi.bb71b5
                 0x00000000      0x3be obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_.symbol_nodes.87e9c8
+ .gnu.lto_.symbol_nodes.bb71b5
                 0x00000000      0x167 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_.refs.87e9c8
+ .gnu.lto_.refs.bb71b5
                 0x00000000       0x46 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_.decls.87e9c8
+ .gnu.lto_.decls.bb71b5
                 0x00000000     0x1ba8 obj/VRBRAIN/sensors/spi_ms5611.o
- .gnu.lto_.symtab.87e9c8
+ .gnu.lto_.symtab.bb71b5
                 0x00000000      0x2b8 obj/VRBRAIN/sensors/spi_ms5611.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/sensors/spi_ms5611.o
@@ -8445,25 +8445,25 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/adc_stm32f4xx.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/adc_stm32f4xx.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_.jmpfuncs.87bb9a
+ .gnu.lto_.jmpfuncs.ba3da1
                 0x00000000       0x16 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_.inline.87bb9a
+ .gnu.lto_.inline.ba3da1
                 0x00000000       0x2c obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_.pureconst.87bb9a
+ .gnu.lto_.pureconst.ba3da1
                 0x00000000       0x16 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_adcInit.87bb9a
+ .gnu.lto_adcInit.ba3da1
                 0x00000000       0x88 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_voltageMonitor.87bb9a
+ .gnu.lto_voltageMonitor.ba3da1
                 0x00000000      0x203 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_adcChannel.87bb9a
+ .gnu.lto_adcChannel.ba3da1
                 0x00000000      0x206 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_.symbol_nodes.87bb9a
+ .gnu.lto_.symbol_nodes.ba3da1
                 0x00000000       0x3a obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_.refs.87bb9a
+ .gnu.lto_.refs.ba3da1
                 0x00000000       0x17 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_.decls.87bb9a
+ .gnu.lto_.decls.ba3da1
                 0x00000000     0x1472 obj/VRBRAIN/drivers/adc_stm32f4xx.o
- .gnu.lto_.symtab.87bb9a
+ .gnu.lto_.symtab.ba3da1
                 0x00000000       0x8d obj/VRBRAIN/drivers/adc_stm32f4xx.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/adc_stm32f4xx.o
@@ -8637,25 +8637,25 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_.jmpfuncs.866c37
+ .gnu.lto_.jmpfuncs.bb250f
                 0x00000000       0x6a obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_.inline.866c37
+ .gnu.lto_.inline.bb250f
                 0x00000000       0x52 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_.pureconst.866c37
+ .gnu.lto_.pureconst.bb250f
                 0x00000000       0x16 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_gpioInit.866c37
+ .gnu.lto_gpioInit.bb250f
                 0x00000000      0x3e1 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_gpioStart.866c37
+ .gnu.lto_gpioStart.bb250f
                 0x00000000      0x2d0 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_gpioExtiLineConfig.866c37
+ .gnu.lto_gpioExtiLineConfig.bb250f
                 0x00000000       0x8c obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_.symbol_nodes.866c37
+ .gnu.lto_.symbol_nodes.bb250f
                 0x00000000       0x79 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_.refs.866c37
+ .gnu.lto_.refs.bb250f
                 0x00000000       0x13 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_.decls.866c37
+ .gnu.lto_.decls.bb250f
                 0x00000000     0x1af4 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
- .gnu.lto_.symtab.866c37
+ .gnu.lto_.symtab.bb250f
                 0x00000000       0xad obj/VRBRAIN/drivers/gpio_stm32f4xx.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/gpio_stm32f4xx.o
@@ -8811,39 +8811,39 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_.jmpfuncs.860b72
+ .gnu.lto_.jmpfuncs.bb239d
                 0x00000000      0x10a obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_.inline.860b72
+ .gnu.lto_.inline.bb239d
                 0x00000000       0xc8 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_.pureconst.860b72
+ .gnu.lto_.pureconst.bb239d
                 0x00000000       0x24 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2c_ev_handler.860b72
+ .gnu.lto_i2c_ev_handler.bb239d
                 0x00000000      0xf0e obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2cInit.860b72
+ .gnu.lto_i2cInit.bb239d
                 0x00000000      0x327 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2cHandleHardwareFailure.860b72
+ .gnu.lto_i2cHandleHardwareFailure.bb239d
                 0x00000000      0x147 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2cWriteBuffer.860b72
+ .gnu.lto_i2cWriteBuffer.bb239d
                 0x00000000      0x485 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2cWrite.860b72
+ .gnu.lto_i2cWrite.bb239d
                 0x00000000       0xd1 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2cRead.860b72
+ .gnu.lto_i2cRead.bb239d
                 0x00000000      0x4a3 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2c_er_handler.860b72
+ .gnu.lto_i2c_er_handler.bb239d
                 0x00000000      0x3e8 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_i2cGetErrorCounter.860b72
+ .gnu.lto_i2cGetErrorCounter.bb239d
                 0x00000000       0xb8 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_I2C2_ER_IRQHandler.860b72
+ .gnu.lto_I2C2_ER_IRQHandler.bb239d
                 0x00000000       0xa8 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_I2C2_EV_IRQHandler.860b72
+ .gnu.lto_I2C2_EV_IRQHandler.bb239d
                 0x00000000       0xa8 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_.symbol_nodes.860b72
+ .gnu.lto_.symbol_nodes.bb239d
                 0x00000000      0x1cd obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_.refs.860b72
+ .gnu.lto_.refs.bb239d
                 0x00000000       0x6b obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_.decls.860b72
+ .gnu.lto_.decls.bb239d
                 0x00000000     0x21fc obj/VRBRAIN/drivers/i2c_stm32f4xx.o
- .gnu.lto_.symtab.860b72
+ .gnu.lto_.symtab.bb239d
                 0x00000000      0x2b5 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/i2c_stm32f4xx.o
@@ -8996,55 +8996,55 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/uart_stm32f4xx.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/uart_stm32f4xx.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_.jmpfuncs.86d63d
+ .gnu.lto_.jmpfuncs.ba1e00
                 0x00000000      0x114 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_.inline.86d63d
+ .gnu.lto_.inline.ba1e00
                 0x00000000      0x1df obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_.pureconst.86d63d
+ .gnu.lto_.pureconst.ba1e00
                 0x00000000       0x34 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartTotalBytesWaiting.86d63d
+ .gnu.lto_uartTotalBytesWaiting.ba1e00
                 0x00000000      0x12e obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_isUartTransmitBufferEmpty.86d63d
+ .gnu.lto_isUartTransmitBufferEmpty.ba1e00
                 0x00000000      0x121 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartRead.86d63d
+ .gnu.lto_uartRead.ba1e00
                 0x00000000      0x1b3 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartWrite.86d63d
+ .gnu.lto_uartWrite.ba1e00
                 0x00000000      0x1d2 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartPause.part.0.86d63d
+ .gnu.lto_uartPause.part.0.ba1e00
                 0x00000000      0x114 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartUnPause.part.1.86d63d
+ .gnu.lto_uartUnPause.part.1.ba1e00
                 0x00000000      0x116 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartPause.86d63d
+ .gnu.lto_uartPause.ba1e00
                 0x00000000      0x107 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartUnPause.86d63d
+ .gnu.lto_uartUnPause.ba1e00
                 0x00000000      0x108 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_serialUSART1.86d63d
+ .gnu.lto_serialUSART1.ba1e00
                 0x00000000      0x38e obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_serialUSART2.86d63d
+ .gnu.lto_serialUSART2.ba1e00
                 0x00000000      0x3a2 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_serialUSART3.86d63d
+ .gnu.lto_serialUSART3.ba1e00
                 0x00000000      0x398 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartOpen.86d63d
+ .gnu.lto_uartOpen.ba1e00
                 0x00000000      0x4ba obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartSetBaudRate.86d63d
+ .gnu.lto_uartSetBaudRate.ba1e00
                 0x00000000      0x181 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_uartSetMode.86d63d
+ .gnu.lto_uartSetMode.ba1e00
                 0x00000000      0x17e obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_usartIrqHandler.86d63d
+ .gnu.lto_usartIrqHandler.ba1e00
                 0x00000000      0x450 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_USART1_IRQHandler.86d63d
+ .gnu.lto_USART1_IRQHandler.ba1e00
                 0x00000000       0xf5 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_USART2_IRQHandler.86d63d
+ .gnu.lto_USART2_IRQHandler.ba1e00
                 0x00000000       0xf5 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_USART3_IRQHandler.86d63d
+ .gnu.lto_USART3_IRQHandler.ba1e00
                 0x00000000       0xf5 obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_.symbol_nodes.86d63d
+ .gnu.lto_.symbol_nodes.ba1e00
                 0x00000000      0x1bd obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_.refs.86d63d
+ .gnu.lto_.refs.ba1e00
                 0x00000000       0x4c obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_.decls.86d63d
+ .gnu.lto_.decls.ba1e00
                 0x00000000     0x285d obj/VRBRAIN/drivers/uart_stm32f4xx.o
- .gnu.lto_.symtab.86d63d
+ .gnu.lto_.symtab.ba1e00
                 0x00000000      0x38d obj/VRBRAIN/drivers/uart_stm32f4xx.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/uart_stm32f4xx.o
@@ -9197,39 +9197,39 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/usb_stm32f4xx.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/usb_stm32f4xx.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_.jmpfuncs.8676fa
+ .gnu.lto_.jmpfuncs.bb011b
                 0x00000000       0x6f obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_.inline.8676fa
+ .gnu.lto_.inline.bb011b
                 0x00000000       0x7e obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_.pureconst.8676fa
+ .gnu.lto_.pureconst.bb011b
                 0x00000000       0x23 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbSetBaudRate.8676fa
+ .gnu.lto_usbSetBaudRate.bb011b
                 0x00000000       0x88 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbSetMode.8676fa
+ .gnu.lto_usbSetMode.bb011b
                 0x00000000       0x88 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_isUsbTransmitBufferEmpty.8676fa
+ .gnu.lto_isUsbTransmitBufferEmpty.bb011b
                 0x00000000       0x93 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbAvailable.8676fa
+ .gnu.lto_usbAvailable.bb011b
                 0x00000000       0xd3 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbRead.8676fa
+ .gnu.lto_usbRead.bb011b
                 0x00000000      0x144 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbPrint.8676fa
+ .gnu.lto_usbPrint.bb011b
                 0x00000000      0x14b obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbPrintf.8676fa
+ .gnu.lto_usbPrintf.bb011b
                 0x00000000       0xb2 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbPrintStr.part.0.8676fa
+ .gnu.lto_usbPrintStr.part.0.bb011b
                 0x00000000      0x123 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbPrintStr.8676fa
+ .gnu.lto_usbPrintStr.bb011b
                 0x00000000      0x13d obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_usbInit.8676fa
+ .gnu.lto_usbInit.bb011b
                 0x00000000      0x184 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_.symbol_nodes.8676fa
+ .gnu.lto_.symbol_nodes.bb011b
                 0x00000000       0xc6 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_.refs.8676fa
+ .gnu.lto_.refs.bb011b
                 0x00000000       0x32 obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_.decls.8676fa
+ .gnu.lto_.decls.bb011b
                 0x00000000     0x1ffc obj/VRBRAIN/drivers/usb_stm32f4xx.o
- .gnu.lto_.symtab.8676fa
+ .gnu.lto_.symtab.bb011b
                 0x00000000      0x212 obj/VRBRAIN/drivers/usb_stm32f4xx.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/usb_stm32f4xx.o
@@ -9328,37 +9328,37 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_.jmpfuncs.8681fb
+ .gnu.lto_.jmpfuncs.ba7beb
                 0x00000000       0x3d obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_.inline.8681fb
+ .gnu.lto_.inline.ba7beb
                 0x00000000       0x4f obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_.pureconst.8681fb
+ .gnu.lto_.pureconst.ba7beb
                 0x00000000       0x22 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_NMI_Handler.8681fb
+ .gnu.lto_NMI_Handler.ba7beb
                 0x00000000       0x8e obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_MemManage_Handler.8681fb
+ .gnu.lto_MemManage_Handler.ba7beb
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_BusFault_Handler.8681fb
+ .gnu.lto_BusFault_Handler.ba7beb
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_UsageFault_Handler.8681fb
+ .gnu.lto_UsageFault_Handler.ba7beb
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_SVC_Handler.8681fb
+ .gnu.lto_SVC_Handler.ba7beb
                 0x00000000       0x90 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_DebugMon_Handler.8681fb
+ .gnu.lto_DebugMon_Handler.ba7beb
                 0x00000000       0x90 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_PendSV_Handler.8681fb
+ .gnu.lto_PendSV_Handler.ba7beb
                 0x00000000       0x90 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_OTG_FS_WKUP_IRQHandler.8681fb
+ .gnu.lto_OTG_FS_WKUP_IRQHandler.ba7beb
                 0x00000000      0x181 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_OTG_FS_IRQHandler.8681fb
+ .gnu.lto_OTG_FS_IRQHandler.ba7beb
                 0x00000000       0xbc obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_.symbol_nodes.8681fb
+ .gnu.lto_.symbol_nodes.ba7beb
                 0x00000000       0x86 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_.refs.8681fb
+ .gnu.lto_.refs.ba7beb
                 0x00000000       0x1a obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_.decls.8681fb
+ .gnu.lto_.decls.ba7beb
                 0x00000000     0x154c obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
- .gnu.lto_.symtab.8681fb
+ .gnu.lto_.symtab.ba7beb
                 0x00000000      0x1c0 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/vcp_stm32f4xx/stm32f4xx_it.o
@@ -9403,31 +9403,31 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_.jmpfuncs.873363
+ .gnu.lto_.jmpfuncs.bb3b58
                 0x00000000       0xa2 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_.inline.873363
+ .gnu.lto_.inline.bb3b58
                 0x00000000       0x74 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_.pureconst.873363
+ .gnu.lto_.pureconst.bb3b58
                 0x00000000       0x1c obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_USB_OTG_BSP_ConfigVBUS.873363
+ .gnu.lto_USB_OTG_BSP_ConfigVBUS.bb3b58
                 0x00000000       0x91 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_USB_OTG_BSP_DriveVBUS.873363
+ .gnu.lto_USB_OTG_BSP_DriveVBUS.bb3b58
                 0x00000000       0x93 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_USB_OTG_BSP_Init.873363
+ .gnu.lto_USB_OTG_BSP_Init.bb3b58
                 0x00000000      0x21f obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_USB_OTG_BSP_EnableInterrupt.873363
+ .gnu.lto_USB_OTG_BSP_EnableInterrupt.bb3b58
                 0x00000000      0x173 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_USB_OTG_BSP_uDelay.873363
+ .gnu.lto_USB_OTG_BSP_uDelay.bb3b58
                 0x00000000      0x1a2 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_USB_OTG_BSP_mDelay.873363
+ .gnu.lto_USB_OTG_BSP_mDelay.bb3b58
                 0x00000000       0xd2 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_.symbol_nodes.873363
+ .gnu.lto_.symbol_nodes.bb3b58
                 0x00000000       0xa7 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_.refs.873363
+ .gnu.lto_.refs.bb3b58
                 0x00000000        0xf obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_.decls.873363
+ .gnu.lto_.decls.bb3b58
                 0x00000000     0x1a69 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
- .gnu.lto_.symtab.873363
+ .gnu.lto_.symtab.bb3b58
                 0x00000000      0x212 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usb_bsp.o
@@ -9481,47 +9481,47 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_.jmpfuncs.8626ad
+ .gnu.lto_.jmpfuncs.ba36cd
                 0x00000000       0x46 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_.inline.8626ad
+ .gnu.lto_.inline.ba36cd
                 0x00000000       0xd4 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_.pureconst.8626ad
+ .gnu.lto_.pureconst.ba36cd
                 0x00000000       0x2c obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_Init.8626ad
+ .gnu.lto_VCP_Init.ba36cd
                 0x00000000       0xa0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_DeInit.8626ad
+ .gnu.lto_VCP_DeInit.ba36cd
                 0x00000000       0xa0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_DataTx.8626ad
+ .gnu.lto_VCP_DataTx.ba36cd
                 0x00000000      0x261 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_DataRx.8626ad
+ .gnu.lto_VCP_DataRx.ba36cd
                 0x00000000      0x2a7 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_Ctrl.part.0.8626ad
+ .gnu.lto_VCP_Ctrl.part.0.ba36cd
                 0x00000000      0x224 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_Ctrl.8626ad
+ .gnu.lto_VCP_Ctrl.ba36cd
                 0x00000000      0x12c obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_get_string.part.1.8626ad
+ .gnu.lto_VCP_get_string.part.1.ba36cd
                 0x00000000      0x3c5 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_put_char.8626ad
+ .gnu.lto_VCP_put_char.ba36cd
                 0x00000000       0xca obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_send_str.8626ad
+ .gnu.lto_VCP_send_str.ba36cd
                 0x00000000      0x193 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_send_buffer.8626ad
+ .gnu.lto_VCP_send_buffer.ba36cd
                 0x00000000      0x10a obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_DataRX_IsCharReady.8626ad
+ .gnu.lto_VCP_DataRX_IsCharReady.ba36cd
                 0x00000000      0x16e obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_get_char.8626ad
+ .gnu.lto_VCP_get_char.ba36cd
                 0x00000000      0x222 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_VCP_get_string.8626ad
+ .gnu.lto_VCP_get_string.ba36cd
                 0x00000000      0x29b obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_EVAL_COM_IRQHandler.8626ad
+ .gnu.lto_EVAL_COM_IRQHandler.ba36cd
                 0x00000000       0x98 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_.symbol_nodes.8626ad
+ .gnu.lto_.symbol_nodes.ba36cd
                 0x00000000       0xb2 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_.refs.8626ad
+ .gnu.lto_.refs.ba36cd
                 0x00000000       0x4c obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_.decls.8626ad
+ .gnu.lto_.decls.ba36cd
                 0x00000000      0xad7 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
- .gnu.lto_.symtab.8626ad
+ .gnu.lto_.symtab.ba36cd
                 0x00000000      0x1c4 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_cdc_vcp.o
@@ -9578,41 +9578,41 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_.jmpfuncs.86b90f
+ .gnu.lto_.jmpfuncs.bafd8d
                 0x00000000       0xfb obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_.inline.86b90f
+ .gnu.lto_.inline.bafd8d
                 0x00000000       0x79 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_.pureconst.86b90f
+ .gnu.lto_.pureconst.bafd8d
                 0x00000000       0x26 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_DeviceDescriptor.86b90f
+ .gnu.lto_USBD_USR_DeviceDescriptor.bafd8d
                 0x00000000       0xce obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_LangIDStrDescriptor.86b90f
+ .gnu.lto_USBD_USR_LangIDStrDescriptor.bafd8d
                 0x00000000       0xce obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_ManufacturerStrDescriptor.86b90f
+ .gnu.lto_USBD_USR_ManufacturerStrDescriptor.bafd8d
                 0x00000000       0xf8 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_ProductStrDescriptor.part.0.86b90f
+ .gnu.lto_USBD_USR_ProductStrDescriptor.part.0.bafd8d
                 0x00000000      0x151 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_ProductStrDescriptor.86b90f
+ .gnu.lto_USBD_USR_ProductStrDescriptor.bafd8d
                 0x00000000      0x15d obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_SerialStrDescriptor.part.1.86b90f
+ .gnu.lto_USBD_USR_SerialStrDescriptor.part.1.bafd8d
                 0x00000000      0x134 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_SerialStrDescriptor.86b90f
+ .gnu.lto_USBD_USR_SerialStrDescriptor.bafd8d
                 0x00000000      0x144 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_ConfigStrDescriptor.part.2.86b90f
+ .gnu.lto_USBD_USR_ConfigStrDescriptor.part.2.bafd8d
                 0x00000000      0x13d obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_ConfigStrDescriptor.86b90f
+ .gnu.lto_USBD_USR_ConfigStrDescriptor.bafd8d
                 0x00000000      0x147 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_InterfaceStrDescriptor.part.3.86b90f
+ .gnu.lto_USBD_USR_InterfaceStrDescriptor.part.3.bafd8d
                 0x00000000      0x140 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_USBD_USR_InterfaceStrDescriptor.86b90f
+ .gnu.lto_USBD_USR_InterfaceStrDescriptor.bafd8d
                 0x00000000      0x14e obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_.symbol_nodes.86b90f
+ .gnu.lto_.symbol_nodes.bafd8d
                 0x00000000       0xad obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_.refs.86b90f
+ .gnu.lto_.refs.bafd8d
                 0x00000000       0x3d obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_.decls.86b90f
+ .gnu.lto_.decls.bafd8d
                 0x00000000      0x91c obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
- .gnu.lto_.symtab.86b90f
+ .gnu.lto_.symtab.bafd8d
                 0x00000000      0x1f3 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_desc.o
@@ -9660,33 +9660,33 @@ Discarded input sections
  .text          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
  .data          0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
  .bss           0x00000000        0x0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_.jmpfuncs.86f4b4
+ .gnu.lto_.jmpfuncs.bb559f
                 0x00000000       0x1f obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_.inline.86f4b4
+ .gnu.lto_.inline.bb559f
                 0x00000000       0x30 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_.pureconst.86f4b4
+ .gnu.lto_.pureconst.bb559f
                 0x00000000       0x1d obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_USBD_USR_Init.86f4b4
+ .gnu.lto_USBD_USR_Init.bb559f
                 0x00000000       0x91 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_USBD_USR_DeviceReset.86f4b4
+ .gnu.lto_USBD_USR_DeviceReset.bb559f
                 0x00000000       0x95 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_USBD_USR_DeviceConfigured.86f4b4
+ .gnu.lto_USBD_USR_DeviceConfigured.bb559f
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_USBD_USR_DeviceConnected.86f4b4
+ .gnu.lto_USBD_USR_DeviceConnected.bb559f
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_USBD_USR_DeviceDisconnected.86f4b4
+ .gnu.lto_USBD_USR_DeviceDisconnected.bb559f
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_USBD_USR_DeviceSuspended.86f4b4
+ .gnu.lto_USBD_USR_DeviceSuspended.bb559f
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_USBD_USR_DeviceResumed.86f4b4
+ .gnu.lto_USBD_USR_DeviceResumed.bb559f
                 0x00000000       0x94 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_.symbol_nodes.86f4b4
+ .gnu.lto_.symbol_nodes.bb559f
                 0x00000000       0x45 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_.refs.86f4b4
+ .gnu.lto_.refs.bb559f
                 0x00000000       0x20 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_.decls.86f4b4
+ .gnu.lto_.decls.bb559f
                 0x00000000      0x42f obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
- .gnu.lto_.symtab.86f4b4
+ .gnu.lto_.symtab.bb559f
                 0x00000000      0x121 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
  .gnu.lto_.opts
                 0x00000000       0xd0 obj/VRBRAIN/drivers/vcp_stm32f4xx/usbd_usr.o
