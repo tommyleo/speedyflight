@@ -1,7 +1,21 @@
-speedyFlight 2.31  VRBrain - STM32F407VG - 168 Mhz
-==================================================
+# speedyFlight 2.31  VRBrain - STM32F407VG - 168 Mhz
 
 32 bit fork of the baseflight MultiWii RC flight controller firmware
+
+
+## Warning, this is a beta version, do not fly and remove the propeller, it only proves the configuration of VRBrain with the GCS
+
+## Configuration Tool
+
+To configure Cleanflight you should use the Cleanlight-configurator GUI tool (Windows/OSX/Linux) that can be found here:
+
+https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb
+
+The source for it is here:
+
+https://github.com/hydra/cleanflight-configurator
+
+https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
 
 
 ## Additional Features
@@ -13,8 +27,8 @@ For a list of features, changes and some discussion please review the thread on 
 http://www.multiwii.com/forum/viewtopic.php?f=23&t=5149
 
 
-Develop with Eclipse
-====================
+## Develop with Eclipse
+
 You need an ARM toolchain. 
 
 Add new target 
@@ -23,9 +37,7 @@ Make target:  TARGET=VRBRAIN
 
 
 
-
-license
-=======
+### license
 
 speedyFlight is licensed under *GPL V3* (just like MultiWii code it originated from), with all the conditions GPL V3 implies,
 
@@ -54,6 +66,5 @@ with the following exception:
 
 3.2) Will become the property of speedyFlight author.
 
-4) YHBT.
 
 note that above exception is strictly name-based and does not apply to general developers who wish to contribute to speedyFlight. 
