@@ -48,19 +48,15 @@ int main(void)
     spiInit();
     spiInit2();
 
-	LED2_ON
-
     if (feature(FEATURE_I2C)){
 		i2cInit();
+	    LED2_OFF;
+	    for (i = 0; i < 20; i++) {
+	        LED2_TOGGLE;
+	        delay(25);
+	    }
+	    LED2_OFF;
     }
-    else{
-//    	sensorsClear(SENSOR_MAG);
-//#ifdef MAG
-//	#undef MAG
-//#endif
-    }
-
-	LED2_OFF
 
     boardAlignmentInit();
     sensorsSet(SENSORS_SET);        // we have these sensors; SENSORS_SET defined in board.h depending on hardware platform

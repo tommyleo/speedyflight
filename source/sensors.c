@@ -32,10 +32,14 @@ bool sensorsAutodetect(void)
     if (!ms5611DetectSpi(&baro))
         sensorsClear(SENSOR_BARO);
 
+    if (feature(FEATURE_I2C)){
 #ifdef MAG
     if (!hmc5883lDetect(&mag))
     	sensorsClear(SENSOR_MAG);
 #endif
+    }
+    else
+    	sensorsClear(SENSOR_MAG);
 
     // Now time to init things, acc first
     if (sensors(SENSOR_ACC))
@@ -312,15 +316,13 @@ int Mag_getADC(void)
     static int16_t magZeroTempMax[3];
     uint32_t axis;
 
-    if ((int32_t)(currentTime - t) < 0)  //each read is spaced by 100ms
+    if ((int32_t)(currentTime - t) < 0)  //each read is spaced by 30ms
         return 0;
 
-    t = currentTime + 100000;
+    t = currentTime + 30000;
 
     // Read mag sensor
     mag.read(magADC);
-
-    LED2_TOGGLE;
 
     if (f.CALIBRATE_MAG) {
         tCal = t;

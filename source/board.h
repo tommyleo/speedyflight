@@ -39,20 +39,17 @@ __ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
 
 
 #define SENSORS_SET (SENSOR_GYRO | SENSOR_ACC | SENSOR_BARO | SENSOR_MAG)
-//#define SENSORS_SET (SENSOR_GYRO | SENSOR_ACC | SENSOR_BARO)
 #define GYRO
 #define ACC
 #define MAG
 #define BARO
 #define GPS
-//#define LEDRING
-//#define SONAR
-//#define BUZZER
 #define LED0
 #define LED1
 #define LED2
-
-//#define SOFT_I2C
+//#define LEDRING
+//#define SONAR
+//#define BUZZER
 
 // 96-bit Chip Unique ID on st F103/F303
 #define U_ID_0 (*(uint32_t*)0x1FFFF7E8)

@@ -10,6 +10,9 @@ uint8_t toggleBeep = 0;
 uint32_t currentTime = 0;
 uint32_t previousTime = 0;
 uint16_t cycleTime = 0;         // this is the number in micro second to achieve a full loop, it can differ a little and is taken into account in the PID loop
+
+static int taskOrder = 0;    // never call all function in the same loop, to avoid high delay spikes
+
 int16_t headFreeModeHold;
 
 uint16_t vbat;                  // battery voltage in 0.1V steps
@@ -446,17 +449,20 @@ void loop(void)
     static uint8_t rcSticks;            // this hold sticks position for command combos
     uint8_t stTmp = 0;
     int i;
+    uint16_t auxState = 0;
+    bool isThrottleLow = false;
+    bool rcReady = false;
+
+    static uint32_t loopTime = 0;
     static uint32_t rcTime = 0;
-#ifdef BARO
+    static uint32_t motorsTime = 0;
+
+    #ifdef BARO
     static int16_t initialThrottleHold;
 #endif
-    static uint32_t loopTime;
-    uint16_t auxState = 0;
 #ifdef GPS
     static uint8_t GPSNavReset = 1;
 #endif
-    bool isThrottleLow = false;
-    bool rcReady = false;
 
     // calculate rc stuff from serial-based receivers (spek/sbus)
     if (feature(FEATURE_SERIALRX)) {
@@ -478,8 +484,10 @@ void loop(void)
     }
 
     if (((int32_t)(currentTime - rcTime) >= 0) || rcReady) { // 50Hz or data driven
-        rcReady = false;
+
+    	rcReady = false;
         rcTime = currentTime + 20000;
+
         computeRC();
 
         // in 3D mode, we need to be able to disarm by switch at any time
@@ -789,9 +797,9 @@ void loop(void)
         if (mcfg.mixerConfiguration == MULTITYPE_FLYING_WING || mcfg.mixerConfiguration == MULTITYPE_AIRPLANE) {
             f.HEADFREE_MODE = 0;
         }
-    } else {                    // not in rc loop
-        static int taskOrder = 0;    // never call all function in the same loop, to avoid high delay spikes
-        switch (taskOrder) {
+    }
+    else {                    // not in rc loop
+		switch (taskOrder) {
         case 0:
             taskOrder++;
 #ifdef MAG
@@ -802,21 +810,25 @@ void loop(void)
             taskOrder++;
 #ifdef BARO
             if (sensors(SENSOR_BARO) && Baro_update())
-            	getEstimatedAltitude();
-			break;
+                break;
 #endif
         case 2:
+            taskOrder++;
+#ifdef BARO
+            if (sensors(SENSOR_BARO) && getEstimatedAltitude())
+                break;
+#endif
+        case 3:
             // if GPS feature is enabled, gpsThread() will be called at some intervals to check for stuck
             // hardware, wrong baud rates, init GPS if needed, etc. Don't use SENSOR_GPS here as gpsThread() can and will
             // change this based on available hardware
-            taskOrder=0;
+            taskOrder++;
 #ifdef GPS
             if (feature(FEATURE_GPS)) {
                 gpsThread();
                 break;
             }
 #endif
-/*
         case 4:
             taskOrder = 0;
 #ifdef SONAR
@@ -827,21 +839,25 @@ void loop(void)
             if (feature(FEATURE_VARIO) && f.VARIO_MODE)
                 mwVario();
             break;
-*/
         }
+
     }
 
     currentTime = micros();
     if (mcfg.looptime == 0 || (int32_t)(currentTime - loopTime) >= 0) {
-        loopTime = currentTime + mcfg.looptime;
 
-        computeIMU();
+    	loopTime = currentTime + mcfg.looptime;
+
+    	computeIMU();
+
         // Measure loop rate just afer reading the sensors
         currentTime = micros();
         cycleTime = (int32_t)(currentTime - previousTime);
         previousTime = currentTime;
+
         // non IMU critical, temeperatur, serialcom
-         annexCode();
+        annexCode();
+
 #ifdef MAG
         if (sensors(SENSOR_MAG)) {
             if (abs(rcCommand[YAW]) < 70 && f.MAG_MODE) {
@@ -922,11 +938,17 @@ void loop(void)
             }
         }
 #endif
-
         // PID - note this is function pointer set by setPIDController()
-        pid_controller();
-        mixTable();
-        writeServos();
-        writeMotors();
+        // 1000000 / mcfg.motor_pwm_rate(400) = 2500
+        if (((int32_t)(currentTime - motorsTime) >= 0)) {
+        	motorsTime = currentTime + (uint16_t)(1000000/mcfg.motor_pwm_rate);
+			pid_controller();
+			mixTable();
+			//writeServos();
+			writeMotors();
+			debug[0]=cycleTime;
+			debug[1]=(uint16_t)(1000000/mcfg.motor_pwm_rate);
+		}
     }
+
 }
