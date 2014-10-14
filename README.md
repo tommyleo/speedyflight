@@ -25,6 +25,11 @@ EEPROM (SPI For local parameters storage)
 GPS Ublox OK
 
 
+## Wires (you can switch from Arducopter without change the PIN connection)
+
+![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/speedyFlight_collegamenti.png)
+
+
 ## Configuration Tool
 
 To configure speedyFlight you should use the BaseFlight configurator GUI tool (Windows/OSX/Linux) that can be found here:
@@ -44,11 +49,6 @@ http://www.multiwii.com/forum/viewtopic.php?f=23&t=5149
 You need an ARM toolchain. 
 
 Add new target, with Make target:  TARGET=VRBRAIN
-
-
-## Wires
-
-![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/speedyFlight_collegamenti.png)
 
 
 
