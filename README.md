@@ -16,7 +16,7 @@ MS5611 (SPI Barometer)
 
 EEPROM (SPI For local parameters storage)
 
-8 RC Input
+8 RC Input PWM (Test ok) or  Sat Spektrum (Test ok)
 
 8 RC Output at 490 hz
 
@@ -43,9 +43,12 @@ http://www.multiwii.com/forum/viewtopic.php?f=23&t=5149
 
 You need an ARM toolchain. 
 
-Add new target 
+Add new target, with Make target:  TARGET=VRBRAIN
 
-Make target:  TARGET=VRBRAIN
+
+## Wires
+
+![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/speedyFlight_collegamenti.png)
 
 
 
