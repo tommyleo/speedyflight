@@ -34,7 +34,7 @@ GPS Ublox OK
 
 To configure speedyFlight you should use the BaseFlight configurator GUI tool (Windows/OSX/Linux) that can be found here:
 
-https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
+https://chrome.google.com/webstore/detail/speedyflight-configurator/elkoncemijdophjjcllbpeiagoknmofl
 
 
 ## Features
