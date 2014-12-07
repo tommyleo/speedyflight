@@ -34,6 +34,7 @@ GPS Ublox OK
 
 To configure speedyFlight you should use:
 
+Baseflight configurator
 https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
 
 
@@ -41,19 +42,18 @@ https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfej
 
 For a list of features, changes and some discussion please review the thread on MultiWii forums and consult the documenation.
 
-http://www.multiwii.com/forum/viewtopic.php?f=23&t=5149
+https://github.com/multiwii/baseflight/wiki/CLI-Variables
 
 
 ## Develop with Eclipse
 
 You need an ARM toolchain. 
 
-Add new target, with Make target:  TARGET=VRBRAIN
+Add new target, with Make target: TARGET=VRBRAIN
 
 
 
 ### license
 
-speedyFlight is licensed under *GPL V3* (just like MultiWii code it originated from), with all the conditions GPL V3 implies.
-
-
+speedyFlight is licensed under *GPL V3* (just like MultiWii and BaseFlight code it originated from), with all the conditions GPL V3 implies.
+https://github.com/multiwii/baseflight (GPLv3) 
