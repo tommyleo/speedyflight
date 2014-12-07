@@ -32,9 +32,9 @@ GPS Ublox OK
 
 ## Configuration Tool
 
-To configure speedyFlight you should use the SpeedyFlight configurator GUI tool (Windows/OSX/Linux) that can be found here:
+To configure speedyFlight you should use:
 
-https://chrome.google.com/webstore/detail/speedyflight-configurator/elkoncemijdophjjcllbpeiagoknmofl
+https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
 
 
 ## Features
