@@ -1,6 +1,6 @@
 # speedyFlight 2.31  
 
-# VR μBrain - STM32F4XX - 168 Mhz
+# VR μBrain - STM32F4XX - 168 Mhz : http://vrbrain.wordpress.com/vr-microbrain/
 
 32 bit fork of the baseflight MultiWii RC flight controller firmware
 
