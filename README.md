@@ -1,10 +1,10 @@
 # speedyFlight 2.31  
+32 bit fork of the baseflight MultiWii RC flight controller firmware
 
 # VR μBrain - STM32F4XX - 168 Mhz 
+## Looptime = 500 (2 KHz by deafult)
 
 Web reference: http://vrbrain.wordpress.com/vr-microbrain/
-
-32 bit fork of the baseflight MultiWii RC flight controller firmware
 
 ## Warning, this is a beta version, do not fly and remove the propeller, it only proves the configuration of VRBrain with the GCS
 
