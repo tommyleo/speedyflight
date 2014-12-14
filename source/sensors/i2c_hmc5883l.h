@@ -1,6 +1,7 @@
 #pragma once
 
-bool hmc5883lDetect(sensor_t *mag);
+bool hmc5883lDetect(mag_t *mag);
+//bool hmc5883lDetect(sensor_t *mag);
 
 void hmc5883lInit(sensor_align_e align);
 

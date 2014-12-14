@@ -20,6 +20,7 @@ bool isUsbTransmitBufferEmpty(serialPort_t *instance)
 {
     return true;
 }
+
 static void usbPrintf(void *p, char c)
 {
     usbPrint( NULL, c);

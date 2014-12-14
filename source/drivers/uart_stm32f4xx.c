@@ -4,6 +4,7 @@
 static uartPort_t uartPort1;
 static uartPort_t uartPort2;
 static uartPort_t uartPort3;
+static uartPort_t uartPort6;
 
 void uartPause(int n)
 {
@@ -180,6 +181,57 @@ uartPort_t *serialUSART3(uint32_t baudRate, portMode_t mode)
      return s;
 }
 
+uartPort_t *serialUSART6(uint32_t baudRate, portMode_t mode)
+{
+    NVIC_InitTypeDef NVIC_InitStructure;
+    GPIO_InitTypeDef GPIO_InitStructure;
+
+	uartPort_t *s;
+
+	static volatile uint8_t rx6Buffer[UART6_RX_BUFFER_SIZE];
+    static volatile uint8_t tx6Buffer[UART6_TX_BUFFER_SIZE];
+
+    s = &uartPort6;
+    s->port.vTable = uartVTable;
+    s->port.baudRate = baudRate;
+    s->port.rxBufferSize = UART6_RX_BUFFER_SIZE;
+    s->port.txBufferSize = UART6_TX_BUFFER_SIZE;
+    s->port.rxBuffer = rx6Buffer;
+    s->port.txBuffer = tx6Buffer;
+    s->USARTx = USART6;
+
+	//Enable GPIO clock
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+
+	//Enable UART clock
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART6, ENABLE);
+
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+
+    if (mode & MODE_TX) {
+        GPIO_InitStructure.GPIO_Pin = UART6_TX_PIN;
+        GPIO_PinAFConfig(UART6_TX_GPIO, UART6_TX_PINSOURCE, GPIO_AF_USART6);
+        GPIO_Init(UART6_TX_GPIO, &GPIO_InitStructure);
+    }
+
+    if (mode & MODE_RX) {
+        GPIO_InitStructure.GPIO_Pin = UART6_RX_PIN;
+        GPIO_PinAFConfig(UART6_RX_GPIO, UART6_RX_PINSOURCE, GPIO_AF_USART6);
+        GPIO_Init(UART6_RX_GPIO, &GPIO_InitStructure);
+    }
+
+    NVIC_InitStructure.NVIC_IRQChannel = USART6_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStructure);
+
+    return s;
+}
+
 serialPort_t *uartOpen(USART_TypeDef *USARTx, serialReceiveCallbackPtr callback, uint32_t baudRate, portMode_t mode, serialInversion_e inversion)
 {
     USART_InitTypeDef USART_InitStructure;
@@ -192,6 +244,8 @@ serialPort_t *uartOpen(USART_TypeDef *USARTx, serialReceiveCallbackPtr callback,
         s = serialUSART2(baudRate, mode);
     } else if (USARTx == USART3) {
         s = serialUSART3(baudRate, mode);
+    } else if (USARTx == USART6) {
+        s = serialUSART6(baudRate, mode);
     } else {
         return (serialPort_t *)s;
     }
@@ -202,7 +256,7 @@ serialPort_t *uartOpen(USART_TypeDef *USARTx, serialReceiveCallbackPtr callback,
 	s->port.callback = callback;
     s->port.mode = mode;
     s->port.baudRate = baudRate;
-    s->port.inversion = SERIAL_NOT_INVERTED; // Not used on STM32F4
+    s->port.inversion = inversion/*SERIAL_NOT_INVERTED*/; // Not used on STM32F4
 
     USART_InitStructure.USART_BaudRate = baudRate;
     USART_InitStructure.USART_WordLength = USART_WordLength_8b;
@@ -346,3 +400,10 @@ void USART3_IRQHandler(void)
     uartPort_t *s = &uartPort3;
     usartIrqHandler(s);
 }
+
+void USART6_IRQHandler(void)
+{
+    uartPort_t *s = &uartPort6;
+    usartIrqHandler(s);
+}
+

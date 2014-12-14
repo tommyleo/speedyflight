@@ -1,8 +1,6 @@
 #include "board.h"
 #include "mw.h"
-#include "utils_math.h"
 
-int16_t heading;
 int16_t gyroADC[3], accADC[3], accSmooth[3], magADC[3];
 int32_t accSum[3];
 uint32_t accTimeSum = 0;        // keep track for integration of acc
@@ -14,7 +12,6 @@ uint32_t baroPressureSum = 0;
 int32_t BaroAlt = 0;
 float sonarTransition = 0;
 int32_t baroAlt_offset = 0;
-int16_t sonarAnglecorrection;
 int32_t sonarAlt = -1;         // in cm , -1 indicate sonar is not in range
 int32_t EstAlt;                // in cm
 int32_t BaroPID = 0;
@@ -41,34 +38,25 @@ static void getEstimatedAttitude(void);
 
 void imuInit(void)
 {
-    int16_t deg, min;
-
-    // calculate magnetic declination
-    deg = cfg.mag_declination / 100;
-    min = cfg.mag_declination % 100;
-    if (sensors(SENSOR_MAG))
-        magneticDeclination = (deg + ((float)min * (1.0f / 60.0f))) * 10; // heading is in 0.1deg units
-    else
-        magneticDeclination = 0.0f;
-
-    // what is considered a safe angle
     smallAngle = lrintf(acc_1G * cosf(RAD * cfg.small_angle));
-
-    // this is a scale for converting  acc reading
     accVelScale = 9.80665f / acc_1G / 10000.0f;
-
-    // throttle angle correction from configuration
     throttleAngleScale = (1800.0f / M_PI) * (900.0f / cfg.throttle_correction_angle);
 
     fc_acc = 0.5f / (M_PI * cfg.accz_lpf_cutoff); // calculate RC time constant used in the accZ lpf
+
+#ifdef MAG
+    // if mag sensor is enabled, use it
+    if (sensors(SENSOR_MAG))
+        Mag_init();
+#endif
 }
 
 void computeIMU(void)
 {
     static int16_t gyroYawSmooth = 0;
 
+    /*
     Gyro_getADC();
-
     if (sensors(SENSOR_ACC)) {
         ACC_getADC();
         getEstimatedAttitude();
@@ -77,6 +65,10 @@ void computeIMU(void)
         accADC[Y] = 0;
         accADC[Z] = 0;
     }
+    */
+
+    IMU_getADC();
+    getEstimatedAttitude();
 
     if (mcfg.mixerConfiguration == MULTITYPE_TRI) {
         gyroData[YAW] = (gyroYawSmooth * 2 + gyroADC[YAW]) / 3;
@@ -131,14 +123,15 @@ void normalizeV(struct fp_vector *src, struct fp_vector *dest)
     }
 }
 
-// Rotate Estimated vector(s) according to the gyro delta
+// Rotate Estimated vector(s) with small angle approximation, according to the gyro data
 void rotateV(struct fp_vector *v, float *delta)
 {
     struct fp_vector v_tmp = *v;
 
+    // This does a  "proper" matrix rotation using gyro deltas without small-angle approximation
     float mat[3][3];
     float cosx, sinx, cosy, siny, cosz, sinz;
-    float coszcosx, coszcosy, sinzcosx, coszsinx, sinzsinx;
+    float coszcosx, sinzcosx, coszsinx, sinzsinx;
 
     cosx = cosf(delta[ROLL]);
     sinx = sinf(delta[ROLL]);
@@ -148,12 +141,11 @@ void rotateV(struct fp_vector *v, float *delta)
     sinz = sinf(delta[YAW]);
 
     coszcosx = cosz * cosx;
-    coszcosy = cosz * cosy;
     sinzcosx = sinz * cosx;
     coszsinx = sinx * cosz;
     sinzsinx = sinx * sinz;
 
-    mat[0][0] = coszcosy;
+    mat[0][0] = cosz * cosy;
     mat[0][1] = -cosy * sinz;
     mat[0][2] = siny;
     mat[1][0] = sinzcosx + (coszsinx * siny);
@@ -166,6 +158,18 @@ void rotateV(struct fp_vector *v, float *delta)
     v->X = v_tmp.X * mat[0][0] + v_tmp.Y * mat[1][0] + v_tmp.Z * mat[2][0];
     v->Y = v_tmp.X * mat[0][1] + v_tmp.Y * mat[1][1] + v_tmp.Z * mat[2][1];
     v->Z = v_tmp.X * mat[0][2] + v_tmp.Y * mat[1][2] + v_tmp.Z * mat[2][2];
+}
+
+int32_t applyDeadband(int32_t value, int32_t deadband)
+{
+    if (abs(value) < deadband) {
+        value = 0;
+    } else if (value > 0) {
+        value -= deadband;
+    } else if (value < 0) {
+        value += deadband;
+    }
+    return value;
 }
 
 // rotate acc into Earth frame and calculate acceleration in it
@@ -252,8 +256,17 @@ static void getEstimatedAttitude(void)
     uint32_t deltaT;
     float scale, deltaGyroAngle[3];
     deltaT = currentT - previousT;
+    /*
+    if (mcfg.looptime!=0){
+    	if (deltaT > mcfg.looptime)
+    		deltaT = mcfg.looptime;
+    }
+    */
+
     scale = deltaT * gyro.scale;
     previousT = currentT;
+
+    //debug[0]=deltaT;
 
     // Initialization
     for (axis = 0; axis < 3; axis++) {
@@ -389,18 +402,12 @@ int getEstimatedAltitude(void)
     accAlt = accAlt * cfg.baro_cf_alt + (float)BaroAlt * (1.0f - cfg.baro_cf_alt);      // complementary filter for altitude estimation (baro & acc)
 
     // when the sonar is in his best range
-    if (sonarAlt > 0 && sonarAlt < 200)
+    //if (sonarAlt > 0 && sonarAlt < 200)
         EstAlt = BaroAlt;
-    else
-        EstAlt = accAlt;
+    //else
+    //    EstAlt = accAlt;
 
     vel += vel_acc;
-
-#if 0
-    debug[0] = accSum[2] / accSumCount; // acceleration
-    debug[1] = vel;                     // velocity
-    debug[2] = accAlt;                  // height
-#endif
 
     accSum_reset();
 

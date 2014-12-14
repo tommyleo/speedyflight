@@ -167,7 +167,6 @@
  #define TX3_FIFO_FS_SIZE                          0
  #define TXH_NP_FS_FIFOSIZ                         96
  #define TXH_P_FS_FIFOSIZ                          96
-
  //#define USB_OTG_FS_LOW_PWR_MGMT_SUPPORT
  //#define USB_OTG_FS_SOF_OUTPUT_ENABLED
 #endif
@@ -232,7 +231,7 @@
   #define __packed    __packed
 #elif defined (__ICCARM__)     /* IAR Compiler */
   #define __packed    __packed
-#elif defined   ( __GNUC__ )   /* GNU Compiler */                        
+#elif defined   ( __GNUC__ )   /* GNU Compiler */
   #define __packed    __attribute__ ((__packed__))
 #elif defined   (__TASKING__)  /* TASKING Compiler */
   #define __packed    __unaligned

@@ -3,6 +3,7 @@
 #pragma once
 
 #define SOFT_SERIAL_BUFFER_SIZE 256
+#define SOFT_SERIAL_MAX_BAUD_RATE 19200
 
 typedef struct softSerial_s {
     serialPort_t port;

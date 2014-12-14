@@ -80,7 +80,7 @@ void spiInit2(void)
     SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
     SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
     SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_32;  // 36/64 = 0.5625 MHz SPI Clock
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_64;
     SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
     SPI_InitStructure.SPI_CRCPolynomial = 7;
     SPI_Init(SPI_BUSE2, &SPI_InitStructure);
@@ -133,7 +133,6 @@ uint8_t spiTransfer2(uint8_t *out, uint8_t *in, int len)
         if (out)
             *(out++) = b;
     }
-
     return 1;
 }
 

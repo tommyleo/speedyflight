@@ -11,8 +11,6 @@ uint32_t currentTime = 0;
 uint32_t previousTime = 0;
 uint16_t cycleTime = 0;         // this is the number in micro second to achieve a full loop, it can differ a little and is taken into account in the PID loop
 
-static int taskOrder = 0;    // never call all function in the same loop, to avoid high delay spikes
-
 int16_t headFreeModeHold;
 
 uint16_t vbat;                  // battery voltage in 0.1V steps
@@ -42,14 +40,14 @@ int16_t axisPID[3];
 // GPS
 // **********************
 int32_t GPS_coord[2];
-int32_t GPS_home[2];
-int32_t GPS_hold[2];
+int32_t GPS_home[3];
+int32_t GPS_hold[3];
 uint8_t GPS_numSat;
 uint16_t GPS_distanceToHome;        // distance to home point in meters
 int16_t GPS_directionToHome;        // direction to home or hol point in degrees
 uint16_t GPS_altitude, GPS_speed;   // altitude in 0.1m and speed in 0.1m/s
 uint8_t GPS_update = 0;             // it's a binary toogle to distinct a GPS position update
-int16_t GPS_angle[2] = { 0, 0 };    // it's the angles that must be applied for GPS correction
+int16_t GPS_angle[3] = { 0, 0, 0 }; // it's the angles that must be applied for GPS correction
 uint16_t GPS_ground_course = 0;     // degrees * 10
 int16_t nav[2];
 int16_t nav_rated[2];               // Adding a rate controller to the navigation to make it smoother
@@ -85,6 +83,20 @@ void blinkLED(uint8_t num, uint8_t wait, uint8_t repeat)
         delay(60);
     }
 }
+
+void gpsLED(bool value){
+    static uint32_t LEDTime;
+	if (value){
+		LED2_ON;
+	}
+	else{
+        if ((int32_t)(currentTime - LEDTime) >= 0) {
+            LEDTime = currentTime + 500000;
+            LED2_TOGGLE;
+        }
+	}
+}
+
 
 void annexCode(void)
 {
@@ -226,20 +238,12 @@ void annexCode(void)
     }
 #endif
 
-    if (sensors(SENSOR_GPS)) {
-        static uint32_t GPSLEDTime;
-        if ((int32_t)(currentTime - GPSLEDTime) >= 0 && (GPS_numSat >= 5)) {
-            GPSLEDTime = currentTime + 150000;
-            LED1_TOGGLE;
-        }
-    }
-
     // Read out gyro temperature. can use it for something somewhere. maybe get MCU temperature instead? lots of fun possibilities.
-    if (gyro.temperature)
-        gyro.temperature(&telemTemperature1);
-    else {
+    //if (gyro.temperature)
+    //    gyro.temperature(&telemTemperature1);
+    //else {
         // TODO MCU temp
-    }
+    //}
 }
 
 uint16_t pwmReadRawRC(uint8_t chan)
@@ -565,12 +569,15 @@ void loop(void)
         if (rcDelayCommand == 20) {
             if (f.ARMED) {      // actions during armed
                 // Disarm on throttle down + yaw
-                if (cfg.activate[BOXARM] == 0 && (rcSticks == THR_LO + YAW_LO + PIT_CE + ROL_CE))
+                if (cfg.activate[BOXARM] == 0 && (rcSticks == THR_LO + YAW_LO + PIT_CE + ROL_CE)){
                     mwDisarm();
+                }
                 // Disarm on roll (only when retarded_arm is enabled)
-                if (mcfg.retarded_arm && cfg.activate[BOXARM] == 0 && (rcSticks == THR_LO + YAW_CE + PIT_CE + ROL_LO))
+                if (mcfg.retarded_arm && cfg.activate[BOXARM] == 0 && (rcSticks == THR_LO + YAW_CE + PIT_CE + ROL_LO)){
                     mwDisarm();
-            } else {            // actions during not armed
+                }
+            }
+            else {            // actions during not armed
                 i = 0;
                 // GYRO calibration
                 if (rcSticks == THR_LO + YAW_LO + PIT_LO + ROL_CE) {
@@ -752,6 +759,7 @@ void loop(void)
         if (sensors(SENSOR_GPS)) {
             if (f.GPS_FIX && GPS_numSat >= 5) {
                 // if both GPS_HOME & GPS_HOLD are checked => GPS_HOME is the priority
+            	gpsLED(true);
                 if (rcOptions[BOXGPSHOME]) {
                     if (!f.GPS_HOME_MODE) {
                         f.GPS_HOME_MODE = 1;
@@ -784,8 +792,13 @@ void loop(void)
                 f.GPS_HOME_MODE = 0;
                 f.GPS_HOLD_MODE = 0;
                 nav_mode = NAV_MODE_NONE;
+                gpsLED(false);
             }
         }
+        else
+        	gpsLED(false);
+#else
+        gpsLED(false);
 #endif
 
         if (rcOptions[BOXPASSTHRU]) {
@@ -798,8 +811,9 @@ void loop(void)
             f.HEADFREE_MODE = 0;
         }
     }
-    else {                    // not in rc loop
-		switch (taskOrder) {
+    else { // not in rc loop
+        static int taskOrder = 0;   // never call all function in the same loop, to avoid high delay spikes
+        switch (taskOrder) {
         case 0:
             taskOrder++;
 #ifdef MAG
@@ -845,19 +859,14 @@ void loop(void)
 
     currentTime = micros();
     if (mcfg.looptime == 0 || (int32_t)(currentTime - loopTime) >= 0) {
-
-    	loopTime = currentTime + mcfg.looptime;
-
-    	computeIMU();
-
+        loopTime = currentTime + mcfg.looptime;
+        computeIMU();
         // Measure loop rate just afer reading the sensors
         currentTime = micros();
         cycleTime = (int32_t)(currentTime - previousTime);
         previousTime = currentTime;
-
         // non IMU critical, temeperatur, serialcom
         annexCode();
-
 #ifdef MAG
         if (sensors(SENSOR_MAG)) {
             if (abs(rcCommand[YAW]) < 70 && f.MAG_MODE) {
@@ -911,7 +920,7 @@ void loop(void)
                     // handle fixedwing-related althold. UNTESTED! and probably wrong
                     // most likely need to check changes on pitch channel and 'reset' althold similar to
                     // how throttle does it on multirotor
-                    rcCommand[PITCH] += BaroPID * mcfg.fixedwing_althold_dir;
+                	rcCommand[PITCH] += BaroPID * mcfg.fw_althold_dir;
                 }
             }
         }
@@ -926,29 +935,31 @@ void loop(void)
             if ((f.GPS_HOME_MODE || f.GPS_HOLD_MODE) && f.GPS_FIX_HOME) {
                 float sin_yaw_y = sinf(heading * 0.0174532925f);
                 float cos_yaw_x = cosf(heading * 0.0174532925f);
-                if (cfg.nav_slew_rate) {
-                    nav_rated[LON] += constrain(wrap_18000(nav[LON] - nav_rated[LON]), -cfg.nav_slew_rate, cfg.nav_slew_rate); // TODO check this on uint8
-                    nav_rated[LAT] += constrain(wrap_18000(nav[LAT] - nav_rated[LAT]), -cfg.nav_slew_rate, cfg.nav_slew_rate);
-                    GPS_angle[ROLL] = (nav_rated[LON] * cos_yaw_x - nav_rated[LAT] * sin_yaw_y) / 10;
-                    GPS_angle[PITCH] = (nav_rated[LON] * sin_yaw_y + nav_rated[LAT] * cos_yaw_x) / 10;
-                } else {
-                    GPS_angle[ROLL] = (nav[LON] * cos_yaw_x - nav[LAT] * sin_yaw_y) / 10;
-                    GPS_angle[PITCH] = (nav[LON] * sin_yaw_y + nav[LAT] * cos_yaw_x) / 10;
-                }
+                if (!f.FIXED_WING) {
+                	if (cfg.nav_slew_rate) {
+                        nav_rated[LON] += constrain(wrap_18000(nav[LON] - nav_rated[LON]), -cfg.nav_slew_rate, cfg.nav_slew_rate); // TODO check this on uint8
+                        nav_rated[LAT] += constrain(wrap_18000(nav[LAT] - nav_rated[LAT]), -cfg.nav_slew_rate, cfg.nav_slew_rate);
+                        GPS_angle[ROLL] = (nav_rated[LON] * cos_yaw_x - nav_rated[LAT] * sin_yaw_y) / 10;
+                        GPS_angle[PITCH] = (nav_rated[LON] * sin_yaw_y + nav_rated[LAT] * cos_yaw_x) / 10;
+                    } else {
+                        GPS_angle[ROLL] = (nav[LON] * cos_yaw_x - nav[LAT] * sin_yaw_y) / 10;
+                        GPS_angle[PITCH] = (nav[LON] * sin_yaw_y + nav[LAT] * cos_yaw_x) / 10;
+                	}
+                }//else fw_nav();
+            } else {
+            	GPS_angle[ROLL] = 0;
+            	GPS_angle[PITCH] = 0;
+            	GPS_angle[YAW] = 0;
             }
         }
 #endif
         // PID - note this is function pointer set by setPIDController()
-        // 1000000 / mcfg.motor_pwm_rate(400) = 2500
         if (((int32_t)(currentTime - motorsTime) >= 0)) {
         	motorsTime = currentTime + (uint16_t)(1000000/mcfg.motor_pwm_rate);
 			pid_controller();
 			mixTable();
 			//writeServos();
 			writeMotors();
-			debug[0]=cycleTime;
-			debug[1]=(uint16_t)(1000000/mcfg.motor_pwm_rate);
 		}
     }
-
 }

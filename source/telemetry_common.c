@@ -56,8 +56,7 @@ void initTelemetry(USART_TypeDef *USARTx)
 
 //   todo
 
-    //core.telemport = uartOpen(USARTx, NULL, mcfg.serial_baudrate, MODE_RXTX, SERIAL_NOT_INVERTED);
-    core.telemport = uartOpen(USARTx, NULL, 57600, MODE_RXTX, SERIAL_NOT_INVERTED);
+    core.telemport = uartOpen(USARTx, NULL, mcfg.serial_baudrate, MODE_RXTX, SERIAL_NOT_INVERTED);
     //checkTelemetryState();
 }
 

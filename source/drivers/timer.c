@@ -2,12 +2,12 @@
 #include "timer.h"
 
 const timerHardware_t timerHardware[] = {
-	{ TIM1, GPIOE, Pin_13, TIM_Channel_3, TIM1_CC_IRQn, 1, GPIO_Mode_AF},   //RC 1
 	{ TIM1, GPIOE, Pin_9, TIM_Channel_1, TIM1_CC_IRQn, 1, GPIO_Mode_AF},    //   2
     { TIM1, GPIOE, Pin_11, TIM_Channel_2, TIM1_CC_IRQn, 1, GPIO_Mode_AF},   //   3
+	{ TIM1, GPIOE, Pin_13, TIM_Channel_3, TIM1_CC_IRQn, 1, GPIO_Mode_AF},   //RC 1
 	{ TIM1, GPIOE, Pin_14, TIM_Channel_4, TIM1_CC_IRQn, 1, GPIO_Mode_AF},   //   4
-    { TIM8, GPIOC, Pin_6, TIM_Channel_1, TIM8_CC_IRQn, 0, GPIO_Mode_AF},    //   5
-    { TIM8, GPIOC, Pin_7, TIM_Channel_2, TIM8_CC_IRQn, 0, GPIO_Mode_AF},    //   6
+    { TIM9, GPIOE, Pin_5, TIM_Channel_2, TIM1_BRK_TIM9_IRQn, 0, GPIO_Mode_AF},    //   5
+    { TIM9, GPIOE, Pin_6, TIM_Channel_1, TIM1_BRK_TIM9_IRQn, 0, GPIO_Mode_AF},    //   6
     { TIM8, GPIOC, Pin_8, TIM_Channel_3, TIM8_CC_IRQn, 0, GPIO_Mode_AF},    //   7
     { TIM8, GPIOC, Pin_9, TIM_Channel_4, TIM8_CC_IRQn, 0, GPIO_Mode_AF},    //   8
     { TIM3, GPIOB, Pin_5, TIM_Channel_2, TIM3_IRQn, 0, Mode_AF_PP},         //Motors 1
@@ -18,10 +18,10 @@ const timerHardware_t timerHardware[] = {
     { TIM3, GPIOB, Pin_1, TIM_Channel_4, TIM3_IRQn, 0, Mode_AF_PP}          //       6 TODO: check me
 };
 
-#define MAX_TIMERS 4
+#define MAX_TIMERS 5
 
 static const TIM_TypeDef const *timers[MAX_TIMERS] = {
-    TIM1, TIM2, TIM3, TIM8};
+    TIM1, TIM2, TIM3, TIM8, TIM9};
 
 #define CC_CHANNELS_PER_TIMER 4 // TIM_Channel_1..4
 static const uint16_t channels[CC_CHANNELS_PER_TIMER] = { TIM_Channel_1, TIM_Channel_2, TIM_Channel_3, TIM_Channel_4 };
@@ -192,4 +192,9 @@ void TIM3_IRQHandler(void)
 void TIM8_CC_IRQHandler(void)
 {
     timCCxHandler(TIM8);
+}
+
+void TIM1_BRK_TIM9_IRQHandler(void)
+{
+    timCCxHandler(TIM9);
 }

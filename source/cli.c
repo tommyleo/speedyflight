@@ -1,6 +1,8 @@
 #include "board.h"
 #include "mw.h"
 
+#define FLASH_WRITE_ADDR_LOGS    0x8080000
+
 // we unset this on 'exit'
 extern uint8_t cliMode;
 static void cliAux(char *cmdline);
@@ -100,7 +102,7 @@ const clicmd_t cmdTable[] = {
     { "save", "save and reboot", cliSave },
     { "set", "name=value or blank or * for list", cliSet },
     { "status", "show system status", cliStatus },
-    { "version", "", cliVersion },
+    { "version", "", cliVersion }
 };
 #define CMD_COUNT (sizeof(cmdTable) / sizeof(clicmd_t))
 
@@ -136,10 +138,10 @@ const clivalue_t valueTable[] = {
     { "deadband3d_throttle", VAR_UINT16, &mcfg.deadband3d_throttle, 0, 2000 },
     { "motor_pwm_rate", VAR_UINT16, &mcfg.motor_pwm_rate, 50, 32000 },
     { "servo_pwm_rate", VAR_UINT16, &mcfg.servo_pwm_rate, 50, 498 },
+    { "pwm_filter", VAR_UINT8, &mcfg.pwm_filter, 0, 15 },
     { "retarded_arm", VAR_UINT8, &mcfg.retarded_arm, 0, 1 },
     { "disarm_kill_switch", VAR_UINT8, &mcfg.disarm_kill_switch, 0, 1 },
-    { "flaps_speed", VAR_UINT8, &mcfg.flaps_speed, 0, 100 },
-    { "fixedwing_althold_dir", VAR_INT8, &mcfg.fixedwing_althold_dir, -1, 1 },
+    { "fw_althold_dir", VAR_INT8, &mcfg.fw_althold_dir, -1, 1 },
     { "reboot_character", VAR_UINT8, &mcfg.reboot_character, 48, 126 },
     { "serial_baudrate", VAR_UINT32, &mcfg.serial_baudrate, 1200, 115200 },
     { "softserial_baudrate", VAR_UINT32, &mcfg.softserial_baudrate, 1200, 19200 },
@@ -147,9 +149,11 @@ const clivalue_t valueTable[] = {
     { "softserial_2_inverted", VAR_UINT8, &mcfg.softserial_2_inverted, 0, 1 },
     { "gps_type", VAR_UINT8, &mcfg.gps_type, 0, GPS_HARDWARE_MAX },
     { "gps_baudrate", VAR_INT8, &mcfg.gps_baudrate, 0, GPS_BAUD_MAX },
-    { "gps_ubx_sbas", VAR_UINT8, &mcfg.gps_ubx_sbas, 0, 4 },
+    { "gps_ubx_sbas", VAR_INT8, &mcfg.gps_ubx_sbas, -1, 4 },
+    { "gps_autobaud", VAR_UINT8, &mcfg.gps_autobaud, 0, 1 },
     { "serialrx_type", VAR_UINT8, &mcfg.serialrx_type, 0, SERIALRX_PROVIDER_MAX },
-    { "sbus_offset", VAR_UINT16, &mcfg.sbus_offset, 900, 1200 },
+    { "spektrum_sat_bind", VAR_UINT8, &mcfg.spektrum_sat_bind, 0, 10 },
+    { "spektrum_sat_on_flexport", VAR_UINT8, &mcfg.spektrum_sat_on_flexport, 0, 1 },
     { "telemetry_provider", VAR_UINT8, &mcfg.telemetry_provider, 0, TELEMETRY_PROVIDER_MAX },
     { "telemetry_port", VAR_UINT8, &mcfg.telemetry_port, 0, TELEMETRY_PORT_MAX },
     { "telemetry_switch", VAR_UINT8, &mcfg.telemetry_switch, 0, 1 },
@@ -167,8 +171,8 @@ const clivalue_t valueTable[] = {
     { "align_board_pitch", VAR_INT16, &mcfg.board_align_pitch, -180, 360 },
     { "align_board_yaw", VAR_INT16, &mcfg.board_align_yaw, -180, 360 },
     { "yaw_control_direction", VAR_INT8, &mcfg.yaw_control_direction, -1, 1 },
-    { "acc_hardware", VAR_UINT8, &mcfg.acc_hardware, 0, 5 },
-    { "mag_hardware", VAR_UINT8, &mcfg.mag_hardware, 0, 2 },
+    { "acc_hardware", VAR_UINT8, &mcfg.acc_hardware, 0, ACC_NONE },
+    { "mag_hardware", VAR_UINT8, &mcfg.mag_hardware, 0, MAG_NONE },
     { "max_angle_inclination", VAR_UINT16, &mcfg.max_angle_inclination, 100, 900 },
     { "moron_threshold", VAR_UINT8, &mcfg.moron_threshold, 0, 128 },
     { "gyro_lpf", VAR_UINT16, &mcfg.gyro_lpf, 0, 256 },
@@ -199,6 +203,9 @@ const clivalue_t valueTable[] = {
     { "rssi_adc_offset", VAR_INT16, &mcfg.rssi_adc_offset, 0, 4095 },
     { "yaw_direction", VAR_INT8, &cfg.yaw_direction, -1, 1 },
     { "tri_unarmed_servo", VAR_INT8, &cfg.tri_unarmed_servo, 0, 1 },
+    { "fw_roll_throw", VAR_FLOAT, &cfg.fw_roll_throw, 0, 1 },
+    { "fw_pitch_throw", VAR_FLOAT, &cfg.fw_pitch_throw, 0, 1 },
+    { "fw_vector_trust", VAR_UINT8, &cfg.fw_vector_trust, 0, 1},
     { "gimbal_flags", VAR_UINT8, &cfg.gimbal_flags, 0, 255},
     { "acc_lpf_factor", VAR_UINT8, &cfg.acc_lpf_factor, 0, 250 },
     { "accxy_deadband", VAR_UINT8, &cfg.accxy_deadband, 0, 100 },
@@ -245,6 +252,16 @@ const clivalue_t valueTable[] = {
     { "p_vel", VAR_UINT8, &cfg.P8[PIDVEL], 0, 200 },
     { "i_vel", VAR_UINT8, &cfg.I8[PIDVEL], 0, 200 },
     { "d_vel", VAR_UINT8, &cfg.D8[PIDVEL], 0, 200 },
+    { "fw_gps_maxcorr", VAR_INT16, &cfg.fw_gps_maxcorr, -45, 45 },
+    { "fw_gps_rudder", VAR_INT16, &cfg.fw_gps_rudder,  -45, 45 },
+    { "fw_gps_maxclimb", VAR_INT16, &cfg.fw_gps_maxclimb,  -45, 45 },
+    { "fw_gps_maxdive", VAR_INT16, &cfg.fw_gps_maxdive,  -45, 45 },
+    { "fw_climb_throttle", VAR_UINT16, &cfg.fw_climb_throttle, 1000, 2000 },
+    { "fw_cruise_throttle", VAR_UINT16, &cfg.fw_cruise_throttle, 1000, 2000 },
+    { "fw_idle_throttle", VAR_UINT16, &cfg.fw_idle_throttle, 1000, 2000 },
+    { "fw_scaler_throttle", VAR_UINT16, &cfg.fw_scaler_throttle, 0, 15 },
+    { "fw_roll_comp", VAR_FLOAT, &cfg.fw_roll_comp, 0, 2 },
+    { "fw_rth_alt", VAR_UINT8, &cfg.D8[PIDPOSR], 0, 200 },
 };
 
 #define VALUE_COUNT (sizeof(valueTable) / sizeof(clivalue_t))
@@ -1032,7 +1049,7 @@ static void cliStatus(char *cmdline)
 static void cliVersion(char *cmdline)
 {
     (void)cmdline;
-    cliPrint("Afro32 CLI version 2.3 " __DATE__ " / " __TIME__);
+    cliPrint("VRBrain CLI version 2.31 " __DATE__ " / " __TIME__);
 }
 
 void cliProcess(void)

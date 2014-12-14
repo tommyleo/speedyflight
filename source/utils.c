@@ -1,12 +1,20 @@
 #include "board.h"
 #include "mw.h"
 
-#include "align.h"
-
 static bool standardBoardAlignment = true;     // board orientation correction
 static float boardRotation[3][3];              // matrix
 
-void boardAlignmentInit(void)
+int constrain(int amt, int low, int high)
+{
+    if (amt < low)
+        return low;
+    else if (amt > high)
+        return high;
+    else
+        return amt;
+}
+
+void initBoardAlignment(void)
 {
     float roll, pitch, yaw;
     float cosx, sinx, cosy, siny, cosz, sinz;
@@ -52,57 +60,57 @@ void boardAlignmentInit(void)
 
 void alignBoard(int16_t *vec)
 {
-    int16_t x = vec[ROLL];
-    int16_t y = vec[PITCH];
-    int16_t z = vec[YAW];
+    int16_t x = vec[X];
+    int16_t y = vec[Y];
+    int16_t z = vec[Z];
 
-    vec[ROLL] = lrintf(boardRotation[0][0] * x + boardRotation[1][0] * y + boardRotation[2][0] * z);
-    vec[PITCH] = lrintf(boardRotation[0][1] * x + boardRotation[1][1] * y + boardRotation[2][1] * z);
-    vec[YAW] = lrintf(boardRotation[0][2] * x + boardRotation[1][2] * y + boardRotation[2][2] * z);
+    vec[X] = lrintf(boardRotation[0][0] * x + boardRotation[1][0] * y + boardRotation[2][0] * z);
+    vec[Y] = lrintf(boardRotation[0][1] * x + boardRotation[1][1] * y + boardRotation[2][1] * z);
+    vec[Z] = lrintf(boardRotation[0][2] * x + boardRotation[1][2] * y + boardRotation[2][2] * z);
 }
 
 void alignSensors(int16_t *src, int16_t *dest, uint8_t rotation)
 {
     switch (rotation) {
         case CW0_DEG:
-            dest[ROLL] = src[ROLL];
-            dest[PITCH] = src[PITCH];
-            dest[YAW] = src[YAW];
+            dest[X] = src[X];
+            dest[Y] = src[Y];
+            dest[Z] = src[Z];
             break;
         case CW90_DEG:
-            dest[ROLL] = src[PITCH];
-            dest[PITCH] = -src[ROLL];
-            dest[YAW] = src[YAW];
+            dest[X] = src[Y];
+            dest[Y] = -src[X];
+            dest[Z] = src[Z];
             break;
         case CW180_DEG:
-            dest[ROLL] = -src[ROLL];
-            dest[PITCH] = -src[PITCH];
-            dest[YAW] = src[YAW];
+            dest[X] = -src[X];
+            dest[Y] = -src[Y];
+            dest[Z] = src[Z];
             break;
         case CW270_DEG:
-            dest[ROLL] = -src[PITCH];
-            dest[PITCH] = src[ROLL];
-            dest[YAW] = src[YAW];
+            dest[X] = -src[Y];
+            dest[Y] = src[X];
+            dest[Z] = src[Z];
             break;
         case CW0_DEG_FLIP:
-            dest[ROLL] = -src[ROLL];
-            dest[PITCH] = src[PITCH];
-            dest[YAW] = -src[YAW];
+            dest[X] = -src[X];
+            dest[Y] = src[Y];
+            dest[Z] = -src[Z];
             break;
         case CW90_DEG_FLIP:
-            dest[ROLL] = src[PITCH];
-            dest[PITCH] = src[ROLL];
-            dest[YAW] = -src[YAW];
+            dest[X] = src[Y];
+            dest[Y] = src[X];
+            dest[Z] = -src[Z];
             break;
         case CW180_DEG_FLIP:
-            dest[ROLL] = src[ROLL];
-            dest[PITCH] = -src[PITCH];
-            dest[YAW] = -src[YAW];
+            dest[X] = src[X];
+            dest[Y] = -src[Y];
+            dest[Z] = -src[Z];
             break;
         case CW270_DEG_FLIP:
-            dest[ROLL] = -src[PITCH];
-            dest[PITCH] = -src[ROLL];
-            dest[YAW] = -src[YAW];
+            dest[X] = -src[Y];
+            dest[Y] = -src[X];
+            dest[Z] = -src[Z];
             break;
         default:
             break;
@@ -110,5 +118,4 @@ void alignSensors(int16_t *src, int16_t *dest, uint8_t rotation)
 
     if (!standardBoardAlignment)
         alignBoard(dest);
-
 }

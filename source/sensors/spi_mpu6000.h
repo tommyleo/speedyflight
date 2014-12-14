@@ -17,6 +17,8 @@
 
 bool mpu6000DetectSpi(sensor_t *acc, sensor_t *gyro, uint16_t lpf );
 
-bool mpu6000GyroRead(int16_t *gyroData);
+//bool mpu6000GyroRead(int16_t *gyroData);
 
-bool mpu6000AccRead(int16_t *gyroData);
+//bool mpu6000AccRead(int16_t *gyroData);
+
+bool mpu6000Read(int16_t *gyroDataG, int16_t *gyroDataA);

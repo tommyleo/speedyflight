@@ -42,35 +42,27 @@ int32_t calculateTemperature(void)
 
 void readTemperature()
 {
-    //setSPIdivisor(2);  // 18 MHz SPI clock
-
     ENABLE_MS5611;
     spiTransferByte(0x00);
     d2.bytes[2] = spiTransferByte(0x00);
     d2.bytes[1] = spiTransferByte(0x00);
     d2.bytes[0] = spiTransferByte(0x00);
     DISABLE_MS5611;
-    //delayMicroseconds(10);
     calculateTemperature();
 }
 
 void readPressure()
 {
-    //setSPIdivisor(2);  // 18 MHz SPI clock
-
     ENABLE_MS5611;
     spiTransferByte(0x00);
     d1.bytes[2] = spiTransferByte(0x00);
     d1.bytes[1] = spiTransferByte(0x00);
     d1.bytes[0] = spiTransferByte(0x00);
     DISABLE_MS5611;
-    //delayMicroseconds(10);
 }
 
 void requestTemperature()
 {
-    //setSPIdivisor(2);  // 18 MHz SPI clock
-
     ENABLE_MS5611;                      // Request temperature conversion
 #if   (OSR ==  256)
     spiTransferByte(0x50);
@@ -84,14 +76,10 @@ void requestTemperature()
     spiTransferByte(0x58);
 #endif
     DISABLE_MS5611;
-
-    //delayMicroseconds(1);
-
 }
+
 void requestPressure()
 {
-    //setSPIdivisor(2);  // 18 MHz SPI clock
-
     ENABLE_MS5611;                      // Request pressure conversion
 #if   (OSR ==  256)
     spiTransferByte(0x40);
@@ -105,8 +93,6 @@ void requestPressure()
     spiTransferByte(0x48);
 #endif
     DISABLE_MS5611;
-
-    //delayMicroseconds(1);
 }
 
 
@@ -165,7 +151,6 @@ void calculatePressureAltitude(int32_t *pressure, int32_t *temperature)
 bool ms5611DetectSpi(baro_t *baro)
 {
     spiResetErrorCounter();
-    setSPIdivisor(64);  // 18 MHz SPI clock
 
     ENABLE_MS5611;   // Reset Device
     spiTransferByte(0x1E);
@@ -219,6 +204,10 @@ bool ms5611DetectSpi(baro_t *baro)
     c6.bytes[1] = spiTransferByte(0x00);
     c6.bytes[0] = spiTransferByte(0x00);
     DISABLE_MS5611;
+
+    delayMicroseconds(1);
+
+    setSPIdivisor(16);
 
     if (((int8_t)c6.bytes[1]) == -1 || spiGetErrorCounter() != 0) {
         spiResetErrorCounter();

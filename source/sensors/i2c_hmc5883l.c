@@ -1,4 +1,5 @@
 #include "board.h"
+#include "mw.h"
 
 #define MAG_ADDRESS 0x1E
 #define MAG_DATA_REGISTER 0x03
@@ -39,7 +40,8 @@
 static sensor_align_e magAlign = 0;
 static float magGain[3] = { 1.0f, 1.0f, 1.0f };
 
-bool hmc5883lDetect(sensor_t *mag)
+bool hmc5883lDetect(mag_t *mag)
+//bool hmc5883lDetect(sensor_t *mag)
 {
     bool ack = false;
     uint8_t sig = 0;
@@ -145,6 +147,11 @@ void hmc5883lRead(int16_t *magData)
     mag[X] = (int16_t)(buf[0] << 8 | buf[1]) * magGain[X];
     mag[Z] = (int16_t)(buf[2] << 8 | buf[3]) * magGain[Z];
     mag[Y] = (int16_t)(buf[4] << 8 | buf[5]) * magGain[Y];
+
+    debug[0] = mag[X];
+    debug[1] = mag[Z];
+    debug[2] = mag[Y];
+    debug[3] = 10;
 
     alignSensors(mag, magData, magAlign);
 }

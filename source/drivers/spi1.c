@@ -44,17 +44,15 @@ bool spiInit(void)
     SPI_I2S_DeInit(SPI_BUSE);
 
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
-
     SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
     SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
     SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
     SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
     SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
     SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_64;  // 36/64 = 0.5625 MHz SPI Clock
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_64;
     SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
     SPI_InitStructure.SPI_CRCPolynomial = 7;
-
     SPI_Init(SPI_BUSE, &SPI_InitStructure);
 
     SPI_CalculateCRC(SPI_BUSE, DISABLE);

@@ -10,6 +10,7 @@
 #include <stdarg.h>
 #include <errno.h>
 
+#include "utils.h"
 #include "printf.h"
 #include "stm32f4xx_conf.h"
 #include "stm32f4xx.h"
@@ -37,8 +38,9 @@
  */
 __ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
 
-
 #define SENSORS_SET (SENSOR_GYRO | SENSOR_ACC | SENSOR_BARO | SENSOR_MAG)
+//#define SENSORS_SET (SENSOR_GYRO | SENSOR_ACC | SENSOR_BARO )
+//#define SENSORS_SET (SENSOR_GYRO | SENSOR_ACC)
 #define GYRO
 #define ACC
 #define MAG
@@ -50,11 +52,29 @@ __ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
 //#define LEDRING
 //#define SONAR
 //#define BUZZER
+#define MOTOR_PWM_RATE 400
 
-// 96-bit Chip Unique ID on st F103/F303
+#ifndef M_PI
+#define M_PI       3.14159265358979323846f
+#endif
+
+#define RADX10 (M_PI / 1800.0f)                  // 0.001745329252f
+#define RAD    (M_PI / 180.0f)
+
+#define min(a, b) ((a) < (b) ? (a) : (b))
+#define max(a, b) ((a) > (b) ? (a) : (b))
+#define abs(x) ((x) > 0 ? (x) : -(x))
+
+// Chip Unique ID on F103
 #define U_ID_0 (*(uint32_t*)0x1FFFF7E8)
 #define U_ID_1 (*(uint32_t*)0x1FFFF7EC)
 #define U_ID_2 (*(uint32_t*)0x1FFFF7F0)
+
+typedef enum HardwareRevision {
+    NAZE32 = 1,                                         // Naze32 and compatible with 8MHz HSE
+    NAZE32_REV5,                                        // Naze32 and compatible with 12MHz HSE
+    NAZE32_SP                                           // Naze32 w/Sensor Platforms
+} HardwareRevision;
 
 typedef enum {
     SENSOR_GYRO = 1 << 0, // always present
@@ -75,6 +95,13 @@ typedef enum AccelSensors {
     ACC_BMA280 = 4,
     ACC_NONE = 5
 } AccelSensors;
+
+typedef enum CompassSensors {
+    MAG_DEFAULT = 0,
+    MAG_HMC5883L = 1,
+    MAG_AK8975 = 2,
+    MAG_NONE = 3
+} CompassSensors;
 
 typedef enum {
     FEATURE_PPM = 1 << 0,
@@ -170,9 +197,11 @@ typedef struct sensor_data_t {
     int updated;
 } sensor_data_t;
 
-typedef void (*sensorInitFuncPtr)(sensor_align_e align);   // sensor init prototype
-typedef bool (*sensorReadFuncPtr)(int16_t *data);          // sensor read and align prototype
-typedef void (*baroOpFuncPtr)(void);                       // baro start operation
+typedef void (*sensorInitFuncPtr)(sensor_align_e align);           // sensor init prototype
+//typedef bool (*sensorReadFuncPtr)(int16_t *data); // sensor read and align prototype
+typedef bool (*sensorReadFuncPtr)(int16_t *dataG, int16_t *dataA); // sensor read and align prototype
+typedef bool (*magReadFuncPtr)(int16_t *data);                     // mag read and align prototype
+typedef void (*baroOpFuncPtr)(void);                               // baro start operation
 typedef void (*baroCalculateFuncPtr)(int32_t *pressure, int32_t *temperature);             // baro calculation (filled params are pressure and temperature)
 
 typedef uint16_t (*rcReadRawDataPtr)(uint8_t chan);        // used by receiver driver to return channel data
@@ -185,9 +214,16 @@ typedef struct sensor_t {
     float scale;                                            // scalefactor (currently used for gyro only, todo for accel)
 } sensor_t;
 
+typedef struct mag_t {
+    sensorInitFuncPtr init;                                 // initialize function
+    magReadFuncPtr read;                                    // read 3 axis data function
+    sensorReadFuncPtr temperature;                          // read temperature if available
+    float scale;                                            // scalefactor (currently used for gyro only, todo for accel)
+} mag_t;
+
 typedef struct baro_t {
-    uint16_t ut_delay;
-    uint16_t up_delay;
+    uint32_t ut_delay;
+    uint32_t up_delay;
     baroOpFuncPtr start_ut;
     baroOpFuncPtr get_ut;
     baroOpFuncPtr start_up;
@@ -199,21 +235,30 @@ typedef struct baro_t {
 #define BEEP_PIN    GPIO_Pin_4
 #define BEEP_GPIO   GPIOA
 
-#define LED0_PIN    GPIO_Pin_13  //Green
+#define LED0_PIN    GPIO_Pin_5   //Green
 #define LED0_GPIO   GPIOC
 
-#define LED1_PIN    GPIO_Pin_14  //Yellow
-#define LED1_GPIO   GPIOC
+#define LED1_PIN    GPIO_Pin_14  //Yellow/Blue
+#define LED1_GPIO   GPIOD
 
 #define LED2_PIN    GPIO_Pin_15  //Red
-#define LED2_GPIO   GPIOC
+#define LED2_GPIO   GPIOD
 
+/*
 #define UART1_TX_PIN        GPIO_Pin_9
 #define UART1_RX_PIN        GPIO_Pin_10
 #define UART1_TX_GPIO       GPIOA
 #define UART1_RX_GPIO       GPIOA
 #define UART1_TX_PINSOURCE  GPIO_PinSource9
 #define UART1_RX_PINSOURCE  GPIO_PinSource10
+*/
+
+#define UART1_TX_PIN        GPIO_Pin_6
+#define UART1_RX_PIN        GPIO_Pin_7
+#define UART1_TX_GPIO       GPIOB
+#define UART1_RX_GPIO       GPIOB
+#define UART1_TX_PINSOURCE  GPIO_PinSource6
+#define UART1_RX_PINSOURCE  GPIO_PinSource7
 
 #define UART2_TX_PIN        GPIO_Pin_5
 #define UART2_RX_PIN        GPIO_Pin_6
@@ -229,6 +274,13 @@ typedef struct baro_t {
 #define UART3_TX_PINSOURCE  GPIO_PinSource8
 #define UART3_RX_PINSOURCE  GPIO_PinSource9
 
+#define UART6_TX_PIN        GPIO_Pin_6
+#define UART6_RX_PIN        GPIO_Pin_7
+#define UART6_TX_GPIO       GPIOC
+#define UART6_RX_GPIO       GPIOC
+#define UART6_TX_PINSOURCE  GPIO_PinSource6
+#define UART6_RX_PINSOURCE  GPIO_PinSource7
+
 #include "drivers/adc.h"
 #include "drivers/crc.h"
 #include "drivers/gpio.h"
@@ -243,7 +295,6 @@ typedef struct baro_t {
 #include "drivers/uart.h"
 #include "drivers/usb.h"
 
-#include "sensors.h"
 #include "sensors/i2c_hmc5883l.h"
 #include "sensors/i2c_ledring.h"
 #include "sensors/spi_mpu6000.h"

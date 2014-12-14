@@ -107,8 +107,7 @@ $(USBOTGPERIPH_SRC) \
 $(USBCDCPERIPH_SRC)
 
 
-MW_SRC	 = align.c \
-		buzzer.c \
+MW_SRC	 = buzzer.c \
 		cli.c \
 		config.c \
 		gps.c \
@@ -116,17 +115,17 @@ MW_SRC	 = align.c \
 		main.c \
 		mw.c \
 		mixer.c \
-		msp.c \
 		printf.c \
 		rxmsp.c \
 		rxsbus.c \
 		rxspektrum.c \
 		rxsumd.c \
 		sensors.c \
+		serial.c \
+		utils.c \
 		telemetry_common.c \
 		telemetry_frsky.c \
 		telemetry_hott.c \
-		utils_math.c \
 		$(CMSIS_SRC) \
 		$(DEVICE_STDPERIPH_SRC) \
 		lib/cmsis_boot/startup/startup_$(DEVICE_MCUNAME).c

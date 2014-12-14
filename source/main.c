@@ -1,6 +1,5 @@
 #include "board.h"
 #include "mw.h"
-#include "align.h"
 #include "telemetry_common.h"
 
 core_t core;
@@ -15,15 +14,12 @@ int main(void)
     drv_pwm_config_t pwm_params;
     drv_adc_config_t adc_params;
 
-	//systemInit(mcfg.emf_avoidance);  // start board
-
-	//SystemInit();
-
-
     RCC_HSEConfig(RCC_HSE_ON);
     while(!RCC_WaitForHSEStartUp())
     {
     }
+
+    hw_revision = NAZE32;
 
 	checkFirstTime(false);           // check the need to load default config
     loadAndActivateConfig();         // load master and profile configuration
@@ -58,7 +54,7 @@ int main(void)
 	    LED2_OFF;
     }
 
-    boardAlignmentInit();
+    initBoardAlignment();
     sensorsSet(SENSORS_SET);        // we have these sensors; SENSORS_SET defined in board.h depending on hardware platform
     sensorsAutodetect();            // drop out any sensors that don't seem to work, init all the others.
 
@@ -97,11 +93,24 @@ int main(void)
 	if (feature(FEATURE_GPS)) {
 		gpsInit(mcfg.gps_baudrate);
 	}
+	else{
+
+	}
+
+    LED0_OFF;
+	LED1_ON;
+    for (i = 0; i < 20; i++) {
+        LED0_TOGGLE;
+        delay(25);
+        LED1_TOGGLE;
+        delay(25);
+    }
+    LED0_ON;
+    LED1_OFF;
 
     mspInit();                  // this will configure the aux box based on features and detected sensors
-
-    mixerInit();                // this will set core.useServo var depending on mixer type
     imuInit();                  // set initial flight constant like gravitation or other user defined setting
+    mixerInit();                // this will set core.useServo var depending on mixer type
 
 	pwm_params.useRcUART = feature(FEATURE_GPS) && feature(FEATURE_SERIALRX) && core.telemport;
 	pwm_params.useAf = feature(FEATURE_AF);
@@ -131,17 +140,6 @@ int main(void)
     calibratingB = CALIBRATING_BARO_CYCLES;             // 10 seconds init_delay + 200 * 25 ms = 15 seconds before ground pressure settles
     f.SMALL_ANGLE = 1;
 
-    LED0_OFF;
-	LED1_ON;
-    for (i = 0; i < 20; i++) {
-        LED0_TOGGLE;
-        delay(25);
-        LED1_TOGGLE;
-        delay(25);
-    }
-    LED0_ON;
-    LED1_OFF;
-
     while (1) {
         loop();
     }
@@ -150,10 +148,11 @@ int main(void)
 
 void HardFault_Handler(void)
 {
-// fall out of the sky
+	// fall out of the sky
     //writeAllMotors(mcfg.mincommand);
     LED0_OFF
     LED1_OFF
+    LED2_OFF
     //BEEP_ON
     while (1)
         ; // Keep buzzer on

@@ -1,6 +1,6 @@
 # speedyFlight 2.31  
 
-# VRBrain - STM32F4XX - 168 Mhz
+# VR μBrain - STM32F4XX - 168 Mhz
 
 32 bit fork of the baseflight MultiWii RC flight controller firmware
 
@@ -27,15 +27,21 @@ GPS Ublox OK
 
 ## Wires (you can switch from Arducopter without change the PIN connection)
 
-![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/speedyFlight_collegamenti.png)
+![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/vrmicrobrain_top.png)
+
+![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/vrmicrobrain_bottom1.png)
 
 
 ## Configuration Tool
 
 To configure speedyFlight you should use:
 
-Baseflight configurator
-https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
+Fork of Baseflight configurator - URL: https://github.com/tommyleo/baseflight-configurator
+
+    - Clone the repo to any local directory or download it as zip
+    - Start chromium or google chrome and go to tools -> extension
+    - Check the "Developer mode" checkbox
+    - Click on load unpacked extension and point it to the baseflight configurator directory (for example D:/baseflight-configurator)
 
 
 ## Features

@@ -1,8 +1,6 @@
-#include <string.h>
-
 #include "board.h"
 #include "mw.h"
-
+#include <string.h>
 
 #define FLASH_PAGE_SIZE
 #define FLASH_WRITE_ADDR    0x80E0000
@@ -12,7 +10,7 @@ config_t cfg;   // profile config struct
 
 const char rcChannelLetters[] = "AERT1234";
 
-static const uint8_t EEPROM_CONF_VERSION = 65;
+static const uint8_t EEPROM_CONF_VERSION = 72;
 static uint32_t enabledSensors = 0;
 static void resetConf(void);
 
@@ -102,7 +100,7 @@ void loadAndActivateConfig(void)
 
 void writeEEPROM(uint8_t b, uint8_t updateProfile)
 {
-   FLASH_Status status;
+	FLASH_Status status;
     uint32_t i;
     uint8_t chk = 0;
     const uint8_t *p;
@@ -190,9 +188,9 @@ static void resetConf(void)
     featureSet(FEATURE_I2C);
     featureSet(FEATURE_GPS);
     featureSet(FEATURE_TELEMETRY);
-    //featureSet(FEATURE_VBAT);
-    //featureSet(FEATURE_SERIALRX);
-    //featureSet(FEATURE_SOFTSERIAL);
+    featureSet(FEATURE_VBAT);
+    featureSet(FEATURE_SERIALRX);
+    featureSet(FEATURE_SOFTSERIAL);
 
     // global settings
     mcfg.current_profile = 0;       // default profile
@@ -204,48 +202,53 @@ static void resetConf(void)
     mcfg.accZero[2] = 0;
     mcfg.gyro_align = CW270_DEG;
     mcfg.acc_align = CW270_DEG;
-    mcfg.mag_align = CW90_DEG;
+    mcfg.mag_align = 0;
     mcfg.board_align_roll = 0;
     mcfg.board_align_pitch = 0;
     mcfg.board_align_yaw = 0;
-    mcfg.acc_hardware = ACC_DEFAULT;     // default autodetect
+    mcfg.acc_hardware = ACC_DEFAULT;     // default/autodetect
+    mcfg.mag_hardware = MAG_DEFAULT;
     mcfg.max_angle_inclination = 500;    // 50 degrees
     mcfg.yaw_control_direction = 1;
     mcfg.moron_threshold = 32;
+    mcfg.currentscale = 400; // for Allegro ACS758LCB-100U (40mV/A)
     mcfg.vbatscale = 110;
     mcfg.vbatmaxcellvoltage = 43;
     mcfg.vbatmincellvoltage = 33;
     mcfg.power_adc_channel = 0;
     mcfg.serialrx_type = 0;
-    mcfg.telemetry_provider = TELEMETRY_PROVIDER_MSP;
+    mcfg.spektrum_sat_bind = 0;
+    mcfg.telemetry_provider = TELEMETRY_PROVIDER_FRSKY;
     mcfg.telemetry_port = TELEMETRY_PORT_UART;
     mcfg.telemetry_switch = 0;
     mcfg.midrc = 1500;
     mcfg.mincheck = 1100;
     mcfg.maxcheck = 1900;
     mcfg.retarded_arm = 0;       // disable arm/disarm on roll left/right
-    mcfg.flaps_speed = 0;
-    mcfg.fixedwing_althold_dir = 1;
-
+    mcfg.disarm_kill_switch = 1; // AUX disarm independently of throttle value
+    mcfg.fw_althold_dir = 1;
     // Motor/ESC/Servo
     mcfg.minthrottle = 1150;
     mcfg.maxthrottle = 1850;
-    mcfg.mincommand = 1090;
+    mcfg.mincommand = 1000;
     mcfg.deadband3d_low = 1406;
     mcfg.deadband3d_high = 1514;
     mcfg.neutral3d = 1460;
     mcfg.deadband3d_throttle = 50;
-    mcfg.motor_pwm_rate = 400;
+    mcfg.motor_pwm_rate = MOTOR_PWM_RATE;
     mcfg.servo_pwm_rate = 50;
+    // gps/nav stuff
     mcfg.gps_type = GPS_UBLOX;
     mcfg.gps_baudrate = GPS_BAUD_38400;
-    mcfg.serial_baudrate = 57600;
-    mcfg.softserial_baudrate = 57600;
+    // serial (USART1) baudrate
+    mcfg.serial_baudrate = 115200;
+    mcfg.softserial_baudrate = 9600;
     mcfg.softserial_1_inverted = 0;
     mcfg.softserial_2_inverted = 0;
-    mcfg.looptime = 3500;
+    mcfg.looptime = 500;  //2 KHz - Default
     mcfg.emf_avoidance = 0;
     mcfg.rssi_aux_channel = 0;
+    mcfg.rssi_adc_max = 4095;
 
     cfg.pidController = 0;
     cfg.P8[ROLL] = 40;
@@ -301,7 +304,7 @@ static void resetConf(void)
     cfg.small_angle = 25;
 
     // Radio
-    parseRcChannels("TAER1234");
+    parseRcChannels("AETR1234");
     cfg.deadband = 0;
     cfg.yawdeadband = 0;
     cfg.alt_hold_throttle_neutral = 40;
@@ -337,7 +340,18 @@ static void resetConf(void)
     cfg.nav_speed_min = 100;
     cfg.nav_speed_max = 300;
     cfg.ap_mode = 40;
-
+    // fw stuff
+    cfg.fw_roll_throw = 0.5f;
+    cfg.fw_pitch_throw = 0.5f;
+    cfg.fw_gps_maxcorr = 20;
+    cfg.fw_gps_rudder = 15;
+    cfg.fw_gps_maxclimb = 15;
+    cfg.fw_gps_maxdive = 15;
+    cfg.fw_climb_throttle = 1900;
+    cfg.fw_cruise_throttle = 1500;
+    cfg.fw_idle_throttle = 1300;
+    cfg.fw_scaler_throttle = 8;
+    cfg.fw_roll_comp = 1;
     // control stuff
     mcfg.reboot_character = 'R';
 

@@ -59,9 +59,9 @@ void spektrumInit(rcReadRawDataPtr *callback)
             break;
     }
 
-    core.rcvrport = uartOpen(USART3, spektrumParser, 115200, MODE_RX, SERIAL_NOT_INVERTED);
-       if (callback)
-           *callback = spektrumRead;
+    core.rcvrport = uartOpen(USART6, spektrumParser, 115200, MODE_RX, SERIAL_INVERTED/*SERIAL_NOT_INVERTED*/);
+    if (callback)
+    	*callback = spektrumRead;
 
 }
 
@@ -91,4 +91,3 @@ uint16_t spektrumRead(uint8_t chan)
 
     return data;
 }
-
