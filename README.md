@@ -33,7 +33,7 @@ GPS Ublox OK
 
 - Open DfuSe Demonstration -  Download from here: https://vrbrain.googlecode.com/files/um0412.zip
 
-![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/vrmicrobrain_top.png)
+![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/defuse.png)
 
 - Click on “Choose…” and select the .dfu file (obj/dev_VRBRAIN.dfu)
 
