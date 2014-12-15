@@ -27,6 +27,20 @@ EEPROM (SPI For local parameters storage)
 GPS Ublox OK
 
 
+## Install firmware
+
+- Disconnect the “Boot” Jumper located near the 10 pin connector.
+
+- Open DfuSe Demonstration -  Download from here: https://vrbrain.googlecode.com/files/um0412.zip
+
+![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/vrmicrobrain_top.png)
+
+- Click on “Choose…” and select the .dfu file (obj/dev_VRBRAIN.dfu)
+
+- Select “Upgrade” and click Yes. Now wait until the upload hase finished and Quit.
+
+
+
 ## Wires (you can switch from Arducopter without change the PIN connection)
 
 ![alt tag](https://raw.github.com/tommyleo/speedyflight/master/images/vrmicrobrain_top.png)
