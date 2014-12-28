@@ -55,19 +55,19 @@ uint8_t usbRead(serialPort_t *instance)
 
 void usbPrintStr(const char *str)
 {
-    if (usbDeviceConfigured == true)
-      {
-        VCP_send_buffer((uint8_t*)str, strlen(str));
-      }
+	if (usbDeviceConfigured == true)
+	{
+		VCP_send_buffer((uint8_t*)str, strlen(str));
+	}
 }
 
 void usbPrint(serialPort_t *instance, uint8_t c)
 {
-    if (usbDeviceConfigured == true)
-        {
-        VCP_send_buffer(&c, 1);
-        }
-
+	if (usbDeviceConfigured == true)
+	{
+		VCP_send_buffer(&c, 1);
+        USB_OTG_BSP_uDelay(250); //Just for Baseflight configurator, VRBrain is too fast!!!
+	}
 }
 
 const struct serialPortVTable usbVTable[] = { { usbPrint, usbAvailable, usbRead, usbSetBaudRate, isUsbTransmitBufferEmpty, usbSetMode, } };
@@ -84,5 +84,4 @@ serialPort_t *usbInit(void)
     s->port.vTable = usbVTable;
     usbDeviceConfigured = true;
     return (serialPort_t *)s;
-
 }

@@ -6,7 +6,7 @@
 
 Web reference: http://vrbrain.wordpress.com/vr-microbrain/
 
-## Warning, this is a beta version, do not fly and remove the propeller, it only proves the configuration of VRBrain with the GCS
+## Warning, this is a beta version, do not fly and remove the propeller, it only proves the configuration of VR μBrain with the GCS
 
 # Sensors
 

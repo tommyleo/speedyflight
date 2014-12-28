@@ -403,7 +403,8 @@ int getEstimatedAltitude(void)
 
     // when the sonar is in his best range
     //if (sonarAlt > 0 && sonarAlt < 200)
-        EstAlt = BaroAlt;
+	if (abs(EstAlt-BaroAlt)<10)
+		EstAlt = BaroAlt;
     //else
     //    EstAlt = accAlt;
 
