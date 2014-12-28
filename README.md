@@ -52,12 +52,7 @@ GPS Ublox OK
 
 To configure speedyFlight you should use:
 
-Fork of Baseflight configurator - URL: https://github.com/tommyleo/baseflight-configurator
-
-- Clone the repo to any local directory or download it as zip
-- Start chromium or google chrome and go to tools -> extension
-- Check the "Developer mode" checkbox
-- Click on load unpacked extension and point it to the baseflight configurator directory (for example D:/baseflight-configurator)
+Baseflight configurator - https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
 
 
 ## Features
