@@ -3,6 +3,7 @@
 
 typedef struct {
     volatile uint32_t *ccr;
+    volatile TIM_TypeDef *tim;
     uint16_t period;
     // for input only
     uint8_t channel;
@@ -116,6 +117,7 @@ static const pwmPintData_t * const hardwareMaps[] = { multiPWM, multiNoPWM, airP
 
 #define PWM_TIMER_MHZ 1
 #define PWM_BRUSHED_TIMER_MHZ 8
+#define ONESHOT125_TIMER_MHZ 8
 
 static void pwmWriteBrushed(uint8_t index, uint16_t value)
 {
@@ -132,7 +134,34 @@ void pwmWriteMotor(uint8_t index, uint16_t value)
 {
     if (index < numMyMotors)
 		pwmWritePtr(index, value);
+
+    //pwmFinishedWritingMotors(numMyMotors);
 }
+
+void pwmFinishedWritingMotors(uint8_t numberMotors)
+{
+	 uint8_t index;
+	 volatile TIM_TypeDef *lastTimerPtr = NULL;
+
+	 if(feature(FEATURE_ONESHOT125)){
+
+		 for(index = 0; index < numberMotors; index++){
+
+			 // Force the timer to overflow if it's the first motor to output, or if we change timers
+			 if(motors[index]->tim != lastTimerPtr){
+				 lastTimerPtr = motors[index]->tim;
+				 timerForceOverflow(motors[index]->tim);
+			 }
+		 }
+
+		 // Set the compare register to 0, which stops the output pulsing if the timer overflows before the main loop completes again.
+		 // This compare register will be set to the output value on the next main loop.
+		 for(index = 0; index < numberMotors; index++){
+			 *motors[index]->ccr = 0;
+		 }
+	 }
+}
+
 
 void pwmWriteServo(uint8_t index, uint16_t value)
 {
@@ -243,6 +272,7 @@ static pwmPortData_t *pwmOutConfig(uint8_t port, uint8_t mhz, uint16_t period, u
             p->ccr = (uint32_t *)&timerHardware[port].tim->CCR4;
             break;
     }
+    p->tim = timerHardware[port].tim;
     p->period = period;
 
     return p;
@@ -403,7 +433,11 @@ void pwmInit(drv_pwm_config_t *config)
             else
                 mhz = PWM_TIMER_MHZ;
             hz = mhz * 1000000;
-			motors[numMyMotors++] = pwmOutConfig(port, mhz, hz / config->motorPwmRate, config->idlePulse);
+            if(feature(FEATURE_ONESHOT125))
+            	motors[numMyMotors] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, 0xFFFF, config->idlePulse);
+            else
+            	motors[numMyMotors++] = pwmOutConfig(port, mhz, hz / config->motorPwmRate, config->idlePulse);
+
         } else if (mask & TYPE_S) {
             servos[numServos++] = pwmOutConfig(port, PWM_TIMER_MHZ, 1000000 / config->servoPwmRate, config->servoCenterPulse);
         }

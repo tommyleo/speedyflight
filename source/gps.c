@@ -130,7 +130,6 @@ static void gpsSetState(uint8_t state)
 
 void gpsInit(uint8_t baudrateIndex)
 {
-	uint8_t i;
     portMode_t mode = MODE_RXTX;
 
     // init gpsData structure. if we're not actually enabled, don't bother doing anything else

@@ -5,7 +5,6 @@ static volatile uint16_t spiErrorCount2 = 0;
 
 void spiInit2(void)
 {
-	SPI_InitTypeDef spi;
 	GPIO_InitTypeDef GPIO_InitStruct;
 	GPIO_InitTypeDef GPIO_InitStructure1;
 	GPIO_InitTypeDef GPIO_InitStructure2;
