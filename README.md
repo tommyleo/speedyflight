@@ -52,7 +52,7 @@ GPS Ublox
 
 To configure speedyFlight you should use Baseflight configurator
 
-https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk
+<a href="https://chrome.google.com/webstore/detail/baseflight-configurator/mppkgnedeapfejgfimkdoninnofofigk" target="blank">Baseflight configurator</a>
 
 
 ## Features
