@@ -2,7 +2,7 @@
 32 bit fork of the baseflight MultiWii RC flight controller firmware
 
 # VR μBrain - STM32F4XX - 168 Mhz 
-## Looptime = 500 (2 KHz by default)
+## Looptime = 25 (Main Cycle Time 25μs) (40 KHz by default)
 
 Web reference: http://vrbrain.wordpress.com/vr-microbrain/
 
@@ -18,13 +18,13 @@ MS5611 (SPI Barometer)
 
 EEPROM (SPI For local parameters storage)
 
-8 RC Input PWM (Test ok) or  Sat Spektrum (Test ok)
+8 RC Input PWM (Test ok) or  Sat Spektrum
 
 8 RC Output at 490 hz
 
 3 Seriale ports
 
-GPS Ublox OK
+GPS Ublox
 
 
 ## Install firmware

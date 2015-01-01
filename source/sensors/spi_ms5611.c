@@ -220,8 +220,8 @@ bool ms5611DetectSpi(baro_t *baro)
 
     delay(10);
 
-    baro->ut_delay = 10000;
-    baro->up_delay = 10000;
+    baro->ut_delay = 15000;
+    baro->up_delay = 15000;
     baro->start_ut = requestTemperature;
     baro->get_ut = readTemperature;
     baro->start_up = requestPressure;

@@ -10,6 +10,7 @@ uint8_t toggleBeep = 0;
 uint32_t currentTime = 0;
 uint32_t previousTime = 0;
 uint16_t cycleTime = 0;         // this is the number in micro second to achieve a full loop, it can differ a little and is taken into account in the PID loop
+uint32_t imuDeadline = 1000;
 
 int16_t headFreeModeHold;
 
@@ -232,11 +233,9 @@ void annexCode(void)
 
     serialCom();
 
-#ifndef CJMCU
     if (!cliMode && feature(FEATURE_TELEMETRY)) {
         handleTelemetry();
     }
-#endif
 
     // Read out gyro temperature. can use it for something somewhere. maybe get MCU temperature instead? lots of fun possibilities.
     //if (gyro.temperature)
@@ -854,19 +853,16 @@ void loop(void)
                 mwVario();
             break;
         }
-
     }
 
     currentTime = micros();
     if (mcfg.looptime == 0 || (int32_t)(currentTime - loopTime) >= 0) {
         loopTime = currentTime + mcfg.looptime;
-        computeIMU();
-        // Measure loop rate just afer reading the sensors
-        currentTime = micros();
+		computeIMU();
+        currentTime = micros(); // Measure loop rate just afer reading the sensors
         cycleTime = (int32_t)(currentTime - previousTime);
         previousTime = currentTime;
-        // non IMU critical, temeperatur, serialcom
-        annexCode();
+        annexCode(); // non IMU critical, temeperatur, serialcom
 #ifdef MAG
         if (sensors(SENSOR_MAG)) {
             if (abs(rcCommand[YAW]) < 70 && f.MAG_MODE) {

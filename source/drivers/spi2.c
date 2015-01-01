@@ -1,6 +1,8 @@
 #include "board.h"
 #include "spi2.h"
 
+#define SPI2_TIMEOUT 500
+
 static volatile uint16_t spiErrorCount2 = 0;
 
 void spiInit2(void)
@@ -23,7 +25,6 @@ void spiInit2(void)
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
 	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
-	//GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
 	GPIO_Init(GPIOE, &GPIO_InitStruct);
 
@@ -31,7 +32,6 @@ void spiInit2(void)
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
 	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
-	//GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
 	GPIO_Init(GPIOD, &GPIO_InitStruct);
 
@@ -69,7 +69,7 @@ void spiInit2(void)
 
 	SPI_I2S_DeInit(SPI_BUSE2);
 
-	// Enable SPI1 clock
+	// Enable SPI2 clock
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_SPI2, ENABLE);
 
 	SPI_InitTypeDef SPI_InitStructure;
@@ -92,7 +92,7 @@ void spiInit2(void)
 // return uint8_t value or -1 when failure
 uint8_t spiTransferByte2(uint8_t data)
 {
-    uint16_t spiTimeout = 1000;
+    uint16_t spiTimeout = SPI2_TIMEOUT;
 
     while (SPI_I2S_GetFlagStatus(SPI_BUSE2, SPI_I2S_FLAG_TXE) == RESET)
         if ((spiTimeout--) == 0)
@@ -100,7 +100,7 @@ uint8_t spiTransferByte2(uint8_t data)
 
     SPI_SendData(SPI_BUSE2, data);
 
-    spiTimeout = 1000;
+    spiTimeout = SPI2_TIMEOUT;
     while (SPI_I2S_GetFlagStatus(SPI_BUSE2, SPI_I2S_FLAG_RXNE) == RESET)
         if ((spiTimeout--) == 0)
             return spiTimeoutUserCallback2();
@@ -116,13 +116,13 @@ uint8_t spiTransfer2(uint8_t *out, uint8_t *in, int len)
 
     while (len--) {
         b = in ? *(in++) : 0xFF;
-        spiTimeout = 1000;
+        spiTimeout = SPI2_TIMEOUT;
         while (SPI_I2S_GetFlagStatus(SPI_BUSE2, SPI_I2S_FLAG_TXE) == RESET) {
             if ((spiTimeout--) == 0)
                 return spiTimeoutUserCallback2();
         }
         SPI_SendData(SPI_BUSE2, b);
-        spiTimeout = 1000;
+        spiTimeout = SPI2_TIMEOUT;
         while (SPI_I2S_GetFlagStatus(SPI_BUSE2, SPI_I2S_FLAG_RXNE) == RESET) {
             if ((spiTimeout--) == 0)
                 return spiTimeoutUserCallback2();
@@ -134,8 +134,6 @@ uint8_t spiTransfer2(uint8_t *out, uint8_t *in, int len)
     }
     return 1;
 }
-
-
 
 ///////////////////////////////////////////////////////////////////////////////
 // Set SPI Divisor

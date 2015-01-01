@@ -60,6 +60,7 @@
 #define BITS_DLPF_CFG_MASK          0x07
 #define BIT_INT_ANYRD_2CLEAR        0x10
 #define BIT_RAW_RDY_EN			    0x01
+#define BIT_RAW_RDY_INT             0x01
 #define BIT_I2C_IF_DIS              0x10
 #define BIT_INT_STATUS_DATA		    0x01
 #define BIT_GYRO                    3
@@ -175,7 +176,7 @@ bool mpu6000DetectSpi(sensor_t *sensorAcc, sensor_t *sensorGyro, uint16_t lpf )
     delayMicroseconds(1);
 
     ENABLE_MPU6000;
-    spiTransferByte2(MPU6000_GYRO_CONFIG);         // Gyro +/- 1000 DPS Full Scale
+    spiTransferByte2(MPU6000_GYRO_CONFIG);         // Gyro +/- 2000 DPS Full Scale
     spiTransferByte2(BITS_FS_2000DPS);
     DISABLE_MPU6000;
     delayMicroseconds(1);
@@ -183,7 +184,6 @@ bool mpu6000DetectSpi(sensor_t *sensorAcc, sensor_t *sensorGyro, uint16_t lpf )
     ENABLE_MPU6000;
     spiTransferByte2(MPU6000_CONFIG);
     spiTransferByte2(mpuLowPassFilter);
-    //spiTransferByte2(BITS_DLPF_CFG_2100HZ_NOLPF);
     DISABLE_MPU6000;
     delayMicroseconds(1);
 
@@ -196,9 +196,8 @@ bool mpu6000DetectSpi(sensor_t *sensorAcc, sensor_t *sensorGyro, uint16_t lpf )
     setSPIdivisor2(2);
 
     sensorAcc->init = mpu6000AccInit;
-    //sensorAcc->read = mpu6000AccRead;
+    sensorAcc->read = NULL; //Not used
     sensorGyro->init = mpu6000GyroInit;
-    //sensorGyro->read = mpu6000GyroRead;
     sensorGyro->read = mpu6000Read;
     sensorGyro->scale = (4.0f / 16.4f) * (M_PI / 180.0f) * 0.000001f;
 
@@ -213,12 +212,27 @@ bool mpu6000Read(int16_t *datag, int16_t *dataa)
     uint8_t Read_OK;
 
     ENABLE_MPU6000;
+    buf[0]=spiTransferByte2(MPU6000_INT_STATUS | 0x80);
+    buf[1]=spiTransferByte2(0xFF);
+    DISABLE_MPU6000;
+
+    delayMicroseconds(5);
+
+    debug[0] = buf[1];
+    debug[1] = buf[1] & BIT_RAW_RDY_INT;
+
+    if ((buf[1] & BIT_RAW_RDY_INT) == 0){
+    	debug[2]=99;
+    	return false;
+    }
+
+    ENABLE_MPU6000;
     spiTransferByte2(MPU6000_ACCEL_XOUT_H | 0x80);
     Read_OK = spiTransfer2(buf, NULL, 14);
     DISABLE_MPU6000;
 
     //Gyro
-    if (Read_OK){
+    if (Read_OK==1){
 		dataBuffer[X] = (int16_t)((buf[8] << 8) | buf[9]) / 4;
 		dataBuffer[Y] = (int16_t)((buf[10] << 8) | buf[11]) / 4;
 		dataBuffer[Z] = (int16_t)((buf[12] << 8) | buf[13]) / 4;
@@ -229,44 +243,8 @@ bool mpu6000Read(int16_t *datag, int16_t *dataa)
 		dataBuffer[Y] = (int16_t)((buf[2] << 8) | buf[3]);
 		dataBuffer[Z] = (int16_t)((buf[4] << 8) | buf[5]);
 		alignSensors(dataBuffer, dataa, accAlign);
+	    return true;
     }
-    return true;
+    else
+    	return false;
 }
-
-/*
-bool mpu6000GyroRead(int16_t *data)
-{
-    int16_t dataBuffer[3];
-    uint8_t buf[6];
-
-    ENABLE_MPU6000;
-    spiTransferByte2(MPU6000_GYRO_XOUT_H | 0x80);
-    spiTransfer2(buf, NULL, 6);
-    DISABLE_MPU6000;
-
-    dataBuffer[X] = (int16_t)((buf[0] << 8) | buf[1]) / 4;
-    dataBuffer[Y] = (int16_t)((buf[2] << 8) | buf[3]) / 4;
-    dataBuffer[Z] = (int16_t)((buf[4] << 8) | buf[5]) / 4;
-
-    alignSensors(dataBuffer, data, gyroAlign);
-    return true;
-}
-
-bool mpu6000AccRead(int16_t *data)
-{
-    int16_t dataBuffer[3];
-    uint8_t buf[6];
-
-    ENABLE_MPU6000;
-    spiTransferByte2(MPU6000_ACCEL_XOUT_H | 0x80);
-    spiTransfer2(buf, NULL, 6);
-    DISABLE_MPU6000;
-
-    dataBuffer[X] = (int16_t)((buf[0] << 8) | buf[1]);
-    dataBuffer[Y] = (int16_t)((buf[2] << 8) | buf[3]);
-    dataBuffer[Z] = (int16_t)((buf[4] << 8) | buf[5]);
-
-    alignSensors(dataBuffer, data, accAlign);
-    return true;
-}
-*/

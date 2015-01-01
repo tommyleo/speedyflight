@@ -67,17 +67,18 @@ void computeIMU(void)
     }
     */
 
-    IMU_getADC();
-    getEstimatedAttitude();
+    if (IMU_getADC()){
+		getEstimatedAttitude();
 
-    if (mcfg.mixerConfiguration == MULTITYPE_TRI) {
-        gyroData[YAW] = (gyroYawSmooth * 2 + gyroADC[YAW]) / 3;
-        gyroYawSmooth = gyroData[YAW];
-    } else {
-        gyroData[YAW] = gyroADC[YAW];
+		if (mcfg.mixerConfiguration == MULTITYPE_TRI) {
+			gyroData[YAW] = (gyroYawSmooth * 2 + gyroADC[YAW]) / 3;
+			gyroYawSmooth = gyroData[YAW];
+		} else {
+			gyroData[YAW] = gyroADC[YAW];
+		}
+		gyroData[ROLL] = gyroADC[ROLL];
+		gyroData[PITCH] = gyroADC[PITCH];
     }
-    gyroData[ROLL] = gyroADC[ROLL];
-    gyroData[PITCH] = gyroADC[PITCH];
 }
 
 // **************************************************
@@ -256,17 +257,9 @@ static void getEstimatedAttitude(void)
     uint32_t deltaT;
     float scale, deltaGyroAngle[3];
     deltaT = currentT - previousT;
-    /*
-    if (mcfg.looptime!=0){
-    	if (deltaT > mcfg.looptime)
-    		deltaT = mcfg.looptime;
-    }
-    */
 
     scale = deltaT * gyro.scale;
     previousT = currentT;
-
-    //debug[0]=deltaT;
 
     // Initialization
     for (axis = 0; axis < 3; axis++) {
@@ -361,7 +354,6 @@ int getEstimatedAltitude(void)
         baroGroundPressure -= baroGroundPressure / 8;
         baroGroundPressure += baroPressureSum / (cfg.baro_tab_size - 1);
         baroGroundAltitude = (1.0f - powf((baroGroundPressure / 8) / 101325.0f, 0.190295f)) * 4433000.0f;
-
         vel = 0;
         accAlt = 0;
         calibratingB--;

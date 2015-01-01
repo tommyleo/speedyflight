@@ -325,11 +325,15 @@ void ACC_getADC(void)
 }
 */
 
-void IMU_getADC(void)
+bool IMU_getADC(void)
 {
-    gyro.read(gyroADC, accADC);
-	GYRO_Common();
-	ACC_Common();
+    if (gyro.read(gyroADC, accADC)){
+    	GYRO_Common();
+    	ACC_Common();
+    	return true;
+    }
+    else
+		return false;
 }
 
 #ifdef MAG
