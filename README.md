@@ -2,7 +2,7 @@
 32 bit fork of the baseflight MultiWii RC flight controller firmware
 
 # VR μBrain - STM32F4XX - 168 Mhz 
-## Looptime = 25 (Main Cycle Time 25μs) (40 KHz by default)
+## Looptime = 50 (Main Cycle Time 50μs) (20 KHz by default)
 
 Web reference: http://vrbrain.wordpress.com/vr-microbrain/
 
