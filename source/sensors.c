@@ -216,7 +216,8 @@ static void GYRO_Common(void)
                     g[0] = g[1] = g[2] = 0;
                     continue;
                 }
-                gyroZero[axis] = (g[axis] + (CALIBRATING_GYRO_CYCLES / 2)) / CALIBRATING_GYRO_CYCLES;
+                //gyroZero[axis] = (g[axis] + (CALIBRATING_GYRO_CYCLES / 2)) / CALIBRATING_GYRO_CYCLES;
+                gyroZero[axis] = (g[axis]+1) / CALIBRATING_GYRO_CYCLES;
                 blinkLED(10, 15, 1);
             }
         }
@@ -255,7 +256,8 @@ static void ACC_Common(void)
         if (calibratingA == 1) {
             mcfg.accZero[ROLL] = (a[ROLL] + (CALIBRATING_ACC_CYCLES / 2)) / CALIBRATING_ACC_CYCLES;
             mcfg.accZero[PITCH] = (a[PITCH] + (CALIBRATING_ACC_CYCLES / 2)) / CALIBRATING_ACC_CYCLES;
-            mcfg.accZero[YAW] = (a[YAW] + (CALIBRATING_ACC_CYCLES / 2)) / CALIBRATING_ACC_CYCLES - acc_1G;
+            //mcfg.accZero[YAW] = (a[YAW] + (CALIBRATING_ACC_CYCLES / 2)) / CALIBRATING_ACC_CYCLES - acc_1G;
+            mcfg.accZero[YAW] = (a[YAW]+1) / CALIBRATING_ACC_CYCLES - acc_1G;
             cfg.angleTrim[ROLL] = 0;
             cfg.angleTrim[PITCH] = 0;
             writeEEPROM(1, true);      // write accZero in EEPROM

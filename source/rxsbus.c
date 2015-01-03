@@ -1,7 +1,7 @@
 #include "board.h"
 #include "mw.h"
 
-// driver for SBUS receiver using UART2
+// driver for SBUS receiver using UART6
 
 #define SBUS_MAX_CHANNEL 8
 #define SBUS_FRAME_SIZE 25
@@ -12,7 +12,6 @@ static bool sbusFrameDone = false;
 static void sbusDataReceive(uint8_t c);
 static uint16_t sbusReadRawRC(uint8_t chan);
 
-// external vars (ugh)
 extern int16_t failsafeCnt;
 
 static uint32_t sbusChannelData[SBUS_MAX_CHANNEL];
@@ -22,8 +21,7 @@ void sbusInit(rcReadRawDataPtr *callback)
     int b;
     for (b = 0; b < SBUS_MAX_CHANNEL; b++)
         sbusChannelData[b] = 2 * (mcfg.midrc - SBUS_OFFSET);
-    // TODO fix me : core.rcvrport is unused
-    core.rcvrport = uartOpen(USART3, sbusDataReceive, 100000, (portMode_t)(MODE_RX | MODE_SBUS), SERIAL_NOT_INVERTED);
+    core.rcvrport = uartOpen(USART6, sbusDataReceive, 100000, (portMode_t)(MODE_RX | MODE_SBUS), SERIAL_INVERTED);
     if (callback)
         *callback = sbusReadRawRC;
     core.numRCChannels = SBUS_MAX_CHANNEL;

@@ -16,21 +16,19 @@ Web reference: http://vrbrain.wordpress.com/vr-microbrain/
 
 # Sensors
 
-MPU6000 (SPI Gyro + Acc)
+MPU6000 (SPI Gyro + Acc) (Test OK)
 
-HMC5883 (Extern Compass)
+HMC5883 (I2C External Compass) (Test OK)
 
-MS5611 (SPI Barometer)
+MS5611 (SPI Barometer) (Test OK)
 
-EEPROM (SPI For local parameters storage)
+8 RC Input PWM, Sat Spektrum, SBUS (Test ok)
 
-8 RC Input PWM (Test ok) or  Sat Spektrum
+8 RC Output up to 2 Khz (Test OK)
 
-8 RC Output at 490 hz
+3 Seriale ports (Test OK)
 
-3 Seriale ports
-
-GPS Ublox
+GPS Ublox (Test OK)
 
 
 ## Install firmware
