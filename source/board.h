@@ -246,15 +246,6 @@ typedef struct baro_t {
 #define LED2_PIN    GPIO_Pin_15  //Red
 #define LED2_GPIO   GPIOD
 
-/*
-#define UART1_TX_PIN        GPIO_Pin_9
-#define UART1_RX_PIN        GPIO_Pin_10
-#define UART1_TX_GPIO       GPIOA
-#define UART1_RX_GPIO       GPIOA
-#define UART1_TX_PINSOURCE  GPIO_PinSource9
-#define UART1_RX_PINSOURCE  GPIO_PinSource10
-*/
-
 #define UART1_TX_PIN        GPIO_Pin_6
 #define UART1_RX_PIN        GPIO_Pin_7
 #define UART1_TX_GPIO       GPIOB

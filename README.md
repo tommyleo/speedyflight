@@ -22,7 +22,7 @@ HMC5883 (I2C External Compass) (Test OK)
 
 MS5611 (SPI Barometer) (Test OK)
 
-8 RC Input PWM, Sat Spektrum, SBUS (Test ok)
+8 RC Input PWM, Sat Spektrum, SBUS (Test OK)
 
 8 RC Output up to 2 Khz (Test OK)
 
