@@ -12,7 +12,7 @@ Web reference: http://vrbrain.wordpress.com/vr-microbrain/
 
 ## <a href="https://www.youtube.com/watch?v=Y6o8bMnIQCA&feature=youtu.be" target="blank">Test GCS</a>
 
-## <a href="https://www.youtube.com/watch?v=KR7RtV-vEr0" target="blank">Test flight</a>
+## <a href="https://www.youtube.com/watch?v=ftrmEvXqNM0" target="blank">Test flight</a>
 
 # Sensors
 
