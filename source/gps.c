@@ -148,7 +148,7 @@ void gpsInit(uint8_t baudrateIndex)
 
     gpsSetPIDs();
     // Open GPS UART, no callback - buffer will be read out in gpsThread()
-    core.gpsport = uartOpen(USART3, NULL, gpsInitData[baudrateIndex].baudrate, mode, SERIAL_NOT_INVERTED);
+    core.gpsport = uartOpen(USART1, NULL, gpsInitData[baudrateIndex].baudrate, mode, SERIAL_NOT_INVERTED);
     // signal GPS "thread" to initialize when it gets to it
     gpsSetState(GPS_INITIALIZING);
 

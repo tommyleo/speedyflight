@@ -202,7 +202,7 @@ static void resetConf(void)
     mcfg.accZero[2] = 0;
     mcfg.gyro_align = CW270_DEG;
     mcfg.acc_align = CW270_DEG;
-    mcfg.mag_align = 0;
+    mcfg.mag_align = CW270_DEG_FLIP;
     mcfg.board_align_roll = 0;
     mcfg.board_align_pitch = 0;
     mcfg.board_align_yaw = 0;
@@ -240,8 +240,7 @@ static void resetConf(void)
     // gps/nav stuff
     mcfg.gps_type = GPS_UBLOX;
     mcfg.gps_baudrate = GPS_BAUD_38400;
-    // serial (USART1) baudrate
-    mcfg.serial_baudrate = 115200;
+    mcfg.serial_baudrate = 38400;
     mcfg.softserial_baudrate = 9600;
     mcfg.softserial_1_inverted = 0;
     mcfg.softserial_2_inverted = 0;
@@ -281,9 +280,9 @@ static void resetConf(void)
     cfg.D8[PIDVEL] = 1;
     cfg.rcRate8 = 90;
     cfg.rcExpo8 = 65;
-    cfg.rollPitchRate = 0;
-    cfg.yawRate = 0;
-    cfg.dynThrPID = 0;
+    cfg.rollPitchRate = 50;
+    cfg.yawRate = 50;
+    cfg.dynThrPID = 30;
     cfg.tpa_breakpoint = 1500;
     cfg.thrMid8 = 50;
     cfg.thrExpo8 = 0;
