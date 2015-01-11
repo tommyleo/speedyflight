@@ -2,14 +2,14 @@
 #include "timer.h"
 
 const timerHardware_t timerHardware[] = {
-	{ TIM1, GPIOE, Pin_9, TIM_Channel_1, TIM1_CC_IRQn, 1, GPIO_Mode_AF},    //   2
-    { TIM1, GPIOE, Pin_11, TIM_Channel_2, TIM1_CC_IRQn, 1, GPIO_Mode_AF},   //   3
-	{ TIM1, GPIOE, Pin_13, TIM_Channel_3, TIM1_CC_IRQn, 1, GPIO_Mode_AF},   //RC 1
-	{ TIM1, GPIOE, Pin_14, TIM_Channel_4, TIM1_CC_IRQn, 1, GPIO_Mode_AF},   //   4
-    { TIM9, GPIOE, Pin_5, TIM_Channel_2, TIM1_BRK_TIM9_IRQn, 0, GPIO_Mode_AF},    //   5
-    { TIM9, GPIOE, Pin_6, TIM_Channel_1, TIM1_BRK_TIM9_IRQn, 0, GPIO_Mode_AF},    //   6
-    { TIM8, GPIOC, Pin_8, TIM_Channel_3, TIM8_CC_IRQn, 0, GPIO_Mode_AF},    //   7
-    { TIM8, GPIOC, Pin_9, TIM_Channel_4, TIM8_CC_IRQn, 0, GPIO_Mode_AF},    //   8
+	{ TIM1, GPIOE, Pin_9, TIM_Channel_1, TIM1_CC_IRQn, 1, GPIO_Mode_AF},          // 1 RC 1
+    { TIM1, GPIOE, Pin_11, TIM_Channel_2, TIM1_CC_IRQn, 1, GPIO_Mode_AF},         // 2 RC 2
+	{ TIM1, GPIOE, Pin_13, TIM_Channel_3, TIM1_CC_IRQn, 1, GPIO_Mode_AF},         // 3 RC 3
+	{ TIM1, GPIOE, Pin_14, TIM_Channel_4, TIM1_CC_IRQn, 1, GPIO_Mode_AF},         // 4 RC 4
+    { TIM9, GPIOE, Pin_6, TIM_Channel_1, TIM1_BRK_TIM9_IRQn, 0, GPIO_Mode_AF},    // 5 Aux1
+    { TIM9, GPIOE, Pin_5, TIM_Channel_2, TIM1_BRK_TIM9_IRQn, 0, GPIO_Mode_AF},    // 6 Aux2
+    { TIM8, GPIOC, Pin_8, TIM_Channel_3, TIM8_CC_IRQn, 0, GPIO_Mode_AF},          // 7 Aux3
+    { TIM8, GPIOC, Pin_9, TIM_Channel_4, TIM8_CC_IRQn, 0, GPIO_Mode_AF},          // 8 Aux4
     { TIM2, GPIOA, Pin_1, TIM_Channel_2, TIM2_IRQn, 0, Mode_AF_PP},         //Motors 1
     { TIM2, GPIOA, Pin_2, TIM_Channel_3, TIM2_IRQn, 0, Mode_AF_PP},         //       2
     { TIM2, GPIOA, Pin_3, TIM_Channel_4, TIM2_IRQn, 0, Mode_AF_PP},         //       3
