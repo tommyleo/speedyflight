@@ -240,7 +240,7 @@ static void resetConf(void)
     // gps/nav stuff
     mcfg.gps_type = GPS_UBLOX;
     mcfg.gps_baudrate = GPS_BAUD_38400;
-    mcfg.serial_baudrate = 38400;
+    mcfg.serial_baudrate = 115200;
     mcfg.softserial_baudrate = 9600;
     mcfg.softserial_1_inverted = 0;
     mcfg.softserial_2_inverted = 0;
