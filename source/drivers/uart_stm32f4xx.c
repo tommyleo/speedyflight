@@ -334,14 +334,15 @@ void uartWrite(serialPort_t *instance, uint8_t ch)
 {
     uartPort_t *s = (uartPort_t *)instance;
 
-    /*
     USART_SendData(s->USARTx, ch);
     while(USART_GetFlagStatus(s->USARTx, USART_FLAG_TC) == RESET){}
-	*/
 
+    /*
     s->port.txBuffer[s->port.txBufferHead] = ch;
     s->port.txBufferHead = (s->port.txBufferHead + 1) % s->port.txBufferSize;
 	USART_ITConfig(s->USARTx, USART_IT_TXE, ENABLE);
+	*/
+	//USB_OTG_BSP_uDelay(250); //Just for Baseflight configurator, VRBrain is too fast!!!
 }
 
 const struct serialPortVTable uartVTable[] = {
