@@ -12,6 +12,7 @@
 #define ADC_GPIO               GPIOC
 #define ADC_CHANNEL            ADC_Channel_10
 
+static volatile uint16_t adcValues[ADC_CHANNEL_MAX];
 ///////////////////////////////////////
 
 uint16_t adc2ConvertedValues[8] = { 0, 0, 0, 0, 0, 0, 0, 0, };
@@ -54,5 +55,12 @@ float adcChannel(void)
 
     return (float)convertedSum / 4.0f;
 }
+
+/*
+uint16_t adcGetChannel(uint8_t channel)
+{
+    return adcValues[adcConfig[channel].dmaIndex];
+}
+*/
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -148,10 +148,10 @@ void hmc5883lRead(int16_t *magData)
     mag[Z] = (int16_t)(buf[2] << 8 | buf[3]) * magGain[Z];
     mag[Y] = (int16_t)(buf[4] << 8 | buf[5]) * magGain[Y];
 
-    debug[0] = mag[X];
-    debug[1] = mag[Z];
-    debug[2] = mag[Y];
-    debug[3] = 10;
+    //debug[0] = mag[X];
+    //debug[1] = mag[Z];
+    //debug[2] = mag[Y];
+    //debug[3] = 10;
 
     alignSensors(mag, magData, magAlign);
 }

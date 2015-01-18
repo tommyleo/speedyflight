@@ -47,6 +47,7 @@ OBJECT_DIR	 = $(ROOT)/obj
 BIN_DIR		 = $(ROOT)/obj
 CMSIS_DIR	 = $(ROOT)/lib/cmsis
 CMSISB_DIR	 = $(ROOT)/lib/cmsis_boot
+FATFS_DIR	 = $(ROOT)/lib/fatfs
 INCLUDE_DIRS = $(SRC_DIR)
 
 # Common Search path for sources
@@ -60,7 +61,7 @@ DIR_USBOTG     = $(ROOT)/lib/usb_lib/otg
 
 CMSIS_SRC	  = $(notdir $(wildcard $(CMSISB_DIR)/*.c))
 
-VPATH		:= $(VPATH):$(CMSIS_DIR):$(CMSISB_DIR)
+VPATH		:= $(VPATH):$(CMSIS_DIR):$(CMSISB_DIR):$(FATFS_DIR)
 
 INCLUDE_DIRS := $(INCLUDE_DIRS) \
 		   $(DIR_STDPERIPH)/include \
@@ -69,6 +70,7 @@ INCLUDE_DIRS := $(INCLUDE_DIRS) \
 		   $(DIR_USBOTG) \
 		   $(CMSIS_DIR) \
 		   $(CMSISB_DIR) \
+		   $(FATFS_DIR) \
 		   $(SRC_DIR)/drivers/vcp_$(DEVICE_MCUNAME)
 
 
@@ -87,7 +89,7 @@ STDPERIPH_SRC = $(notdir $(wildcard $(DIR_STDPERIPH)/source/*.c))
 USBPERIPH_SRC = $(notdir $(wildcard $(DIR_USBFS)/*.c))
 USBOTGPERIPH_SRC = $(notdir $(wildcard $(DIR_USBOTG)/*.c))
 USBCDCPERIPH_SRC = $(notdir $(wildcard $(DIR_USBCDC)/*.c))
-
+FATFS_SRC = $(notdir $(wildcard $(FATFS_DIR)/*.c))
 
 EXCLUDES = stm32f4xx_crc.c\
 stm32f4xx_can.c 
@@ -126,11 +128,14 @@ MW_SRC	 = buzzer.c \
 		telemetry_common.c \
 		telemetry_frsky.c \
 		telemetry_hott.c \
+		blackbox.c \
+		$(FATFS_SRC) \
 		$(CMSIS_SRC) \
 		$(DEVICE_STDPERIPH_SRC) \
 		lib/cmsis_boot/startup/startup_$(DEVICE_MCUNAME).c
 		
 VRBRAIN_SRC = $(MW_SRC) \
+	    drivers/adc_stm32f4xx.c \
 		drivers/spi1.c \
 		drivers/spi2.c \
 		drivers/crc.c \

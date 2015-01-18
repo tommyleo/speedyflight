@@ -122,7 +122,8 @@ typedef enum {
     FEATURE_I2C = 1 << 15,
     FEATURE_AF = 1 << 16,
     FEATURE_DISPLAY = 1 << 17,
-    FEATURE_ONESHOT125 = 1 << 18
+    FEATURE_ONESHOT125 = 1 << 18,
+    FEATURE_BLACKBOX = 1 << 19
 } AvailableFeatures;
 
 typedef enum {

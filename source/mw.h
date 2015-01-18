@@ -381,6 +381,10 @@ typedef struct master_t {
     uint8_t current_profile;                // currently loaded profile
     uint8_t reboot_character;               // which byte is used to reboot. Default 'R', could be changed carefully to something else.
 
+    // blackbox settings
+    uint8_t blackbox_rate_num;              // Together with the denom, chooses fraction of loop iterations to record
+    uint8_t blackbox_rate_denom;            //
+
     uint8_t magic_ef;                       // magic number, should be 0xEF
     uint8_t chk;                            // XOR checksum
 } master_t;
@@ -425,6 +429,7 @@ extern int16_t gyroZero[3];
 extern int16_t gyroData[3];
 extern int16_t angle[2];
 extern int16_t axisPID[3];
+extern int32_t axisPID_P[3], axisPID_I[3], axisPID_D[3];
 extern int16_t rcCommand[4];
 extern uint8_t rcOptions[CHECKBOXITEMS];
 extern int16_t failsafeCnt;
@@ -465,6 +470,7 @@ extern int16_t telemTemperature1;      // gyro sensor temperature
 extern int32_t amperage;               // amperage read by current sensor in 0.01A steps
 extern int32_t mAhdrawn;              // milli ampere hours drawn from battery since start
 extern uint8_t toggleBeep;
+extern uint16_t vbatLatest;
 
 #define PITCH_LOOKUP_LENGTH 7
 #define THROTTLE_LOOKUP_LENGTH 12

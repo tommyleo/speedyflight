@@ -2,10 +2,12 @@
 
 typedef enum {
     ADC_BATTERY = 0,
-    ADC_EXTERNAL1 = 1,
-    ADC_EXTERNAL2 = 2,
-    ADC_CHANNEL_MAX = 3
+    ADC_EXTERNAL_PAD = 1,
+    ADC_EXTERNAL_CURRENT = 2,
+    ADC_RSSI = 3,
+    ADC_CHANNEL_MAX = 4
 } AdcChannel;
+
 ///////////////////////////////////////////////////////////////////////////////
 
 #define VOLTS_PER_BIT   (3.3f / 4096.0f)

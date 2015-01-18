@@ -37,7 +37,7 @@ static uint16_t captures[MAX_INPUTS];
 static pwmPortData_t *motors[MAX_MOTORS];
 static pwmPortData_t *servos[MAX_SERVOS];
 static pwmWriteFuncPtr pwmWritePtr = NULL;
-static uint8_t numMyMotors = 0;
+static uint8_t numMotors = 0;
 static uint8_t numServos = 0;
 static uint8_t numInputs = 0;
 static uint16_t failsafeThreshold = 985;
@@ -132,20 +132,20 @@ static void pwmWriteStandard(uint8_t index, uint16_t value)
 
 void pwmWriteMotor(uint8_t index, uint16_t value)
 {
-    if (index < numMyMotors)
+    if (index < numMotors)
 		pwmWritePtr(index, value);
 
-    //pwmFinishedWritingMotors(numMyMotors);
+    //pwmFinishedWritingMotors(numMotors);
 }
 
-void pwmFinishedWritingMotors(uint8_t numberMotors)
+void pwmFinishedWritingMotors(uint8_t numMotors)
 {
 	 uint8_t index;
 	 volatile TIM_TypeDef *lastTimerPtr = NULL;
 
 	 if(feature(FEATURE_ONESHOT125)){
 
-		 for(index = 0; index < numberMotors; index++){
+		 for(index = 0; index < numMotors; index++){
 
 			 // Force the timer to overflow if it's the first motor to output, or if we change timers
 			 if(motors[index]->tim != lastTimerPtr){
@@ -156,7 +156,7 @@ void pwmFinishedWritingMotors(uint8_t numberMotors)
 
 		 // Set the compare register to 0, which stops the output pulsing if the timer overflows before the main loop completes again.
 		 // This compare register will be set to the output value on the next main loop.
-		 for(index = 0; index < numberMotors; index++){
+		 for(index = 0; index < numMotors; index++){
 			 *motors[index]->ccr = 0;
 		 }
 	 }
@@ -434,9 +434,9 @@ void pwmInit(drv_pwm_config_t *config)
                 mhz = PWM_TIMER_MHZ;
             hz = mhz * 1000000;
             if(feature(FEATURE_ONESHOT125))
-            	motors[numMyMotors] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, 0xFFFF, config->idlePulse);
+            	motors[numMotors] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, 0xFFFF, config->idlePulse);
             else
-            	motors[numMyMotors++] = pwmOutConfig(port, mhz, hz / config->motorPwmRate, config->idlePulse);
+            	motors[numMotors++] = pwmOutConfig(port, mhz, hz / config->motorPwmRate, config->idlePulse);
 
         } else if (mask & TYPE_S) {
             servos[numServos++] = pwmOutConfig(port, PWM_TIMER_MHZ, 1000000 / config->servoPwmRate, config->servoCenterPulse);

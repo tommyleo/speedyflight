@@ -1,6 +1,7 @@
 #include "board.h"
 #include "mw.h"
 #include "telemetry_common.h"
+#include "blackbox.h"
 
 core_t core;
 int hw_revision = 0;
@@ -85,17 +86,14 @@ int main(void)
 		}
 	}
 
-	// now init other serial
-	if (feature(FEATURE_TELEMETRY)) {
+	if (feature(FEATURE_TELEMETRY))
 		initTelemetry(USART3);
-	}
 
-	if (feature(FEATURE_GPS)) {
+	if (feature(FEATURE_GPS))
 		gpsInit(mcfg.gps_baudrate);
-	}
-	else{
 
-	}
+	if (feature(FEATURE_BLACKBOX))
+        initBlackbox();
 
     LED0_OFF;
 	LED1_ON;

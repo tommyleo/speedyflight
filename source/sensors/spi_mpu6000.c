@@ -218,11 +218,11 @@ bool mpu6000Read(int16_t *datag, int16_t *dataa)
 
     delayMicroseconds(5);
 
-    debug[0] = buf[1];
-    debug[1] = buf[1] & BIT_RAW_RDY_INT;
+    //debug[0] = buf[1];
+    //debug[1] = buf[1] & BIT_RAW_RDY_INT;
 
     if ((buf[1] & BIT_RAW_RDY_INT) == 0){
-    	debug[2]=99;
+    	//debug[2]=99;
     	return false;
     }
 

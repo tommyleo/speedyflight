@@ -188,9 +188,10 @@ static void resetConf(void)
     featureSet(FEATURE_I2C);
     featureSet(FEATURE_GPS);
     featureSet(FEATURE_TELEMETRY);
-    featureSet(FEATURE_VBAT);
+    //featureSet(FEATURE_VBAT);
     featureSet(FEATURE_SERIALRX);
-    featureSet(FEATURE_SOFTSERIAL);
+    //featureSet(FEATURE_SOFTSERIAL);
+    featureSet(FEATURE_BLACKBOX);
 
     // global settings
     mcfg.current_profile = 0;       // default profile
@@ -216,7 +217,7 @@ static void resetConf(void)
     mcfg.vbatmaxcellvoltage = 43;
     mcfg.vbatmincellvoltage = 33;
     mcfg.power_adc_channel = 0;
-    mcfg.serialrx_type = 0;
+    mcfg.serialrx_type = 2;
     mcfg.spektrum_sat_bind = 0;
     mcfg.telemetry_provider = TELEMETRY_PROVIDER_FRSKY;
     mcfg.telemetry_port = TELEMETRY_PORT_UART;
@@ -248,6 +249,8 @@ static void resetConf(void)
     mcfg.emf_avoidance = 0;
     mcfg.rssi_aux_channel = 0;
     mcfg.rssi_adc_max = 4095;
+    mcfg.blackbox_rate_num = 1;
+    mcfg.blackbox_rate_denom = 1;
 
     cfg.pidController = 0;
     cfg.P8[ROLL] = 40;
