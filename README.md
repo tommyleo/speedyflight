@@ -2,7 +2,13 @@
 32 bit fork of the baseflight MultiWii RC flight controller firmware
 
 # VR μBrain - STM32F4XX - 168 Mhz 
+# BLACKBOX and SDCard on Board 
+(Don't need OpenLog serial data logger) BlackBox code from  Nicholas Sherlock(thenickdude)
+
 ## Looptime = 50 (Main Cycle Time 50μs) (20 KHz by default)
+
+
+
 
 Web reference: http://vrbrain.wordpress.com/vr-microbrain/
 
@@ -31,6 +37,8 @@ MS5611 (SPI Barometer) (Test OK)
 3 Seriale ports (Test OK)
 
 GPS Ublox (Test OK)
+
+SDCARD + BlackBox (Test OK)
 
 
 ## Install firmware
