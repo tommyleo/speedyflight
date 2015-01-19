@@ -31,10 +31,12 @@
 //Use SPI communication with SDCard
 #define FATFS_USE_SDIO      0
 
+
 #define FATFS_SPI           SPI3
 
 #define FATFS_CS_RCC        RCC_AHB1Periph_GPIOA
 #define FATFS_CS_PORT       GPIOA
 #define FATFS_CS_PIN        GPIO_Pin_4
+
 
 #endif

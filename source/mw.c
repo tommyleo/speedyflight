@@ -967,14 +967,14 @@ void loop(void)
         }
 #endif
         // PID - note this is function pointer set by setPIDController()
-        if (((int32_t)(currentTime - motorsTime) >= 0)) {
-        	motorsTime = currentTime + (uint16_t)(1000000/mcfg.motor_pwm_rate);
+        //if (((int32_t)(currentTime - motorsTime) >= 0)) {
+        //	motorsTime = currentTime + (uint16_t)(1000000/mcfg.motor_pwm_rate);
 			pid_controller();
 			mixTable();
 			//writeServos();
 			writeMotors();
 	        if (feature(FEATURE_BLACKBOX))
 	        	handleBlackbox();
-		}
+		//}
     }
 }

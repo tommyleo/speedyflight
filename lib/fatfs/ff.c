@@ -819,8 +819,6 @@ FRESULT sync_fs (	/* FR_OK: successful, FR_DISK_ERR: failed */
 )
 {
 	FRESULT res;
-
-
 	res = sync_window(fs);
 	if (res == FR_OK) {
 		/* Update FSINFO sector if needed */
@@ -2556,12 +2554,8 @@ FRESULT f_open (
 			fp->id = fp->fs->id;
 		}
 	}
-
 	LEAVE_FF(dj.fs, res);
 }
-
-
-
 
 /*-----------------------------------------------------------------------*/
 /* Read File                                                             */
@@ -2782,8 +2776,6 @@ FRESULT f_write (
 
 	LEAVE_FF(fp->fs, FR_OK);
 }
-
-
 
 
 /*-----------------------------------------------------------------------*/
@@ -4456,15 +4448,15 @@ int f_putc (
 	putbuff pb;
 	UINT nw;
 
-
 	pb.fp = fp;			/* Initialize output buffer */
 	pb.nchr = pb.idx = 0;
 
 	putc_bfd(&pb, c);	/* Put a character */
 
-	if (   pb.idx >= 0	/* Flush buffered characters to the file */
+	if (pb.idx >= 0	/* Flush buffered characters to the file */
 		&& f_write(pb.fp, pb.buf, (UINT)pb.idx, &nw) == FR_OK
 		&& (UINT)pb.idx == nw) return pb.nchr;
+
 	return EOF;
 }
 

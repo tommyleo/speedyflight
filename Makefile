@@ -79,7 +79,7 @@ LD_SCRIPT	 = $(ROOT)/stm32_flash_f4xx.ld
 ARCH_FLAGS	 = -mthumb -mthumb-interwork -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion
 
 #DEVICE_FLAGS = -DSTM32F4XX -DARM_MATH_CM4  -DUSE_USB_OTG_FS
-DEVICE_FLAGS = -DSTM32F407VG -DSTM32F4XX -DUSE_USB_OTG_FS -DARM_MATH_CM4 -DHSE_VALUE=8000000
+DEVICE_FLAGS = -DSTM32F407VG -DSTM32F4XX -DSTM32F40_41xxx -DUSE_USB_OTG_FS -DARM_MATH_CM4 -DHSE_VALUE=8000000
 
 
 # Search path and source files for the ST stdperiph library

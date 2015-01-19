@@ -160,7 +160,8 @@ typedef enum {
 //----- SPI3 options start -------
 //Options can be overwriten in defines.h file
 #ifndef TM_SPI3_PRESCALER
-#define TM_SPI3_PRESCALER	SPI_BaudRatePrescaler_32
+//#define TM_SPI3_PRESCALER	SPI_BaudRatePrescaler_32
+#define TM_SPI3_PRESCALER	SPI_BaudRatePrescaler_2
 #endif
 //Specify datasize
 #ifndef TM_SPI3_DATASIZE

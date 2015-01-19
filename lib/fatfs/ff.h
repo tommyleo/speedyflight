@@ -296,14 +296,12 @@ int ff_del_syncobj (_SYNC_t sobj);				/* Delete a sync object */
 
 
 /* FAT sub type (FATFS.fs_type) */
-
 #define FS_FAT12	1
 #define FS_FAT16	2
 #define FS_FAT32	3
 
 
 /* File attribute bits for directory entry */
-
 #define	AM_RDO	0x01	/* Read only */
 #define	AM_HID	0x02	/* Hidden */
 #define	AM_SYS	0x04	/* System */
