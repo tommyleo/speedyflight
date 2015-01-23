@@ -191,7 +191,7 @@ static void resetConf(void)
     //featureSet(FEATURE_VBAT);
     featureSet(FEATURE_SERIALRX);
     //featureSet(FEATURE_SOFTSERIAL);
-    featureSet(FEATURE_BLACKBOX);
+    //featureSet(FEATURE_BLACKBOX);
 
     // global settings
     mcfg.current_profile = 0;       // default profile

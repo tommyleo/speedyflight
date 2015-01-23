@@ -1211,6 +1211,8 @@ static bool configureBlackboxPort(void)
 			if (f_open(&fil, FileName, FA_READ) != FR_OK){
 				if (f_open(&fil, FileName, FA_CREATE_ALWAYS | FA_READ | FA_WRITE) == FR_OK)
 					return true;
+				else
+					return false;
 			}
 			FileIndex++;
 		}
