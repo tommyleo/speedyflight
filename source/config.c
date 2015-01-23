@@ -245,7 +245,7 @@ static void resetConf(void)
     mcfg.softserial_baudrate = 9600;
     mcfg.softserial_1_inverted = 0;
     mcfg.softserial_2_inverted = 0;
-    mcfg.looptime = 50;  //20 KHz by Default
+    mcfg.looptime = 2500; //400Hz by default
     mcfg.emf_avoidance = 0;
     mcfg.rssi_aux_channel = 0;
     mcfg.rssi_adc_max = 4095;
