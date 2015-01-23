@@ -134,34 +134,27 @@ void pwmWriteMotor(uint8_t index, uint16_t value)
 {
     if (index < numMotors)
 		pwmWritePtr(index, value);
-
-    //pwmFinishedWritingMotors(numMotors);
 }
 
-void pwmFinishedWritingMotors(uint8_t numMotors)
+
+void pwmCompleteOneshotMotorUpdate(uint8_t motorCount)
 {
-	 uint8_t index;
-	 volatile TIM_TypeDef *lastTimerPtr = NULL;
+    uint8_t index;
+    TIM_TypeDef *lastTimerPtr = NULL;
 
-	 if(feature(FEATURE_ONESHOT125)){
+    for(index = 0; index < motorCount; index++){
 
-		 for(index = 0; index < numMotors; index++){
+        // Force the timer to overflow if it's the first motor to output, or if we change timers
+        if(motors[index]->tim != lastTimerPtr){
+            lastTimerPtr = motors[index]->tim;
+            timerForceOverflow(motors[index]->tim);
+        }
 
-			 // Force the timer to overflow if it's the first motor to output, or if we change timers
-			 if(motors[index]->tim != lastTimerPtr){
-				 lastTimerPtr = motors[index]->tim;
-				 timerForceOverflow(motors[index]->tim);
-			 }
-		 }
-
-		 // Set the compare register to 0, which stops the output pulsing if the timer overflows before the main loop completes again.
-		 // This compare register will be set to the output value on the next main loop.
-		 for(index = 0; index < numMotors; index++){
-			 *motors[index]->ccr = 0;
-		 }
-	 }
+        // Set the compare register to 0, which stops the output pulsing if the timer overflows before the main loop completes again.
+        // This compare register will be set to the output value on the next main loop.
+        *motors[index]->ccr = 0;
+    }
 }
-
 
 void pwmWriteServo(uint8_t index, uint16_t value)
 {

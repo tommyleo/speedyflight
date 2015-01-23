@@ -48,6 +48,6 @@ enum {
 
 void pwmInit(drv_pwm_config_t *init);
 void pwmWriteMotor(uint8_t index, uint16_t value);
-void pwmFinishedWritingMotors(uint8_t numMotors);
+void pwmCompleteOneshotMotorUpdate(uint8_t motorCount);
 void pwmWriteServo(uint8_t index, uint16_t value);
 uint16_t pwmRead(uint8_t channel);

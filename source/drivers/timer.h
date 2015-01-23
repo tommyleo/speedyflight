@@ -19,6 +19,7 @@ extern const timerHardware_t timerHardware[];
 void configTimeBase(TIM_TypeDef *tim, uint16_t period, uint8_t mhz);
 void timerConfigure(const timerHardware_t *timerHardwarePtr, uint16_t period, uint8_t mhz);
 void timerNVICConfigure(uint8_t irq);
+void timerForceOverflow(TIM_TypeDef *tim);
 
 void configureTimerInputCaptureCompareChannel(TIM_TypeDef *tim, const uint8_t channel);
 void configureTimerCaptureCompareInterrupt(const timerHardware_t *timerHardwarePtr, uint8_t reference, timerCCCallbackPtr *callback);
