@@ -1,6 +1,9 @@
 #include "board.h"
 #include "timer.h"
 
+#include "atomic.h"
+#include "nvic.h"
+
 const timerHardware_t timerHardware[] = {
 	{ TIM1, GPIOE, Pin_9, TIM_Channel_1, TIM1_CC_IRQn, 1, GPIO_Mode_AF},          // 1 RC 1
     { TIM1, GPIOE, Pin_11, TIM_Channel_2, TIM1_CC_IRQn, 1, GPIO_Mode_AF},         // 2 RC 2
@@ -31,6 +34,8 @@ typedef struct timerConfig_s {
     uint8_t channel;
     timerCCCallbackPtr *callback;
     uint8_t reference;
+    timerOvrHandlerRec_t *overflowCallbackActive; // null-terminated linkded list of active overflow callbacks
+    uint32_t forcedOverflowTimerValue;
 } timerConfig_t;
 
 static timerConfig_t timerConfig[MAX_TIMERS * CC_CHANNELS_PER_TIMER];
@@ -113,12 +118,12 @@ void configTimeBase(TIM_TypeDef *tim, uint16_t period, uint8_t mhz)
     TIM_TimeBaseStructInit(&TIM_TimeBaseStructure);
 
     if ((tim == TIM2) || (tim == TIM3)){
-    	TIM_TimeBaseStructure.TIM_Period = period - 1; // 1 MHz / 400Hz = 2500 (2,5ms)
-    	TIM_TimeBaseStructure.TIM_Prescaler = (uint16_t)(((SystemCoreClock / 1000000) / 2) - 1); // Shooting for 1 MHz, (1us)
+    	TIM_TimeBaseStructure.TIM_Period = period - 1; // Es: 1 MHz / 400Hz = 2500 (2,5ms)
+    	TIM_TimeBaseStructure.TIM_Prescaler = (uint16_t)(((SystemCoreClock / ((uint32_t)mhz * 1000000)) / 2) - 1); // Shooting for 1 MHz, (1us)
 	    TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
     }
     else{
-    	TIM_TimeBaseStructure.TIM_Period = period - 1; // 1 MHz / 400Hz = 2500 (2,5ms)
+    	TIM_TimeBaseStructure.TIM_Period = period - 1;
     	TIM_TimeBaseStructure.TIM_Prescaler = (uint16_t)(SystemCoreClock / ((uint32_t)mhz * 1000000)) - 1;
     }
     TIM_TimeBaseStructure.TIM_ClockDivision = 0;
@@ -148,6 +153,18 @@ static void timCCxHandler(TIM_TypeDef *tim)
     for (channelIndex = 0; channelIndex < CC_CHANNELS_PER_TIMER; channelIndex++) {
         uint8_t channel = channels[channelIndex];
 
+        /*
+        if (TIM_GetITStatus(tim, TIM_IT_Update) == SET) {
+            tim->SR = ~TIM_IT_Update;
+            capture = tim->ARR;
+            timerOvrHandlerRec_t *cb = timerConfig->overflowCallbackActive;
+            while(cb) {
+                cb->fn(cb, capture);
+                cb = cb->next;
+            }
+        }
+		*/
+
         if (channel == TIM_Channel_1 && TIM_GetITStatus(tim, TIM_IT_CC1) == SET) {
             TIM_ClearITPendingBit(tim, TIM_IT_CC1);
             tConfig = findTimerConfig(tim, TIM_Channel_1);
@@ -173,6 +190,26 @@ static void timCCxHandler(TIM_TypeDef *tim)
         tConfig->callback(tConfig->reference, capture);
     }
 }
+
+/**
+ * Force an overflow for a given timer.
+ * Saves the current value of the counter in the relevant timerConfig's forcedOverflowTimerValue variable.
+ * @param TIM_Typedef *tim The timer to overflow
+ * @return void
+ **/
+void timerForceOverflow(TIM_TypeDef *tim)
+{
+    uint8_t timerIndex = lookupTimerIndex(tim);
+
+    ATOMIC_BLOCK(NVIC_PRIO_TIMER) {
+        // Save the current count so that PPM reading will work on the same timer that was forced to overflow
+        timerConfig[timerIndex].forcedOverflowTimerValue = tim->CNT + 1;
+
+        // Force an overflow by setting the UG bit
+        tim->EGR |= TIM_EGR_UG;
+    }
+}
+
 
 void TIM1_CC_IRQHandler(void)
 {

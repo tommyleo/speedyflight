@@ -210,6 +210,9 @@ static uint32_t blackboxPFrameIndex, blackboxIFrameIndex;
 
 static serialPort_t *blackboxPort;
 
+static uint32_t blackboxGPS_previousT;
+
+
 /*
  * We store voltages in I-frames relative to this, which was the voltage when the blackbox was activated.
  * This helps out since the voltage is only expected to fall from that point and we can reduce our diffs
@@ -606,6 +609,7 @@ static void blackboxSetState(BlackboxState newState)
             blackboxIteration = 0;
             blackboxPFrameIndex = 0;
             blackboxIFrameIndex = 0;
+            blackboxGPS_previousT = micros();
             break;
 		default:
             ;
@@ -1053,6 +1057,7 @@ static void blackboxPlaySyncBeep()
 void handleBlackbox(void)
 {
     int i;
+    uint32_t currentT;
 
     switch (blackboxState) {
         case BLACKBOX_STATE_SEND_HEADER:
@@ -1134,14 +1139,19 @@ void handleBlackbox(void)
                      * We write it periodically so that if one Home Frame goes missing, the GPS coordinates can
                      * still be interpreted correctly.
                      */
-                    if (GPS_home[0] != gpsHistory.GPS_home[0] || GPS_home[1] != gpsHistory.GPS_home[1]
-                        || (blackboxPFrameIndex == BLACKBOX_I_INTERVAL / 2 && blackboxIFrameIndex % 128 == 0)) {
-                        writeGPSHomeFrame();
-                        writeGPSFrame();
-                    } else if (GPS_numSat != gpsHistory.GPS_numSat || GPS_coord[0] != gpsHistory.GPS_coord[0]
-                            || GPS_coord[1] != gpsHistory.GPS_coord[1]) {
-                        //We could check for velocity changes as well but I doubt it changes independent of position
-                        writeGPSFrame();
+
+                	currentT = micros();
+                    if (currentT - blackboxGPS_previousT >= 1000000){
+                    	blackboxGPS_previousT = currentT;
+						if (GPS_home[0] != gpsHistory.GPS_home[0] || GPS_home[1] != gpsHistory.GPS_home[1]
+							|| (blackboxPFrameIndex == BLACKBOX_I_INTERVAL / 2 && blackboxIFrameIndex % 128 == 0)) {
+							writeGPSHomeFrame();
+							writeGPSFrame();
+						} else if (GPS_numSat != gpsHistory.GPS_numSat || GPS_coord[0] != gpsHistory.GPS_coord[0]
+								|| GPS_coord[1] != gpsHistory.GPS_coord[1]) {
+							//We could check for velocity changes as well but I doubt it changes independent of position
+							writeGPSFrame();
+						}
                     }
                 }
 #endif

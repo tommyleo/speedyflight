@@ -8,19 +8,20 @@ static uartPort_t uartPort6;
 
 void uartPause(int n)
 {
+	/*
     switch (n) {
         case 3:
             USART_Cmd(USART3, DISABLE);
-
             break;
         default:
             break;
     }
-
+	*/
 }
 
 void uartUnPause(int n)
 {
+	/*
     switch (n) {
         case 3:
             USART_Cmd(USART3, ENABLE);
@@ -28,6 +29,7 @@ void uartUnPause(int n)
         default:
             break;
     }
+    */
 }
 
 

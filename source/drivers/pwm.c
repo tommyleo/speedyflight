@@ -43,7 +43,6 @@ static uint8_t numInputs = 0;
 static uint16_t failsafeThreshold = 985;
 extern int16_t failsafeCnt;
 
-
 static const pwmPintData_t multiNoPWM[] = {
         { PWM9 | TYPE_M, TYPE_CAMSTAB1 },
         { PWM10 | TYPE_M, TYPE_CAMSTAB1 },
@@ -134,11 +133,13 @@ void pwmWriteMotor(uint8_t index, uint16_t value)
 {
     if (index < numMotors)
 		pwmWritePtr(index, value);
+    //*motors[index]->ccr = 0;
 }
 
 
 void pwmCompleteOneshotMotorUpdate(uint8_t motorCount)
 {
+	/*
     uint8_t index;
     TIM_TypeDef *lastTimerPtr = NULL;
 
@@ -154,6 +155,7 @@ void pwmCompleteOneshotMotorUpdate(uint8_t motorCount)
         // This compare register will be set to the output value on the next main loop.
         *motors[index]->ccr = 0;
     }
+    */
 }
 
 void pwmWriteServo(uint8_t index, uint16_t value)
@@ -427,7 +429,7 @@ void pwmInit(drv_pwm_config_t *config)
                 mhz = PWM_TIMER_MHZ;
             hz = mhz * 1000000;
             if(feature(FEATURE_ONESHOT125))
-            	motors[numMotors] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, 0xFFFF, config->idlePulse);
+            	motors[numMotors++] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, 0xFFFF, config->idlePulse);
             else
             	motors[numMotors++] = pwmOutConfig(port, mhz, hz / config->motorPwmRate, config->idlePulse);
 

@@ -2,7 +2,15 @@
 
 typedef uint16_t captureCompare_t;
 
+struct timerOvrHandlerRec_s;
+typedef void timerOvrHandlerCallback(struct timerOvrHandlerRec_s* self, uint16_t capture);
+
 typedef void timerCCCallbackPtr(uint8_t port, captureCompare_t capture);
+
+typedef struct timerOvrHandlerRec_s {
+    timerOvrHandlerCallback* fn;
+    struct timerOvrHandlerRec_s* next;
+} timerOvrHandlerRec_t;
 
 typedef struct {
     TIM_TypeDef *tim;
