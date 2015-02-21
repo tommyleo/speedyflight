@@ -5,8 +5,7 @@
 # BLACKBOX and SDCard on Board 
 (Don't need OpenLog serial data logger) BlackBox code from  Nicholas Sherlock(thenickdude)
 
-## Looptime = 50 (Main Cycle Time 50μs) (20 KHz by default)
-
+## Looptime up to 50μs (Main Cycle up to 20 KHz)
 
 
 
