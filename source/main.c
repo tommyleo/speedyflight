@@ -29,18 +29,18 @@ int main(void)
 
 	core.mainport = usbInit();      // start serial
 
-//    // configure power ADC
-//    if (mcfg.power_adc_channel > 0 && (mcfg.power_adc_channel == 1 || mcfg.power_adc_channel == 9))
-//        adc_params.powerAdcChannel = mcfg.power_adc_channel;
-//    else {
-//        adc_params.powerAdcChannel = 0;
-//        mcfg.power_adc_channel = 0;
-//    }
-//    adcInit(&adc_params);
+    // configure power ADC
+    if (mcfg.power_adc_channel > 0 && (mcfg.power_adc_channel == 1 || mcfg.power_adc_channel == 9))
+        adc_params.powerAdcChannel = mcfg.power_adc_channel;
+    else {
+        adc_params.powerAdcChannel = 0;
+        mcfg.power_adc_channel = 0;
+    }
+    adcInit(&adc_params);
 
     // Check battery type/voltage
-//    if (feature(FEATURE_VBAT))
-//        batteryInit();
+    if (feature(FEATURE_VBAT))
+        batteryInit();
 
     spiInit();
     spiInit2();

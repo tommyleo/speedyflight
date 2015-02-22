@@ -216,6 +216,7 @@ static void resetConf(void)
     mcfg.vbatscale = 110;
     mcfg.vbatmaxcellvoltage = 43;
     mcfg.vbatmincellvoltage = 33;
+    mcfg.vbatwarningcellvoltage = 35;
     mcfg.power_adc_channel = 0;
     mcfg.serialrx_type = 2;
     mcfg.spektrum_sat_bind = 0;
@@ -238,6 +239,8 @@ static void resetConf(void)
     mcfg.deadband3d_throttle = 50;
     mcfg.motor_pwm_rate = MOTOR_PWM_RATE;
     mcfg.servo_pwm_rate = 50;
+    // safety features
+    mcfg.auto_disarm_board = 5; // auto disarm after 5 sec if motors not started or disarmed
     // gps/nav stuff
     mcfg.gps_type = GPS_UBLOX;
     mcfg.gps_baudrate = GPS_BAUD_38400;

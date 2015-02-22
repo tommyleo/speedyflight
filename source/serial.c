@@ -486,7 +486,7 @@ static void evaluateCommand(void)
         mcfg.vbatscale = read8();           // actual vbatscale as intended
         mcfg.vbatmincellvoltage = read8();  // vbatlevel_warn1 in MWC2.3 GUI
         mcfg.vbatmaxcellvoltage = read8();  // vbatlevel_warn2 in MWC2.3 GUI
-        read8();                            // vbatlevel_crit (unused)
+        mcfg.vbatwarningcellvoltage = read8(); // vbatlevel when buzzer starts to alert
         headSerialReply(0);
         break;
     case MSP_SET_MOTOR:
@@ -684,11 +684,6 @@ static void evaluateCommand(void)
         break;
     case MSP_ANALOG:
         headSerialReply(7);
-        serialize8(10);
-        serialize16(0);
-        serialize16(0);
-        serialize16(0);
-        /*
         serialize8((uint8_t)constrain(vbat, 0, 255));
         serialize16((uint16_t)constrain(mAhdrawn, 0, 0xFFFF)); // milliamphours drawn from battery
         serialize16(rssi);
@@ -696,7 +691,6 @@ static void evaluateCommand(void)
             serialize16((uint16_t)constrain((abs(amperage) * 10), 0, 0xFFFF)); // send amperage in 0.001 A steps
         else
             serialize16((uint16_t)constrain(abs(amperage), 0, 0xFFFF)); // send amperage in 0.01 A steps
-		*/
         break;
     case MSP_RC_TUNING:
         headSerialReply(7);
@@ -755,7 +749,7 @@ static void evaluateCommand(void)
         serialize8(mcfg.vbatscale);
         serialize8(mcfg.vbatmincellvoltage);
         serialize8(mcfg.vbatmaxcellvoltage);
-        serialize8(0);
+        serialize8(mcfg.vbatwarningcellvoltage);
         break;
     case MSP_MOTOR_PINS:
         headSerialReply(8);

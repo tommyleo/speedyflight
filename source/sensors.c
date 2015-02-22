@@ -12,6 +12,7 @@ extern bool AccInflightCalibrationMeasurementDone;
 extern bool AccInflightCalibrationSavetoEEProm;
 extern bool AccInflightCalibrationActive;
 extern uint16_t batteryWarningVoltage;
+extern uint16_t batteryCriticalVoltage;
 extern uint8_t batteryCellCount;
 extern float magneticDeclination;
 
@@ -67,6 +68,26 @@ bool sensorsAutodetect(void)
     return true;
 }
 
+/*
+uint16_t RSSI_getValue(void)
+{
+    uint16_t value = 0;
+
+    if (mcfg.rssi_aux_channel > 0) {
+        const int16_t rssiChannelData = rcData[AUX1 + mcfg.rssi_aux_channel - 1];
+        // Range of rssiChannelData is [1000;2000]. rssi should be in [0;1023];
+        value = (uint16_t)((constrain(rssiChannelData - 1000, 0, 1000) / 1000.0f) * 1023.0f);
+    } else if (mcfg.rssi_adc_channel > 0) {
+        const int16_t rssiData = (((int32_t)(adcGetChannel(ADC_RSSI) - mcfg.rssi_adc_offset)) * 1023L) / mcfg.rssi_adc_max;
+        // Set to correct range [0;1023]
+        value = constrain(rssiData, 0, 1023);
+    }
+
+    // return range [0;1023]
+    return value;
+}
+*/
+
 uint16_t batteryAdcToVoltage(uint16_t src)
 {
     // calculate battery voltage based on ADC reading
@@ -90,11 +111,11 @@ void batteryInit(void)
     uint32_t i;
     uint32_t voltage = 0;
 
-//    // average up some voltage readings
-//    for (i = 0; i < 32; i++) {
-//        voltage += adcGetChannel(ADC_BATTERY);
-//        delay(10);
-//    }
+    // average up some voltage readings
+    for (i = 0; i < 32; i++) {
+        voltage += adcGetChannel(ADC_BATTERY);
+        delay(10);
+    }
 
     voltage = batteryAdcToVoltage((uint16_t)(voltage / 32));
 
@@ -104,7 +125,8 @@ void batteryInit(void)
             break;
     }
     batteryCellCount = i;
-    batteryWarningVoltage = i * mcfg.vbatmincellvoltage; // 3.3V per cell minimum, configurable in CLI
+    batteryWarningVoltage = i * mcfg.vbatwarningcellvoltage; // 3.5V per cell minimum, configurable in CLI
+    batteryCriticalVoltage = i * mcfg.vbatmincellvoltage; // 3.3V per cell minimum, configurable in CLI
 }
 
 #ifdef BARO
