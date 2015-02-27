@@ -1261,8 +1261,8 @@ void loop(void)
             }
         }
 #endif
-        //if (((int32_t)(currentTime - motorsTime) >= 0)) {
-        //	motorsTime = currentTime + (uint16_t)(1000000/mcfg.motor_pwm_rate);
+        if (((int32_t)(currentTime - motorsTime) >= 0) || feature(FEATURE_ONESHOT125)) {
+			motorsTime = currentTime + (uint16_t)(1000000/mcfg.motor_pwm_rate);
         	// PID - note this is function pointer set by setPIDController()
 			pid_controller();
 			mixTable();
@@ -1270,6 +1270,6 @@ void loop(void)
 			writeMotors();
 	        if (feature(FEATURE_BLACKBOX))
 	        	handleBlackbox();
-		//}
+		}
     }
 }
