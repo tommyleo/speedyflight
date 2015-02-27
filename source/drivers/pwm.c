@@ -429,7 +429,7 @@ void pwmInit(drv_pwm_config_t *config)
                 mhz = PWM_TIMER_MHZ;
             hz = mhz * 1000000;
             if(feature(FEATURE_ONESHOT125))
-            	motors[numMotors++] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, 0xFFFF, config->idlePulse);
+            	motors[numMotors++] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, mcfg.looptime, config->idlePulse);
             else
             	motors[numMotors++] = pwmOutConfig(port, mhz, hz / config->motorPwmRate, config->idlePulse);
 
