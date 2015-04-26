@@ -87,7 +87,7 @@ int main(void)
 	}
 
 	if (feature(FEATURE_TELEMETRY))
-		initTelemetry(USART3);
+		initTelemetry(USART1);
 
 	if (feature(FEATURE_GPS))
 		gpsInit(mcfg.gps_baudrate);
@@ -111,7 +111,6 @@ int main(void)
     mixerInit();                // this will set core.useServo var depending on mixer type
 
 	pwm_params.useRcUART = feature(FEATURE_GPS) && feature(FEATURE_SERIALRX) && core.telemport;
-	pwm_params.useAf = feature(FEATURE_AF);
 	pwm_params.noPwmRx = feature(FEATURE_PPM) || feature(FEATURE_SERIALRX);
 	pwm_params.useSerialrx = feature(FEATURE_SERIALRX);
 	pwm_params.useI2c = feature(FEATURE_I2C);
@@ -125,8 +124,10 @@ int main(void)
 		pwm_params.idlePulse = mcfg.neutral3d;
 	if (pwm_params.motorPwmRate > 500)
 		pwm_params.idlePulse = 0;                  // brushed motors
-	pwm_params.servoCenterPulse = mcfg.midrc;
-	pwm_params.failsafeThreshold = cfg.failsafe_detect_threshold;
+    pwm_params.syncPWM = feature(FEATURE_SYNCPWM);
+    pwm_params.fastPWM = feature(FEATURE_FASTPWM);
+    pwm_params.servoCenterPulse = mcfg.midrc;
+    pwm_params.failsafeThreshold = cfg.failsafe_detect_threshold;
 	pwmInit(&pwm_params);
 
     previousTime = micros();

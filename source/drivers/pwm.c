@@ -3,6 +3,8 @@
 
 typedef struct {
     volatile uint32_t *ccr;
+    volatile uint16_t *cr1;
+    volatile uint16_t *cnt;
     volatile TIM_TypeDef *tim;
     uint16_t period;
     // for input only
@@ -40,6 +42,8 @@ static pwmWriteFuncPtr pwmWritePtr = NULL;
 static uint8_t numMotors = 0;
 static uint8_t numServos = 0;
 static uint8_t numInputs = 0;
+static bool syncPWM = false;
+static bool fastPWM = false;
 static uint16_t failsafeThreshold = 985;
 extern int16_t failsafeCnt;
 
@@ -115,8 +119,7 @@ static const pwmPintData_t airPWM[] = {
 static const pwmPintData_t * const hardwareMaps[] = { multiPWM, multiNoPWM, airPWM, airNoPWM, };
 
 #define PWM_TIMER_MHZ 1
-#define PWM_BRUSHED_TIMER_MHZ 8
-#define ONESHOT125_TIMER_MHZ 8
+#define PWM_TIMER_8_MHZ 8
 
 static void pwmWriteBrushed(uint8_t index, uint16_t value)
 {
@@ -125,7 +128,15 @@ static void pwmWriteBrushed(uint8_t index, uint16_t value)
 
 static void pwmWriteStandard(uint8_t index, uint16_t value)
 {
-    *motors[index]->ccr = value;
+	*motors[index]->ccr = value;
+}
+
+static void pwmWriteSyncPwm(uint8_t index, uint16_t value)
+{
+    *motors[index]->cr1 &= (uint16_t) ~(0x0001);    // disable timer
+    *motors[index]->cnt = 0x0000;                   // set timer counter to zero
+	*motors[index]->ccr = value;                    // set the pwm value
+    *motors[index]->cr1 |= (uint16_t) (0x0001);     // enable timer
 }
 
 
@@ -133,29 +144,6 @@ void pwmWriteMotor(uint8_t index, uint16_t value)
 {
     if (index < numMotors)
 		pwmWritePtr(index, value);
-    //*motors[index]->ccr = 0;
-}
-
-
-void pwmCompleteOneshotMotorUpdate(uint8_t motorCount)
-{
-	/*
-    uint8_t index;
-    TIM_TypeDef *lastTimerPtr = NULL;
-
-    for(index = 0; index < motorCount; index++){
-
-        // Force the timer to overflow if it's the first motor to output, or if we change timers
-        if(motors[index]->tim != lastTimerPtr){
-            lastTimerPtr = motors[index]->tim;
-            timerForceOverflow(motors[index]->tim);
-        }
-
-        // Set the compare register to 0, which stops the output pulsing if the timer overflows before the main loop completes again.
-        // This compare register will be set to the output value on the next main loop.
-        *motors[index]->ccr = 0;
-    }
-    */
 }
 
 void pwmWriteServo(uint8_t index, uint16_t value)
@@ -171,33 +159,38 @@ uint16_t pwmRead(uint8_t channel)
 
 static void pwmOCConfig(TIM_TypeDef *tim, uint8_t channel, uint16_t value)
 {
+	uint16_t tim_oc_preload;
     TIM_OCInitTypeDef TIM_OCInitStructure;
 
+    TIM_OCStructInit(&TIM_OCInitStructure);
     TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM2;
     TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
     TIM_OCInitStructure.TIM_OutputNState = TIM_OutputNState_Disable;
     TIM_OCInitStructure.TIM_Pulse = value;
     TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_Low;
-    TIM_OCInitStructure.TIM_OCNPolarity = TIM_OCPolarity_High;
     TIM_OCInitStructure.TIM_OCIdleState = TIM_OCIdleState_Set;
-    TIM_OCInitStructure.TIM_OCNIdleState = TIM_OCNIdleState_Reset;
+
+    if (syncPWM)
+        tim_oc_preload = TIM_OCPreload_Disable;
+    else
+        tim_oc_preload = TIM_OCPreload_Enable;
 
     switch (channel) {
         case TIM_Channel_1:
             TIM_OC1Init(tim, &TIM_OCInitStructure);
-            TIM_OC1PreloadConfig(tim, TIM_OCPreload_Enable);
+            TIM_OC1PreloadConfig(tim, tim_oc_preload);
             break;
         case TIM_Channel_2:
             TIM_OC2Init(tim, &TIM_OCInitStructure);
-            TIM_OC2PreloadConfig(tim, TIM_OCPreload_Enable);
+            TIM_OC2PreloadConfig(tim, tim_oc_preload);
             break;
         case TIM_Channel_3:
             TIM_OC3Init(tim, &TIM_OCInitStructure);
-            TIM_OC3PreloadConfig(tim, TIM_OCPreload_Enable);
+            TIM_OC3PreloadConfig(tim, tim_oc_preload);
             break;
         case TIM_Channel_4:
             TIM_OC4Init(tim, &TIM_OCInitStructure);
-            TIM_OC4PreloadConfig(tim, TIM_OCPreload_Enable);
+            TIM_OC4PreloadConfig(tim, tim_oc_preload);
             break;
     }
 }
@@ -252,6 +245,9 @@ static pwmPortData_t *pwmOutConfig(uint8_t port, uint8_t mhz, uint16_t period, u
         TIM_CtrlPWMOutputs(timerHardware[port].tim, ENABLE);
 
     TIM_Cmd(timerHardware[port].tim, ENABLE);
+
+    p->cr1 = &timerHardware[port].tim->CR1;
+    p->cnt = &timerHardware[port].tim->CNT;
 
     switch (timerHardware[port].channel) {
         case TIM_Channel_1:
@@ -351,6 +347,10 @@ void pwmInit(drv_pwm_config_t *config)
     int i = 0;
     uint8_t CamStab = TYPE_CAMSTAB2;
     const pwmPintData_t *hardwareMap;
+    uint16_t period;
+
+    syncPWM = config->syncPWM;
+    fastPWM = config->fastPWM;
 
     // enable TIMs clock
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1 | RCC_APB2Periph_TIM8, ENABLE);
@@ -402,9 +402,11 @@ void pwmInit(drv_pwm_config_t *config)
             break;
 
         // if the user want the alternate function for this pin
+        /*
         if (config->useAf && (afmask & (TYPE_M | TYPE_S))) {
            mask = afmask ;
         }
+        */
 
         if (config->useTri && (port == PWM14)) {
             // this is tricopter,  set tail servo
@@ -423,17 +425,24 @@ void pwmInit(drv_pwm_config_t *config)
 			numInputs++;
         } else if (mask & TYPE_M) {
             uint32_t hz, mhz;
-            if (config->motorPwmRate > 500)
-                mhz = PWM_BRUSHED_TIMER_MHZ;
+
+            if (config->motorPwmRate > 500 || config->fastPWM)
+            	mhz = PWM_TIMER_8_MHZ;
             else
                 mhz = PWM_TIMER_MHZ;
-            hz = mhz * 1000000;
-            if(feature(FEATURE_ONESHOT125))
-            	motors[numMotors++] = pwmOutConfig(port, ONESHOT125_TIMER_MHZ, mcfg.looptime, config->idlePulse);
-            else
-            	motors[numMotors++] = pwmOutConfig(port, mhz, hz / config->motorPwmRate, config->idlePulse);
 
-        } else if (mask & TYPE_S) {
+            hz = mhz * 1000000;
+
+            if (config->syncPWM)
+                period = 8000 * mhz; // 8ms period in syncPWM mode, cycletime should be smaller than this
+            else if (config->fastPWM)
+                period = hz / 4000;
+            else
+                period = hz / config->motorPwmRate;
+
+            motors[numMotors++] = pwmOutConfig(port, mhz, period, config->idlePulse);
+        }
+        else if (mask & TYPE_S) {
             servos[numServos++] = pwmOutConfig(port, PWM_TIMER_MHZ, 1000000 / config->servoPwmRate, config->servoCenterPulse);
         }
     }
@@ -442,6 +451,8 @@ void pwmInit(drv_pwm_config_t *config)
     pwmWritePtr = pwmWriteStandard;
     if (config->motorPwmRate > 500)
         pwmWritePtr = pwmWriteBrushed;
+    else if (config->syncPWM)
+        pwmWritePtr = pwmWriteSyncPwm;
 
     // set return values in init struct
     //init->numServos = numServos;

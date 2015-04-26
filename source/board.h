@@ -117,10 +117,10 @@ typedef enum {
     FEATURE_POWERMETER = 1 << 12,
     FEATURE_VARIO = 1 << 13,
     FEATURE_3D = 1 << 14,
-    FEATURE_I2C = 1 << 15,
-    FEATURE_AF = 1 << 16,
-    FEATURE_DISPLAY = 1 << 17,
-    FEATURE_ONESHOT125 = 1 << 18,
+    FEATURE_FW_FAILSAFE_RTH = 1 << 15,
+    FEATURE_SYNCPWM = 1 << 16,
+    FEATURE_FASTPWM = 1 << 17,
+    FEATURE_I2C = 1 << 18,
     FEATURE_BLACKBOX = 1 << 19
 } AvailableFeatures;
 

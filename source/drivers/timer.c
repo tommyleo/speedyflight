@@ -119,12 +119,12 @@ void configTimeBase(TIM_TypeDef *tim, uint16_t period, uint8_t mhz)
 
     if ((tim == TIM2) || (tim == TIM3)){
     	TIM_TimeBaseStructure.TIM_Period = period - 1; // Es: 1 MHz / 400Hz = 2500 (2,5ms)
-    	TIM_TimeBaseStructure.TIM_Prescaler = (uint16_t)(((SystemCoreClock / ((uint32_t)mhz * 1000000)) / 2) - 1); // Shooting for 1 MHz, (1us)
-	    TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
+    	TIM_TimeBaseStructure.TIM_Prescaler = ((SystemCoreClock / ((uint32_t)mhz * 1000000)) / 2) - 1; // Shooting for 1 MHz, (1us)
+	    //TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
     }
     else{
     	TIM_TimeBaseStructure.TIM_Period = period - 1;
-    	TIM_TimeBaseStructure.TIM_Prescaler = (uint16_t)(SystemCoreClock / ((uint32_t)mhz * 1000000)) - 1;
+    	TIM_TimeBaseStructure.TIM_Prescaler = (SystemCoreClock / ((uint32_t)mhz * 1000000)) - 1;
     }
     TIM_TimeBaseStructure.TIM_ClockDivision = 0;
     TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;

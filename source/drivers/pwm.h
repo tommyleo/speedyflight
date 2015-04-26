@@ -13,7 +13,6 @@ typedef struct drv_pwm_config_t {
     bool noPwmRx;          // activate the 4 additional channels RC 5,6,7,8
     bool useSerialrx;
     bool useRcUART;
-    bool useAf;
     bool useCamStab;
     bool useTri;
     bool airplane; // fixed wing hardware config, lots of servos etc
@@ -24,6 +23,11 @@ typedef struct drv_pwm_config_t {
                          // some higher value (used by 3d mode), or 0, for brushed pwm drivers.
     uint16_t servoCenterPulse;
     uint16_t failsafeThreshold;
+    bool syncPWM;
+    bool fastPWM;
+
+    // OUT parameters, filled by driver
+    uint8_t numServos;
 } drv_pwm_config_t;
 
 // This indexes into the read-only hardware definition structure in pwm.c,

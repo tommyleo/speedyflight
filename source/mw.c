@@ -1261,7 +1261,7 @@ void loop(void)
             }
         }
 #endif
-        if (((int32_t)(currentTime - motorsTime) >= 0) || feature(FEATURE_ONESHOT125)) {
+        if (((int32_t)(currentTime - motorsTime) >= 0) || feature(FEATURE_SYNCPWM)) {
 			motorsTime = currentTime + (uint16_t)(1000000/mcfg.motor_pwm_rate);
         	// PID - note this is function pointer set by setPIDController()
 			pid_controller();

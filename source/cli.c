@@ -58,8 +58,10 @@ static const char * const mixerNames[] = {
 static const char * const featureNames[] = {
     "PPM", "VBAT", "INFLIGHT_ACC_CAL", "SERIALRX", "MOTOR_STOP",
     "SERVO_TILT", "SOFTSERIAL", "LED_RING", "GPS",
-    "FAILSAFE", "SONAR", "TELEMETRY", "POWERMETER", "VARIO", "3D", "I2C",
-    "FW_FAILSAFE_RTH", "DISPLAY", "ONESHOT125", "BLACKBOX", NULL
+    "FAILSAFE", "SONAR", "TELEMETRY", "POWERMETER", "VARIO", "3D",
+    "FW_FAILSAFE_RTH", "SYNCPWM", "FASTPWM",
+    "I2C", "BLACKBOX",
+    NULL
 };
 
 // sync this with AvailableSensors enum from board.h
