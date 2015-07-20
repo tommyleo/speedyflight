@@ -42,4 +42,3 @@ void serialSetMode(serialPort_t *instance, portMode_t mode)
 {
     instance->vTable->setMode(instance, mode);
 }
-

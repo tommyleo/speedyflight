@@ -8,28 +8,42 @@ static uartPort_t uartPort6;
 
 void uartPause(int n)
 {
-	/*
     switch (n) {
+        case 1:
+            USART_Cmd(USART1, DISABLE);
+            break;
+        case 2:
+            USART_Cmd(USART2, DISABLE);
+            break;
         case 3:
             USART_Cmd(USART3, DISABLE);
+            break;
+        case 6:
+            USART_Cmd(USART6, DISABLE);
             break;
         default:
             break;
     }
-	*/
 }
 
 void uartUnPause(int n)
 {
-	/*
     switch (n) {
+        case 1:
+            USART_Cmd(USART1, ENABLE);
+            break;
+        case 2:
+            USART_Cmd(USART2, ENABLE);
+            break;
         case 3:
             USART_Cmd(USART3, ENABLE);
+            break;
+        case 6:
+            USART_Cmd(USART6, ENABLE);
             break;
         default:
             break;
     }
-    */
 }
 
 
@@ -75,7 +89,7 @@ uartPort_t *serialUSART1(uint32_t baudRate, portMode_t mode)
     }
 
     NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
@@ -126,8 +140,8 @@ uartPort_t *serialUSART2(uint32_t baudRate, portMode_t mode)
     }
 
     NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3;
-    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
 
@@ -175,8 +189,8 @@ uartPort_t *serialUSART3(uint32_t baudRate, portMode_t mode)
      }
 
      NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn;
-     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3;
-     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
      NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
      NVIC_Init(&NVIC_InitStructure);
 
@@ -226,8 +240,8 @@ uartPort_t *serialUSART6(uint32_t baudRate, portMode_t mode)
     }
 
     NVIC_InitStructure.NVIC_IRQChannel = USART6_IRQn;
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3;
-    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
 
@@ -338,13 +352,6 @@ void uartWrite(serialPort_t *instance, uint8_t ch)
 
     USART_SendData(s->USARTx, ch);
     while(USART_GetFlagStatus(s->USARTx, USART_FLAG_TC) == RESET){}
-
-    /*
-    s->port.txBuffer[s->port.txBufferHead] = ch;
-    s->port.txBufferHead = (s->port.txBufferHead + 1) % s->port.txBufferSize;
-	USART_ITConfig(s->USARTx, USART_IT_TXE, ENABLE);
-	*/
-	//USB_OTG_BSP_uDelay(250); //Just for Baseflight configurator, VRBrain is too fast!!!
 }
 
 const struct serialPortVTable uartVTable[] = {
@@ -409,4 +416,3 @@ void USART6_IRQHandler(void)
     uartPort_t *s = &uartPort6;
     usartIrqHandler(s);
 }
-

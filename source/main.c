@@ -87,7 +87,7 @@ int main(void)
 	}
 
 	if (feature(FEATURE_TELEMETRY))
-		initTelemetry(USART1);
+		initTelemetry(USART3);
 
 	if (feature(FEATURE_GPS))
 		gpsInit(mcfg.gps_baudrate);
